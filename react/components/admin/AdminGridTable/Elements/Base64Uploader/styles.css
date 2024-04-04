@@ -1,0 +1,14 @@
+.image-upload {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.image-upload__image {
+  max-height: 200px;
+}
+
+.button-remove {
+  margin-left: 16px;
+}

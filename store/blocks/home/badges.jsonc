@@ -1,0 +1,55 @@
+{
+  "flex-layout.row#badges": {
+    "title": "Badges",
+    "children": [
+      "image#delivery",
+      "image#recycle",
+      "image#ontariomade",
+      "image#canadian"
+    ],
+    "props": {
+      "blockClass": "deals",
+      "preserveLayoutOnMobile": "true"
+    }
+  },
+  "flex-layout.row#badges-top-border": {
+    "title": "Badges top border",
+    "children": [
+      "image#delivery",
+      "image#recycle",
+      "image#ontariomade",
+      "image#canadian"
+    ],
+    "props": {
+      "blockClass": "deals-top-border",
+      "preserveLayoutOnMobile": "true"
+    }
+  },
+  "image#delivery": {
+    "props": {
+      "src": "assets/Delivery.png",
+      "maxHeight": "70px"
+    }
+  },
+
+  "image#recycle": {
+    "props": {
+      "src": "assets/Recycle.png",
+      "maxHeight": "70px"
+    }
+  },
+
+  "image#ontariomade": {
+    "props": {
+      "src": "assets/OntarioMade.png",
+      "maxHeight": "70px"
+    }
+  },
+
+  "image#canadian": {
+    "props": {
+      "src": "assets/Canadian.png",
+      "maxHeight": "70px"
+    }
+  }
+}

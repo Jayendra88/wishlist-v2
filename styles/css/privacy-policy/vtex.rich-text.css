@@ -1,0 +1,10 @@
+@import '../../color-variables.css';
+
+.paragraph--privacy-policy-remove-margin {
+  padding-top: 0px !important;
+  margin-top: 0px;
+}
+
+.paragraph--privacy-policy-margin-bottom {
+  margin-bottom: 50px;
+}

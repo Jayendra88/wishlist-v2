@@ -1,0 +1,187 @@
+{
+  "vendor": "whitebird",
+  "name": "minimumtheme",
+  "version": "16.1.24",
+  "builders": {
+    "assets": "0.x",
+    "docs": "0.x",
+    "graphql": "1.x",
+    "messages": "1.x",
+    "node": "6.x",
+    "react": "3.x",
+    "store": "0.x",
+    "styles": "2.x",
+    "admin": "0.x",
+    "pixel": "0.x",
+    "checkout-ui-custom": "0.x"
+  },
+  "scripts": {
+    "postreleasy": "cd ./checkout-ui-settings/ && yarn build && cd .. && vtex publish --verbose"
+  },
+  "policies": [
+    {
+      "name": "AcessaTodosPedidos"
+    },
+    {
+      "name": "AcessaTodosCarrinhos"
+    },
+    {
+      "name": "read_prices"
+    },
+    {
+      "name": "ADMIN_DS"
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "api.vtex.com",
+        "path": "*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "{{account}}.vtexcommercestable.com.br",
+        "path": "/api/checkout/pub/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "wb-xibi-01.stratusmanagedcloud.com",
+        "path": "*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "external-api.freightcom.com",
+        "path": "*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "{{account}}.vtexcommercestable.com.br",
+        "path": "/api/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "/api/catalog_system/pvt/brand",
+        "path": "*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "portal.vtexcommercestable.com.br",
+        "path": "*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "/api/checkout/pub/orderForm",
+        "path": "*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "/api/catalog/pvt/category/",
+        "path": "*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "o483584.ingest.sentry.io",
+        "path": "*"
+      }
+    },
+    {
+      "name": "vtex.search-graphql:resolve-graphql"
+    },
+    {
+      "name": "vtex.graphql-server:resolve-graphql"
+    },
+    {
+      "name": "graphql-query"
+    }
+  ],
+  "dependencies": {
+    "vtex.add-to-cart-button": "0.x",
+    "vtex.b2b-organizations-graphql": "0.x",
+    "vtex.breadcrumb": "1.x",
+    "vtex.carousel": "2.x",
+    "vtex.checkout-summary": "0.x",
+    "vtex.condition-layout": "2.x",
+    "vtex.css-handles": "0.x",
+    "vtex.device-detector": "0.x",
+    "vtex.disclosure-layout": "1.x",
+    "vtex.disposition-layout": "1.x",
+    "vtex.flex-layout": "0.x",
+    "vtex.formatted-price": "0.x",
+    "vtex.graphql-server": "1.x",
+    "vtex.iframe": "0.x",
+    "vtex.info-card-list": "0.x",
+    "vtex.list-context": "0.x",
+    "vtex.locale-switcher": "0.x",
+    "vtex.login": "2.x",
+    "vtex.menu": "2.x",
+    "vtex.minicart": "2.x",
+    "vtex.modal-layout": "0.x",
+    "vtex.my-account": "1.x",
+    "vtex.order-items": "0.x",
+    "vtex.order-placed": "2.x",
+    "vtex.product-context": "0.x",
+    "vtex.product-details": "1.x",
+    "vtex.product-identifier": "0.x",
+    "vtex.product-kit": "1.x",
+    "vtex.product-list": "0.x",
+    "vtex.product-price": "1.x",
+    "vtex.product-quantity": "1.x",
+    "vtex.product-review-interfaces": "1.x",
+    "vtex.product-specification-badges": "0.x",
+    "vtex.product-specifications": "1.x",
+    "vtex.product-summary": "2.x",
+    "vtex.responsive-layout": "0.x",
+    "vtex.rich-text": "0.x",
+    "vtex.search": "2.x",
+    "vtex.search-graphql": "0.x",
+    "vtex.search-page-context": "0.x",
+    "vtex.search-result": "3.x",
+    "vtex.session": "0.x",
+    "vtex.session-client": "1.x",
+    "vtex.shelf": "1.x",
+    "vtex.slider": "0.x",
+    "vtex.slider-layout": "0.x",
+    "vtex.stack-layout": "0.x",
+    "vtex.sticky-layout": "0.x",
+    "vtex.store": "2.x",
+    "vtex.store-components": "3.x",
+    "vtex.store-drawer": "0.x",
+    "vtex.store-footer": "2.x",
+    "vtex.store-form": "0.x",
+    "vtex.store-graphql": "2.x",
+    "vtex.store-header": "2.x",
+    "vtex.store-icons": "0.x",
+    "vtex.store-image": "0.x",
+    "vtex.store-link": "0.x",
+    "vtex.store-video": "1.x",
+    "vtex.storefront-permissions": "1.x",
+    "vtex.structured-data": "0.x",
+    "vtex.styleguide": "9.x",
+    "vtex.tab-layout": "0.x",
+    "vtex.telemarketing": "2.x",
+    "whitebird.my-wishlists": "1.x"
+  },
+  "peerDependencies": {
+    "vtex.quickorder": "3.x",
+    "vtex.b2b-organizations": "1.x",
+    "syatt.mega-menu": "3.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

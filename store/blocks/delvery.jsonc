@@ -1,0 +1,291 @@
+{
+  "store.custom#delivery": {
+    "blocks": ["flex-layout.row#delivery-layout"]
+  },
+  "flex-layout.row#delivery-layout": {
+    "title": "Delivery - Layout",
+    "children": ["flex-layout.col#delivery-layout"],
+    "props": {
+      "blockClass": "delivery-layout",
+      "fullWidth": "true",
+      "horizontalAlign": "center"
+    }
+  },
+  "disposition-layout#delivery-layout": {
+    "title": "Delivery - Disposition layout",
+    "children": [
+      "flex-layout.row#delivery-header",
+      "flex-layout.row#delivery-map",
+      "flex-layout.row#delivery"
+    ],
+    "props": {
+      "disposition": [
+        {
+          "order": 1
+        },
+        {
+          "order": 2
+        },
+        {
+          "order": 3
+        }
+      ]
+    }
+  },
+  "flex-layout.col#delivery-layout": {
+    "children": [
+      "whitebird-custom-breadcrumbs#delivery",
+      "disposition-layout#delivery-layout"
+    ]
+  },
+  "whitebird-custom-breadcrumbs#delivery": {
+    "props": {
+      "term": "Delivery",
+      "showOnMobile": true
+    }
+  },
+  "flex-layout.row#delivery-header": {
+    "title": "Delivery - Hero",
+    "children": ["flex-layout.col#delivery-header"]
+  },
+  "flex-layout.col#delivery-header": {
+    "props": {
+      "blockClass": "delivery-header"
+    },
+    "children": ["image#delivery-image", "rich-text#delivery-header"]
+  },
+  "flex-layout.row#delivery-map": {
+    "props": {
+      "blockClass": "delivery-map-image"
+    },
+    "children": ["flex-layout.col#delivery-map-image"]
+  },
+  "flex-layout.col#delivery-map-image": {
+    "props": {
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "flex-layout.row#delivery-map-image",
+      "rich-text#delivery-disclaimer"
+    ]
+  },
+  "flex-layout.row#delivery-map-image": {
+    "props": {
+      "blockClass": "delivery-map-image"
+    },
+    "children": ["image#delivery-map"]
+  },
+  "rich-text#delivery-header": {
+    "props": {
+      "text": "# Delivery"
+    }
+  },
+  "rich-text#delivery-disclaimer": {
+    "props": {
+      "text": "Check to see if you're in our truck route area, Click 'Verify Your Postal Code' Button now."
+    }
+  },
+  "image#delivery-image": {
+    "props": {
+      "src": "https://whitebird.vtexassets.com/assets/vtex.file-manager-graphql/images/9339c768-9f20-45bd-87fe-a507ac33706d___24ca6ba14057581937681712f4f9a161.jpg"
+    }
+  },
+  "image#delivery-map": {
+    "props": {
+      "blockClass": "deliver-map-image",
+      "src": "https://whitebird.vtexassets.com/assets/vtex.file-manager-graphql/images/f93326d1-6243-44f6-8b7b-b8173bc1ca00___985ec6693634093481529faad2705e09.jpeg"
+    }
+  },
+  "flex-layout.row#delivery": {
+    "title": "Delivery",
+    "children": ["flex-layout.col#delivery"]
+  },
+  "flex-layout.col#delivery": {
+    "props": {
+      "blockClass": "delivery",
+      "horizontalAlign": "left"
+    },
+    "children": [
+      "rich-text#delivery-statement-header",
+      "rich-text#delivery-statement-text-bullet-1",
+      "rich-text#delivery-statement-text-bullet-2",
+      "rich-text#delivery-statement-text-bullet-3",
+      "rich-text#delivery-statement-text-bullet-4",
+      "rich-text#delivery-security-header",
+      "rich-text#delivery-security-text-bullet-1",
+      "rich-text#delivery-security-text-bullet-2",
+      "rich-text#delivery-security-text-bullet-3",
+      "rich-text#delivery-rush-header",
+      "rich-text#delivery-rush-text",
+      "rich-text#delivery-pick-up-header",
+      "rich-text#delivery-pick-up-text-bullet-1",
+      "rich-text#delivery-pick-up-text-bullet-2",
+      "rich-text#delivery-pick-up-text-bullet-3",
+      "rich-text#delivery-pick-up-text-bullet-4",
+      "rich-text#delivery-pick-up-text-bullet-5",
+      "rich-text#delivery-pick-up-text-bullet-6",
+      "rich-text#delivery-pick-up-text-bullet-7",
+      "rich-text#delivery-returns-header",
+      "rich-text#delivery-returns-text-bullet-1",
+      "rich-text#delivery-returns-text-bullet-2",
+      "rich-text#delivery-returns-text-bullet-3",
+      "rich-text#delivery-returns-text-bullet-4",
+      "rich-text#delivery-pricing-header",
+      "rich-text#delivery-pricing-text"
+    ]
+  },
+  "rich-text#delivery-statement-header": {
+    "props": {
+      "text": "### Whitebird Delivery Route (EXCLUDES RESIDENTIAL LOCATIONS)"
+    }
+  },
+  "rich-text#delivery-statement-text-bullet-1": {
+    "props": {
+      "text": "* No Minimum Order * Orders over $1500 (before tax) are FREE delivery.",
+      "blockClass": "delivery-remove-margin"
+    }
+  },
+  "rich-text#delivery-statement-text-bullet-2": {
+    "props": {
+      "text": "* Orders under $1500 (before tax) - $45.00 service charge.",
+      "blockClass": "delivery-remove-margin"
+    }
+  },
+  "rich-text#delivery-statement-text-bullet-3": {
+    "props": {
+      "text": "* Same-day Order Processing, Next Day Delivery",
+      "blockClass": "delivery-remove-margin"
+    }
+  },
+  "rich-text#delivery-statement-text-bullet-4": {
+    "props": {
+      "text": " * Any order placed by phone, fax, email or on-line by 4:30 will be processed same day and delivered next business day to you.",
+      "blockClass": "delivery-remove-margin"
+    }
+  },
+  "rich-text#delivery-security-header": {
+    "props": {
+      "text": "### Outside Of The Whitebird Delivery Route And Residential Businesses"
+    }
+  },
+  "rich-text#delivery-security-text-bullet-1": {
+    "props": {
+      "text": "* No Minimum Order",
+      "blockClass": "delivery-margin-bottom"
+    }
+  },
+  "rich-text#delivery-security-text-bullet-2": {
+    "props": {
+      "text": "* Your order will be shipped from the Hamilton location. COURIER is normally used, but if the order exceeds weight limits, a common carrier will be dispatched. You will be notified with your delivery charge as soon as your order is complete. For delivery costs: info@whitebird.ca or 1-800-263-2128",
+      "blockClass": "delivery-margin-bottom"
+    }
+  },
+  "rich-text#delivery-security-text-bullet-3": {
+    "props": {
+      "text": "* Any order placed by phone, fax, email or on-line by 12:00 noon will be processed and shipped same day",
+      "blockClass": "delivery-margin-bottom"
+    }
+  },
+  "rich-text#delivery-rush-header": {
+    "props": {
+      "text": "### Rush Deliveries:",
+      "blockClass": "delivery-margin-bottom"
+    }
+  },
+  "rich-text#delivery-rush-text": {
+    "props": {
+      "text": "Should a rush delivery (same day) be required, we will be more than happy to do our best to accommodate your request. Please note, same day deliveries are shipped out F.O.B Whitebird's dock.",
+      "blockClass": "delivery-margin-bottom"
+    }
+  },
+  "rich-text#delivery-pick-up-header": {
+    "props": {
+      "text": "### Customer Pickup",
+      "blockClass": "delivery-margin-bottom"
+    }
+  },
+  "rich-text#delivery-pick-up-text-bullet-1": {
+    "props": {
+      "text": "* Our pick-up hours are 8am-4pm Monday to Friday",
+      "blockClass": "delivery-margin-bottom"
+    }
+  },
+  "rich-text#delivery-pick-up-text-bullet-2": {
+    "props": {
+      "text": "* Any order placed by phone, fax, email or on-line by 4:30 will be processed same day and available for next day pickup. Any order placed after 4:30pm will be subject to the same day pick up fee of $25.",
+      "blockClass": "delivery-margin-bottom"
+    }
+  },
+  "rich-text#delivery-pick-up-text-bullet-3": {
+    "props": {
+      "text": "* Orders placed for same day pick require a 1 hr turnaround time and have a pickup fee of $25.",
+      "blockClass": "delivery-margin-bottom"
+    }
+  },
+  "rich-text#delivery-pick-up-text-bullet-4": {
+    "props": {
+      "text": "* General pickup orders placed will be available the next business day with no pickup charge.",
+      "blockClass": "delivery-margin-bottom"
+    }
+  },
+  "rich-text#delivery-pick-up-text-bullet-5": {
+    "props": {
+      "text": "* If customers would like to submit an order in person, customer service will gladly assist but the same criteria applies. $25 for pickup same day or free next day pickup.",
+      "blockClass": "delivery-margin-bottom"
+    }
+  },
+  "rich-text#delivery-pick-up-text-bullet-6": {
+    "props": {
+      "text": "* Please use our main entrance to sign paper work prior to pick-up.",
+      "blockClass": "delivery-margin-bottom"
+    }
+  },
+  "rich-text#delivery-pick-up-text-bullet-7": {
+    "props": {
+      "text": "* Orders not picked up within 5 business days will be cancelled.",
+      "blockClass": "delivery-margin-bottom"
+    }
+  },
+  "rich-text#delivery-returns-header": {
+    "props": {
+      "text": "### Returns:",
+      "blockClass": "delivery-margin-bottom"
+    }
+  },
+  "rich-text#delivery-returns-text-bullet-1": {
+    "props": {
+      "text": "* Please contact customer service at 1800-263-2128 to set up a return authorization. Standard stocked products ordered incorrectly by the customer are subject to a 15% restocking charge.",
+      "blockClass": "delivery-margin-bottom"
+    }
+  },
+  "rich-text#delivery-returns-text-bullet-2": {
+    "props": {
+      "text": "* Certain non-stocked items are non-returnable or subject to higher than 15% restocking charges.",
+      "blockClass": "delivery-margin-bottom"
+    }
+  },
+  "rich-text#delivery-returns-text-bullet-3": {
+    "props": {
+      "text": "* Credits are only issued upon inspection of returned goods",
+      "blockClass": "delivery-margin-bottom"
+    }
+  },
+  "rich-text#delivery-returns-text-bullet-4": {
+    "props": {
+      "text": "* Customers are responsible for shipping charges on returned goods.",
+      "blockClass": "delivery-margin-bottom"
+    }
+  },
+  "rich-text#delivery-pricing-header": {
+    "props": {
+      "text": "### Pricing:",
+      "blockClass": "delivery-margin-bottom"
+    }
+  },
+  "rich-text#delivery-pricing-text": {
+    "props": {
+      "text": "Whitebird strives to maintain accurate pricing on both its website and in its mailed advertising, however we reserve the right to make any corrections or adjustments without notice, which are caused by market fluctuations or human error. All pricing is in Canadian dollars.",
+      "blockClass": "delivery-pricing-margin-bottom"
+    }
+  }
+}

@@ -1,0 +1,5 @@
+@import '../color-variables.css';
+
+.wrapper--sticky-header-menu {
+  background: var(--bg-french-blue);
+}

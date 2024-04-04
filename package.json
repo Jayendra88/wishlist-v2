@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "axios": "^0.21.4",
+    "hyperline": "^1.2.0",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/co-body": "^6.1.0",
+    "@types/lodash": "^4.14.186",
+    "@vtex/prettier-config": "^1.0.0",
+    "eslint": "^8.24.0",
+    "eslint-config-vtex": "^15.0.0",
+    "eslint-config-vtex-react": "^9.0.0",
+    "prettier": "^2.6.2",
+    "typescript": "^4.6.3"
+  },
+  "prettier": "@vtex/prettier-config",
+  "scripts": {
+    "lint": "eslint --ext js,jsx,ts,tsx .",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,css}\""
+  }
+}

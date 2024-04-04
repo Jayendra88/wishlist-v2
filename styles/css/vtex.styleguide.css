@@ -1,0 +1,17 @@
+/* log out modal */
+.mh100 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+}
+
+.mh100 :global(.vtex-modal__close-icon) {
+  display: none;
+}
+
+.mh100 :global(.vtex-modal__confirmation) {
+  justify-content: center;
+}
+
+/* end log out modal */

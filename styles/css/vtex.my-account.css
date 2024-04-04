@@ -1,0 +1,91 @@
+@import '../color-variables.css';
+/* file uploaded to https://whitebird.myvtex.com/admin/a/, file is overrides*.css, need to bump the version as it gets cached */
+@import url('/arquivos/overrides-v4.css');
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin-top: 53px;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 911px) {
+  .userInfo {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 911px) {
+  .menu {
+    padding-top: 0rem;
+  }
+}
+
+/* targeting a classless div */
+.userInfo :nth-child(2) {
+  display: flex;
+  align-items: baseline;
+}
+
+.userGreeting,
+.userName {
+  font-size: 18px;
+}
+
+.userName {
+  padding-left: 6px;
+}
+
+.menuLinks :global(.vtex-account_menu-link),
+.menuLink {
+  border-bottom: 1px solid var(--border-light-gray);
+  font-weight: 600;
+  margin: 0;
+}
+.menuLinks {
+  border-top: 1px solid var(--border-light-gray);
+}
+
+.menuLinks :global(.b--action-primary),
+.menuLink :global(.b--action-primary) {
+  margin: 0;
+}
+
+.boxContainerFooter {
+  padding: 0 0 16px 0;
+  margin-top: -36px;
+}
+
+.boxContainerFooter :global(.vtex-button__label) {
+  color: var(--text-star-blue);
+  border-bottom: 1px solid var(--border-star-blue);
+  padding: 0;
+  margin: 0 16px 0;
+  text-transform: capitalize;
+}
+
+.profileBoxContainer :global(.boxContainerBody) {
+  padding-bottom: 0;
+  border: 1px solid red;
+}
+
+.dataEntryLabel {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-dark-gray);
+}
+
+.dataEntryChildren {
+  color: var(--text-pewter-blue);
+  font-weight: 500;
+}
+
+a[href='#/addresses'] {
+  display: none;
+}
+
+a[href='#/order-quote'] {
+  display: none;
+}

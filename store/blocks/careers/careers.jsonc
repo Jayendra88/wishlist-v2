@@ -1,0 +1,258 @@
+{
+  "flex-layout.row#careers-layout": {
+    "children": ["flex-layout.col#careers-layout"]
+  },
+  "flex-layout.col#careers-layout": {
+    "children": [
+      "flex-layout.row#careers-layout-text",
+      "flex-layout.row#careers-layout-testimonials"
+    ]
+  },
+  "flex-layout.row#careers-layout-img": {
+    "children": ["image#careers-layout-img"]
+  },
+  "image#careers-layout-img": {
+    "props": {
+      "src": "https://whitebird.vteximg.com.br/arquivos/Cardboard_Bird.png",
+      "maxWidth": 200
+    }
+  },
+  "flex-layout.row#careers-layout-text": {
+    "children": ["flex-layout.col#careers-layout-text"]
+  },
+  "disposition-layout#careers-layout": {
+    "title": "Careers - Disposition layout",
+    "children": [
+      "flex-layout.row#careers-layout-img",
+      "rich-text#careers-layout-title",
+      "rich-text#careers-layout-paragraph",
+      "flex-layout.row#careers-layout-bullet-list",
+      "flex-layout.row#divider",
+      "flex-layout.row#careers-layout-question"
+    ],
+    "props": {
+      "disposition": [
+        {
+          "order": 1
+        },
+        {
+          "order": 2
+        },
+        {
+          "order": 3
+        },
+        {
+          "order": 4
+        },
+        {
+          "order": 5
+        },
+        {
+          "order": 6
+        },
+        {
+          "order": 7
+        }
+      ]
+    }
+  },
+  "flex-layout.col#careers-layout-text": {
+    "children": ["disposition-layout#careers-layout"],
+    "props": {
+      "blockClass": "careers-layout-text"
+    }
+  },
+  "rich-text#careers-layout-title": {
+    "props": {
+      "text": "# Interested in joining our team?",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "careers-layout-title"
+    }
+  },
+  "rich-text#careers-layout-paragraph": {
+    "props": {
+      "text": "Whitebird was built by its founders on these solid family principles and values:",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "careers-layout-paragraph"
+    }
+  },
+  "flex-layout.row#careers-layout-bullet-list": {
+    "children": [
+      "flex-layout.col#careers-layout-bullet-list-left",
+      "flex-layout.col#careers-layout-bullet-list-right"
+    ],
+    "props": {
+      "blockClass": "careers-layout-bullet-list"
+    }
+  },
+  "flex-layout.col#careers-layout-bullet-list-left": {
+    "children": ["rich-text#careers-layout-bullet-list-left"],
+    "props": {
+      "blockClass": "careers-layout-bullet-list-left"
+    }
+  },
+  "rich-text#careers-layout-bullet-list-left": {
+    "props": {
+      "text": " * Excellent Client Experience \n * Keep It Simple \n * Progressiveness",
+      "blockClass": "careers-layout-bullet-list"
+    }
+  },
+  "flex-layout.col#careers-layout-bullet-list-right": {
+    "children": ["rich-text#careers-layout-bullet-list-right"],
+    "props": {
+      "blockClass": "careers-layout-bullet-list-right"
+    }
+  },
+  "rich-text#careers-layout-bullet-list-right": {
+    "props": {
+      "text": " * Responsiveness \n * Respectfulness \n * Get Stuff Done",
+      "blockClass": "careers-layout-bullet-list"
+    }
+  },
+  "flex-layout.row#divider": {
+    "props": {
+      "blockClass": "divider",
+      "horizontalAlign": "center"
+    }
+  },
+  "flex-layout.row#careers-layout-question": {
+    "children": ["flex-layout.col#careers-layout-question"]
+  },
+  "flex-layout.col#careers-layout-question": {
+    "props": {
+      "horizontalAlign": "center"
+    },
+    "children": ["rich-text#careers-layout-question", "link#careers-layout-btn"]
+  },
+  "rich-text#careers-layout-question": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Do these values resonate with you?",
+      "blockClass": "careers-layout-question"
+    }
+  },
+  "link#careers-layout-btn": {
+    "props": {
+      "label": "View Job Openings",
+      "href": "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=27c7cda0-6800-4c0d-a5f3-0b13f045e1da&jobId=",
+      "displayMode": "button",
+      "blockClass": "careers-layout-btn"
+    }
+  },
+  "flex-layout.row#careers-layout-testimonials": {
+    "title": "Careers - Testimonials",
+    "children": ["flex-layout.col#careers-layout-testimonials"],
+    "props": {
+      "blockClass": "careers-layout-testimonials"
+    }
+  },
+  "flex-layout.col#careers-layout-testimonials": {
+    "children": [
+      "rich-text#careers-layout-title-testimonials",
+      "rich-text#careers-layout-paragraph-testimonials",
+      "flex-layout.row#careers-layout-iframe",
+      "rich-text#careers-layout-question-testimonials",
+      "link#careers-layout-btn"
+    ],
+    "props": {
+      "blockClass": "careers-layout-text"
+    }
+  },
+  "rich-text#careers-layout-title-testimonials": {
+    "props": {
+      "text": "# Why work at Whitebird?",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "careers-layout-title"
+    }
+  },
+  "rich-text#careers-layout-paragraph-testimonials": {
+    "props": {
+      "text": "Hear what some of our employees have to say about being on the team.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "careers-layout-paragraph"
+    }
+  },
+
+  "flex-layout.row#careers-layout-iframe": {
+    "children": ["slider-layout#careers-video-testimonials"],
+    "props": {
+      "blockClass": "careers-layout-video"
+    }
+  },
+
+  "slider-layout#careers-video-testimonials": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "arrowSize": 32,
+      "blockClass": "careers-carousel"
+    },
+    "children": [
+      "video#careers-testimonials-1",
+      "video#careers-testimonials-2",
+      "video#careers-testimonials-3",
+      "video#careers-testimonials-4"
+    ]
+  },
+
+  "video#careers-testimonials-1": {
+    "props": {
+      "width": "840px",
+      "height": "475.39px",
+      "loop": false,
+      "autoPlay": true,
+      "muted": false,
+      "src": "https://www.youtube.com/watch?v=iNEJ1Ap6TQE",
+      "blockClass": "careers-video"
+    }
+  },
+  "video#careers-testimonials-2": {
+    "props": {
+      "width": "840px",
+      "height": "475.39px",
+      "loop": false,
+      "autoPlay": true,
+      "muted": false,
+      "src": "https://www.youtube.com/watch?v=44E6vkfpNbU",
+      "blockClass": "careers-video"
+    }
+  },
+  "video#careers-testimonials-3": {
+    "props": {
+      "width": "840px",
+      "height": "475.39px",
+      "loop": false,
+      "autoPlay": true,
+      "muted": false,
+      "src": "https://www.youtube.com/watch?v=pERL9G83G6c",
+      "blockClass": "careers-video"
+    }
+  },
+  "video#careers-testimonials-4": {
+    "props": {
+      "width": "840px",
+      "height": "475.39px",
+      "loop": false,
+      "autoPlay": true,
+      "muted": false,
+      "src": "https://www.youtube.com/watch?v=bg6FhZw4FPg",
+      "blockClass": "careers-video"
+    }
+  },
+  "rich-text#careers-layout-question-testimonials": {
+    "props": {
+      "text": "Does this sound like a good fit?",
+      "blockClass": "careers-layout-question"
+    }
+  }
+}

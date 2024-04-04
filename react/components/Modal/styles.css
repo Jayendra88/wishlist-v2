@@ -1,0 +1,8 @@
+.warningMessage {
+  background-color: #fff5de;
+  border-radius: 4px;
+  border: solid #ffdc8a;
+  border-width: 0 0 0 4px;
+  box-sizing: border-box;
+  padding: 12px 16px;
+}

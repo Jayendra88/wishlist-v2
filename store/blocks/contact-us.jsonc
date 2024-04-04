@@ -1,0 +1,92 @@
+{
+  "store.custom#contact-us": {
+    "blocks": ["flex-layout.row#contact-us"]
+  },
+  "flex-layout.row#contact-us": {
+    "children": ["flex-layout.col#hours-and-locations"],
+    "props": {
+      "blockClass": "contact-us-layout"
+    }
+  },
+  "flex-layout.col#hours-and-locations": {
+    "children": [
+      "whitebird-custom-breadcrumbs#contact-us",
+      "flex-layout.col#contact-us-image-text",
+      "rich-text#contact-h3",
+      "rich-text#contact-p",
+      "flex-layout.row#form",
+      "flex-layout.col#background-color-wrapper"
+    ]
+  },
+  "whitebird-custom-breadcrumbs#contact-us": {
+    "props": {
+      "term": "Contact Us",
+      "showOnMobile": true
+    }
+  },
+  "flex-layout.col#hours-and-locations-wrapper": {
+    "children": [
+      "flex-layout.col#phone-numbers", // from contact-us-phone-numbers.jsonc
+      "flex-layout.col#work-hours", // from contact-us-work-hours
+      "flex-layout.col#holiday-hours" // from contact-us-holiday
+    ],
+    "props": {
+      "blockClass": "hours-locations-wrapper"
+    }
+  },
+  "flex-layout.col#background-color-wrapper": {
+    "children": [
+      "rich-text#contact-h3-hours-location",
+      "flex-layout.col#hours-and-locations-wrapper",
+      "flex-layout.col#contact-us-map"
+    ],
+    "props": {
+      "blockClass": "background-color-wrapper"
+    }
+  },
+  "flex-layout.col#contact-us-image-text": {
+    "children": ["image#contact-us", "rich-text#contact-us-header"],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "contact-us-image-text"
+    }
+  },
+  "image#contact-us": {
+    "props": {
+      "src": "https://whitebird.vtexassets.com/assets/vtex.file-manager-graphql/images/898e4d2c-20a9-4626-a414-62d311c0b959___26f7cd09e0af46930b9ba10da69fa6d5.jpg",
+      "blockClass": "contact-us-header-image"
+    }
+  },
+
+  "rich-text#contact-us-header": {
+    "props": {
+      "text": "# Contact",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "blockClass": "contact-us-header-image-text"
+    }
+  },
+  "rich-text#contact-h3": {
+    "props": {
+      "text": "### Need to get a hold of us?",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "blockClass": "contact-us-top-header"
+    }
+  },
+  "rich-text#contact-h3-hours-location": {
+    "props": {
+      "text": "### Hours and Location",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+  "rich-text#contact-p": {
+    "props": {
+      "text": "Fill out of the form below and we’ll be sure to reach out as soon as possible.",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "blockClass": "contact-us-top-header-explanation"
+    }
+  }
+}

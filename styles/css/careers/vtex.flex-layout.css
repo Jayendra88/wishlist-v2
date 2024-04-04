@@ -1,0 +1,26 @@
+@import '../../color-variables.css';
+
+.flexCol--careers-layout-text {
+  align-items: center;
+}
+
+.flexColChild--careers-layout-text {
+  height: 50px;
+}
+
+.flexColChild--careers-layout-bullet-list-left {
+  margin-right: 10px;
+  padding: 10px 5px;
+  width: 237px;
+}
+
+.flexColChild--careers-layout-bullet-list-right {
+  margin-left: 10px;
+  padding: 10px 20px;
+}
+
+.flexRow--careers-layout-testimonials {
+  background: var(--bg-cultured-white);
+  margin-top: 60px;
+  padding: 60px 0;
+}

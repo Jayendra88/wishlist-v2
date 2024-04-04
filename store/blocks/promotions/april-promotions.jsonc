@@ -1,0 +1,22 @@
+{
+    "store.custom#april-promotion-template": {
+        "children": [
+          "flex-layout.row#promotionBannerDesktopMarch",
+          "flex-layout.row#marchPromotionImagesDesktopTwo",
+          "flex-layout.row#promotionHeroDesktop",
+          "flex-layout.row#doubleImageRow",
+          "flex-layout.row#marchPromotionImagesDesktopThree",
+          "flex-layout.row#marchPromotionImagesDesktopTwoSecond",
+          "flex-layout.row#promoTripleBottom",
+          "flex-layout.row#marchPromotionBannerDesktopBottom",
+          "image#marchPromotionBanner",
+          "flex-layout.row#marchPromotionImages",
+          "flex-layout.row#promotionHeroMobile",
+          "flex-layout.row#marchPromotionImagesMobile",
+          "list-context.image-list#marchPromotionsListTop",
+          "flex-layout.row#marchPromotionImagesMobileSecond",
+          "list-context.image-list#marchPromotionsListBottom",
+          "image#marchPromotionBannerBottom"
+        ]
+    }
+}

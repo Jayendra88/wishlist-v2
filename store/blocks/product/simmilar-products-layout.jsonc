@@ -1,0 +1,17 @@
+{
+  // similar products shelf
+  "shelf.relatedProducts#similars": {
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "maxItems": 5,
+      "minItemsPerPage": 5,
+      "productList": {
+        "showTitle": true,
+        "titleText": "Similar Products",
+        "arrows": false
+      },
+      "blockClass": "similar-shelf"
+    }
+  }
+  // similar products shelf
+}

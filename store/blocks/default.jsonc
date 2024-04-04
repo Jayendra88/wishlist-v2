@@ -1,0 +1,25 @@
+{
+  "store.orderplaced": {
+    "blocks": ["order-placed"]
+  },
+
+  "store.account": {
+    "blocks": ["my-account"],
+    "parent": {
+      "challenge": "challenge.profile"
+    }
+  },
+
+  "store.login": {
+    "blocks": ["login-content#default"]
+  },
+
+  "login-content#default": {
+    "props": {
+      "isInitialScreenOptionOnly": false,
+      "defaultOption": 1,
+      "showPasswordVerificationIntoTooltip": true,
+      "termsAndConditions": "**Welcome to our new site!** \n\n **For returning customers -** your old password and username will no longer work, but our system will recognize your email address. Please use the above access code method. Once logged in, you can reset your password under the “My Account” section. \n\n **If you don’t have an account with Whitebird** you can also use the access code method to create an account with us."
+    }
+  }
+}

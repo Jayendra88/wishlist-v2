@@ -1,0 +1,35 @@
+@import '../color-variables.css';
+
+.quantitySelectorContainer {
+  margin: 0;
+}
+
+.quantitySelectorStepper {
+  height: 100%;
+}
+
+.quantitySelectorStepper :global(.vtex-numeric-stepper-wrapper) {
+  height: 100%;
+}
+
+.quantitySelectorStepper :global(.vtex-numeric-stepper-container) {
+  height: 100%;
+}
+
+.quantitySelectorStepper :global(.vtex-numeric-stepper__input) {
+  height: 100%;
+}
+
+.quantitySelectorStepper :global(.vtex-numeric-stepper__plus-button) {
+  height: 100%;
+  background: var(--bg-prussian-blue);
+  color: var(--text-white);
+  border-radius: 5px;
+}
+
+.quantitySelectorStepper :global(.vtex-numeric-stepper__minus-button) {
+  height: 100%;
+  background: var(--bg-prussian-blue);
+  color: var(--text-white);
+  border-radius: 5px;
+}

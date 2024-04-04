@@ -1,0 +1,10 @@
+@import '../../color-variables.css';
+
+.container--google-maps {
+  border: 18px solid var(--border-white);
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 123px;
+  max-width: 95vw;
+  margin-top: 20px;
+}

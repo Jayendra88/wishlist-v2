@@ -1,0 +1,53 @@
+{
+  "properties": {
+    "categoryId": {
+      "type": "number",
+      "title": "Category ID"
+    },
+    "categoryName": {
+      "type": "string",
+      "title": "Category Name"
+    },
+    "imgUrl": {
+      "type": "string",
+      "title": "Image URL"
+    },
+    "heroImgUrl": {
+      "type": "string",
+      "title": "Hero Image URL"
+    },
+    "heroText": {
+      "type": "string",
+      "title": "Hero Text"
+    },
+    "grids": {
+      "type": ["null", "array"],
+      "title": "Grids",
+      "items": {
+        "type": "object"
+      }
+    }
+  },
+  "required": ["categoryId", "categoryName"],
+  "v-indexed": ["categoryId", "categoryName"],
+  "v-security": {
+    "allowGetAll": true,
+    "publicRead": [
+      "categoryId",
+      "categoryName",
+      "imgUrl",
+      "heroImgUrl",
+      "heroText",
+      "grids"
+    ],
+    "publicWrite": [],
+    "publicFilter": [
+      "categoryId",
+      "categoryName",
+      "imgUrl",
+      "heroImgUrl",
+      "heroText",
+      "grids"
+    ]
+  }
+}

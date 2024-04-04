@@ -1,0 +1,35 @@
+{
+  "flex-layout.col#contact-us-map": {
+    "children": [
+      "rich-text#address-h4",
+      "rich-text#address-p",
+      "iframe#google-maps"
+    ],
+    "props": {}
+  },
+
+  "rich-text#address-h4": {
+    "props": {
+      "text": "#### Whitebird",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "blockClass": "contact-us-address-header"
+    }
+  },
+  "rich-text#address-p": {
+    "props": {
+      "text": "690 Rennie ST, Hamilton, ON L8H 3R2",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "blockClass": "contact-us-text"
+    }
+  },
+  "iframe#google-maps": {
+    "props": {
+      "width": 743,
+      "height": 362,
+      "blockClass": "google-maps",
+      "src": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.227444978446!2d-79.77804808419!3d43.24665478664133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c98d08f455ded%3A0xd1d50afee185d81c!2sWhitebird+%2F+National+Corrugate!5e0!3m2!1sen!2sca!4v1457538322485"
+    }
+  }
+}

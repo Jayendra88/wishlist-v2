@@ -1,0 +1,44 @@
+{
+  "flex-layout.col#phone-numbers": {
+    "children": [
+      "rich-text#phone-header",
+      "rich-text#phone",
+      "rich-text#toll-free-phone",
+      "rich-text#fax",
+      "rich-text#toll-free-fax"
+    ],
+    "props": {
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#phone-header": {
+    "props": {
+      "text": "##### Phone/Fax",
+      "blockClass": "contact-us-header"
+    }
+  },
+  "rich-text#phone": {
+    "props": {
+      "text": "Phone: [905.544.7575](tel:905.544.7575)",
+      "blockClass": "contact-us-text"
+    }
+  },
+  "rich-text#toll-free-phone": {
+    "props": {
+      "text": "Toll Free: [800.263.2128](tel:800.263.2128)",
+      "blockClass": "contact-us-text"
+    }
+  },
+  "rich-text#fax": {
+    "props": {
+      "text": "Fax: [905.544.7570](tel:905.544.7570)",
+      "blockClass": "contact-us-text"
+    }
+  },
+  "rich-text#toll-free-fax": {
+    "props": {
+      "text": "Toll Free Fax: [800.667.7371](tel:800.667.7371)",
+      "blockClass": "contact-us-text"
+    }
+  }
+}

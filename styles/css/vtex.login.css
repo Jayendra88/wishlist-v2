@@ -1,0 +1,75 @@
+@import '../color-variables.css';
+
+/* Sign in Button styles */
+.container :global(.vtex-button) {
+  height: 16px;
+  padding: 8px;
+  border-radius: 25px;
+  font-weight: bold;
+  color: var(--text-white);
+  background: var(--bg-french-blue);
+}
+
+.label {
+  margin-left: 8px;
+  padding: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+  white-space: nowrap;
+  padding-left: 0;
+  color: var(--text-white);
+}
+/* Sign in Button styles */
+
+.profileIcon {
+  color: var(--text-white);
+}
+.container :global(.vtex-button__label) {
+  padding: 10px;
+}
+
+/* login popover card */
+.content--loginOptions,
+.contentContainer {
+  border-radius: 5px;
+}
+
+.button :global(.vtex-button) {
+  border: 1px solid var(--border-french-blue);
+  height: 16px;
+  padding: 8px;
+  font-size: 12px;
+  width: 100%;
+  border-radius: 25px;
+  font-weight: bold;
+  color: var(--text-white);
+  background: var(--bg-french-blue);
+}
+/* login popover card */
+
+.label {
+  display: initial;
+}
+
+.profile {
+  display: inline-block;
+  max-width: 175px;
+  vertical-align: bottom;
+  font-size: 0;
+  color: var(--text-white);
+  padding: 0;
+}
+
+.profile::after {
+  content: 'My Account';
+  font-size: 1rem;
+  visibility: visible;
+}
+
+.termsAndConditions {
+  font-size: 14px;
+  text-align: left;
+  color: #000;
+  margin-top: 36px;
+}

@@ -1,0 +1,24 @@
+@import '../../color-variables.css';
+
+.flexRowContent--delivery-breadcrumb {
+  align-items: center;
+  font-size: 12px;
+}
+
+.flexRowContent--delivery-breadcrumb :global(.vtex-store-link-0-x-link) {
+  text-decoration: none;
+  color: var(--text-star-blue);
+  margin-right: 5px;
+}
+
+.flexRow--delivery-layout :global(.vtex-store-components-3-x-container) {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 640px) {
+  .flexRow--delivery-layout {
+    padding: 0.5rem;
+  }
+}

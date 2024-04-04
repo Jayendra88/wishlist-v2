@@ -1,0 +1,102 @@
+{
+  "store.custom#privacy-policy": {
+    "blocks": ["flex-layout.row#privacy-policy-layout"]
+  },
+  "flex-layout.row#privacy-policy-layout": {
+    "title": "Privacy Policy - Layout",
+    "children": ["flex-layout.col#privacy-policy-layout"],
+    "props": {
+      "blockClass": "privacy-policy-layout",
+      "fullWidth": "true",
+      "horizontalAlign": "center"
+    }
+  },
+  "disposition-layout#privacy-policy-layout": {
+    "title": "Privacy Policy - Disposition layout",
+    "children": [
+      "flex-layout.row#privacy-policy-header",
+      "flex-layout.row#privacy-policy"
+    ],
+    "props": {
+      "disposition": [
+        {
+          "order": 1
+        },
+        {
+          "order": 2
+        }
+      ]
+    }
+  },
+  "flex-layout.col#privacy-policy-layout": {
+    "children": [
+      "whitebird-custom-breadcrumbs#privacy-policy",
+      "disposition-layout#privacy-policy-layout"
+    ]
+  },
+  "whitebird-custom-breadcrumbs#privacy-policy": {
+    "props": {
+      "term": "Privacy Policy",
+      "showOnMobile": true
+    }
+  },
+
+  "flex-layout.row#privacy-policy-header": {
+    "title": "Privacy Policy - Hero",
+    "children": ["flex-layout.col#privacy-policy-header"]
+  },
+  "flex-layout.col#privacy-policy-header": {
+    "props": {
+      "blockClass": "privacy-policy-header"
+    },
+    "children": ["image#privacy-policy", "rich-text#privacy-policy-header"]
+  },
+  "image#privacy-policy": {
+    "props": {
+      "src": "https://whitebird.vtexassets.com/assets/vtex.file-manager-graphql/images/9339c768-9f20-45bd-87fe-a507ac33706d___24ca6ba14057581937681712f4f9a161.jpg"
+    }
+  },
+  "rich-text#privacy-policy-header": {
+    "props": {
+      "text": "# Privacy Policy"
+    }
+  },
+  "flex-layout.row#privacy-policy": {
+    "title": "Privacy Policy",
+    "children": ["flex-layout.col#privacy-policy"]
+  },
+  "flex-layout.col#privacy-policy": {
+    "props": {
+      "blockClass": "privacy-policy",
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "rich-text#privacy-policy-statement-header",
+      "rich-text#privacy-policy-statement-text",
+      "rich-text#privacy-policy-security-header",
+      "rich-text#privacy-policy-security-text"
+    ]
+  },
+  "rich-text#privacy-policy-statement-header": {
+    "props": {
+      "text": "### Statement"
+    }
+  },
+  "rich-text#privacy-policy-statement-text": {
+    "props": {
+      "text": "Whitebird collects personal information, including name, telephone number, and email address only when a customer has chosen to use Whitebird as a service provider. This information is used only for confirmation on orders placed and from time to time our representatives may email or phone a customer to clarify an order or notify them of special offers. We will not share information you provide with other parties.",
+      "blockClass": "privacy-policy-remove-margin"
+    }
+  },
+  "rich-text#privacy-policy-security-header": {
+    "props": {
+      "text": "### Security of your information"
+    }
+  },
+  "rich-text#privacy-policy-security-text": {
+    "props": {
+      "text": "We are committed to ensuring that your information is secure. We use appropriate technical and managerial procedures to protect your personal information and prevent its disclosure outside Whitebird. Only those authorized by Whitebird will be granted access to your personal information.",
+      "blockClass": "privacy-policy-margin-bottom"
+    }
+  }
+}

@@ -1,0 +1,306 @@
+{
+  "store.home": {
+    "blocks": ["disposition-layout#home-layout"]
+  },
+  "disposition-layout#home-layout": {
+    "title": "Home - Disposition layout",
+    "children": [
+      "list-context.info-card-list#hero",
+      "flex-layout.row#promotionBanners",
+      "flex-layout.row#promotionBannersMobile",
+      "flex-layout.row#collections",
+      "signupmodal",
+      "flex-layout.row#badges",
+      "rich-text#shelf-title",
+      "flex-layout.row#shelf",
+      "flex-layout.row#featured-category",
+      "info-card#custom-box",
+      "list-context.image-list#reviews"
+    ],
+    "props": {
+      "disposition": [
+        {
+          "order": 1
+        },
+        {
+          "order": 2
+        },
+        {
+          "order": 3
+        },
+        {
+          "order": 4
+        },
+        {
+          "order": 5
+        },
+        {
+          "order": 6
+        },
+        {
+          "order": 7
+        },
+        {
+          "order": 8
+        },
+        {
+          "order": 9
+        },
+        {
+          "order": 10
+        }
+      ]
+    }
+  },
+  "list-context.info-card-list#hero": {
+    "children": ["slider-layout#hero-images"],
+    "props": {
+      "infoCards": [
+        {
+          "height": 720,
+          "imageUrl": "assets/CoffeeSliderBG.jpg",
+          "isFullModeStyle": true,
+          "headline": "Fact: Coffee Breaks increase productivity by 63%.",
+          "callToActionText": "Shop Cafeteria & Lunch Room",
+          "callToActionUrl": "#",
+          "textPosition": "center",
+          "blockClass": "hero-banner"
+        }
+      ]
+    }
+  },
+  "slider-layout#hero-images": {
+    "title": "Home - Hero Slider",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel",
+      "autoplay": {
+        "timeout": 5000,
+        "stopOnHover": true
+      }
+    }
+  },
+  "flex-layout.row#promotionBanners": {
+    "props": {
+      "blockClass": "promotionBanners"
+    },
+    "children": [
+      "info-card#promotionHpOne",
+      "info-card#promotionHpTwo"
+    ]
+  },
+  "info-card#promotionHpOne": {
+    "props": {
+      "id": "homepagePromotionOne",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://fakeimg.pl/665x250",
+      "headline": "Lorem Ipsum Doloret",
+      "callToActionText": "Learn More",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "homepagePromotion",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#promotionHpTwo": {
+    "props": {
+      "id": "homepagePromotionTwo",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://fakeimg.pl/665x250",
+      "headline": "Lorem Ipsum Doloret",
+      "callToActionText": "Learn More",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "homepagePromotion",
+      "textAlignment": "center"
+    }
+  },
+  "flex-layout.row#promotionBannersMobile": {
+    "props": {
+      "blockClass": "promotionBannersMobile"
+    },
+    "children": [
+      "info-card#promotionHpOneMobile",
+      "info-card#promotionHpTwoMobile"
+    ]
+  },
+  "info-card#promotionHpOneMobile": {
+    "props": {
+      "id": "homepagePromotionOne",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://fakeimg.pl/325x150",
+      "headline": "Lorem Ipsum Doloret",
+      "callToActionText": "Learn More",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "homepagePromotion",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#promotionHpTwoMobile": {
+    "props": {
+      "id": "homepagePromotionTwo",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://fakeimg.pl/325x150",
+      "headline": "Lorem Ipsum Doloret",
+      "callToActionText": "Learn More",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "homepagePromotion",
+      "textAlignment": "center"
+    }
+  },
+  "flex-layout.row#collections": {
+    "title": "Home - Collections",
+    "props": {
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "blockClass": "collections"
+    },
+    "children": ["list-context.collectionRow"]
+  },
+  "list-context.collectionRow": {
+    "children": ["list-context-renderer#collections-wrapper"],
+    "props": {
+      "blockClass": "collections-row",
+      "collections": [
+        {
+          "id": "info-card-example",
+          "imageUrl": "assets/Safety.jpg",
+          "alt": "Safety",
+          "url": "/safety"
+        }
+      ]
+    }
+  },
+  "list-context-renderer#collections-wrapper": {
+    "props": {
+      "listElement": "div",
+      "itemElement": "div",
+      "blockClass": "collections-row"
+    }
+  },
+  "rich-text#shelf-title": {
+    "props": {
+      "text": "## On Clearance",
+      "blockClass": "shelfTitle"
+    }
+  },
+
+  "flex-layout.row#shelf": {
+    "props": {
+      "blockClass": "shelf-row"
+    },
+    "children": ["list-context.product-list#products"]
+  },
+  "list-context.product-list#products": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "collection": "Clearance"
+    }
+  },
+  "slider-layout#products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": false,
+      "fullWidth": false,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "shelf"
+    }
+  },
+  "list-context.image-list#reviews": {
+    "children": ["slider-layout#reviews"],
+    "props": {
+      "height": 720,
+      "width": 300,
+      "images": [
+        {
+          "image": "assets/Review.jpg",
+          "mobileImage": "assets/ReviewMobile.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#reviews": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "blockClass": "reviews"
+    },
+    "children": ["rich-text#reviews"]
+  },
+  "flex-layout.col#slider": {
+    "props": {
+      "preventHorizontalStretch": true
+    },
+    "children": ["rich-text#reviews", "rich-text#reviews"]
+  },
+  "flex-layout.row#featured-category": {
+    "title": "Feature Category CTA",
+    "props": {
+      "preventHorizontalStretch": true,
+      "blockClass": "featured-catergory"
+    },
+    "children": ["link#featured-category"]
+  },
+  "link#featured-category": {
+    "props": {
+      "href": "#",
+      "label": "Shop"
+    }
+  },
+  "info-card#cta": {
+    "title": "Home - CTA",
+    "props": {
+      "height": 720,
+      "imageUrl": "assets/CoffeeSliderBG.jpg",
+      "isFullModeStyle": true,
+      "headline": "Fact: Coffee Breaks increase productivity by 63%.",
+      "callToActionText": "Shop Cafeteria & Lunch Room",
+      "callToActionUrl": "#",
+      "textPosition": "center",
+      "blockClass": "hero-banner"
+    }
+  },
+  "info-card#custom-box": {
+    "title": "Home - Custom Box",
+    "props": {
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "assets/Boxes.png",
+      "headline": "Need a Custom Box?",
+      "subhead": "We also create fully customized boxes to fit your packaging needs. Check out our sister company, Moii!",
+      "callToActionMode": "button",
+      "callToActionText": "Get a Custom Box from Moii",
+      "callToActionUrl": "#",
+      "textAlignment": "center",
+      "blockClass": "custom-box"
+    }
+  },
+  "rich-text#reviews": {
+    "title": "Home - Reviews",
+    "props": {
+      "text": "# **Unbelievably Stellar Experience…** \n\n ![Review Stars!](assets/review-stars.svg) \n\n #### …We've used other suppliers for our boxes and haven't been totally impressed. Whitebird OVER impressed. Not only were they friendly to work with, their prices are comparable if not better than the competition, but shipping also wasn't $100! $25.00 shipping for a whole skid of boxes? HOLY COW! \n\n ### -Jesse D'Hulster \n ##### ![Seagull!](assets/Seagull.jpg)",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-1",
+      "blockClass": "reviews"
+    }
+  }
+}

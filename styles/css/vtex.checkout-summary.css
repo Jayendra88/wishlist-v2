@@ -1,0 +1,56 @@
+.summaryItemLabel {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.summaryItemPrice {
+  min-width: 0;
+  min-height: 0;
+  margin-left: 1rem;
+  flex: inherit;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.summaryItemContainer {
+  justify-content: center;
+}
+
+.summarySmallDisclaimer {
+  text-align: center;
+}
+
+.summaryItemContainer:nth-child(even)
+  :global(.vtex-checkout-summary-0-x-summaryItemPrice) {
+  color: var(--star-blue);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.summaryItemContainer:nth-child(even)
+  :global(.vtex-checkout-summary-0-x-summaryItemLabel),
+.summaryItemContainer:last-child
+  :global(.vtex-checkout-summary-0-x-summaryItemLabel) {
+  font-size: 0;
+}
+
+.summaryItemContainer:nth-child(even)
+  :global(.vtex-checkout-summary-0-x-summaryItemLabel)::after {
+  content: 'Shipping';
+  font-size: 14px;
+}
+
+.summaryItemContainer:last-child
+  :global(.vtex-checkout-summary-0-x-summaryItemLabel)::after {
+  content: 'Total';
+  font-size: 14px;
+}
+
+.summarySmallDisclaimer {
+  font-size: 0;
+}
+
+.summarySmallDisclaimer::after {
+  content: 'Taxes calculated in the Cart.';
+  font-size: 14px;
+}

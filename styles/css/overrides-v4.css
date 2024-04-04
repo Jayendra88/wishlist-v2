@@ -1,0 +1,13 @@
+.vtex-b2b-organizations-1-x-createCostCenter
+  .vtex-table__container
+  #toolbar
+  .vtex-button {
+  display: none;
+}
+
+/* Hide shipping from minicart */
+.vtex-minicart-2-x-minicartProductListContainer
+  .vtex-flex-layout-0-x-flexRowContent--mini-cart
+  #list-price-7402 {
+  display: none;
+}

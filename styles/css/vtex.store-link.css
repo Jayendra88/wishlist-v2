@@ -1,0 +1,27 @@
+@import '../color-variables.css';
+
+.link--faq,
+.link--contact {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--text-dark-gray);
+}
+
+.link--similar-grid-link {
+  text-decoration: none;
+  color: var(--text-star-blue);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.link--collections {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: bold;
+  margin: 0;
+  text-decoration: none;
+}

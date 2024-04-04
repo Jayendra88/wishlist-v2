@@ -1,0 +1,369 @@
+{
+  "header": {
+    "title": "category-menu",
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+
+  "header.full": {
+    "title": "Header",
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+
+  //Header Layout Blocks
+  "header-layout.desktop": {
+    "title": "Desktop Header",
+    "children": [
+      "flex-layout.row#telemarketing",
+      "notification.bar#home",
+      "flex-layout.row#widget-desktop",
+      "sticky-layout#desktop"
+    ]
+  },
+
+  "header-layout.mobile": {
+    "title": "Mobile Header",
+    "children": [
+      "flex-layout.row#widget-desktop",
+      "sticky-layout#mobile",
+      "search-bar#mobile"
+    ]
+  },
+
+  //Sticky Layout Blocks
+  "sticky-layout#desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": ["flex-layout.row#desktop", "flex-layout.row#desktop-menu"]
+  },
+
+  "sticky-layout#mobile": {
+    "children": ["flex-layout.row#mobile"]
+  },
+  //Flex layout Row Blocks
+
+  "flex-layout.row#telemarketing": {
+    "children": ["telemarketing"],
+    "props": {
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#desktop": {
+    "title": "Header - desktop login/search menu",
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "header"
+    },
+    "children": ["flex-layout.row#left-side", "flex-layout.row#right-side"]
+  },
+
+  "flex-layout.row#mobile": {
+    "children": [
+      "drawer#mobile-layout",
+      "flex-layout.col#logo-mobile",
+      "flex-layout.col#spacer",
+      "minicart.v2#mini-cart"
+    ],
+    "props": {
+      "blockClass": "header",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.row#widget-desktop": {
+    "children": ["b2b-user-widget"],
+    "props": {
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.row#desktop-menu": {
+    "title": "Header - desktop menu",
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": "true",
+      "colGap": 8,
+      "fullWidth": true,
+      "blockClass": "header-menu"
+    },
+    "children": [
+      "flex-layout.col#trigger-mega-menu",
+      "flex-layout.row#mega-menu",
+      "flex-layout.row#menuitems"
+    ]
+  },
+
+  "flex-layout.row#left-side": {
+    "props": {
+      "colGap": "6",
+      "preventHorizontalStretch": "true"
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "rich-text#number",
+      "search-bar",
+      "header-spacer"
+    ]
+  },
+
+  "flex-layout.row#right-side": {
+    "props": {
+      "preventHorizontalStretch": "true"
+    },
+    "children": [
+      "flex-layout.row#options",
+      "flex-layout.row#loginsection",
+      "minicart.v2#mini-cart"
+    ]
+  },
+
+  "flex-layout.row#mega-menu": {
+    "children": ["mega-menu"],
+    "props": {
+      "blockClass": "mega-menu-container"
+    }
+  },
+  "flex-layout.col#trigger-mega-menu": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["mega-menu-trigger-btn"]
+  },
+
+  "flex-layout.row#options": {
+    "props": {
+      "colGap": "6",
+      "blockClass": "options-section"
+    },
+    "children": ["link#faq", "link#header-contact"]
+  },
+
+  "flex-layout.row#loginsection": {
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "login-section"
+    },
+    "children": ["myaccountlogin"]
+  },
+  "login": {
+    "props": {
+      "showIconProfile": true,
+      "hideIconLabel": true
+    }
+  },
+
+  // Flex Layout Column Blocks
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo"]
+  },
+
+  "flex-layout.col#logo-mobile": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo"]
+  },
+
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+
+  //Notification banner Blocks
+  "notification.bar#home": {
+    "props": {
+      "content": "An industry-wide paper shortage is affecting our lead times on custom corrugated products. Check Lead Times"
+    }
+  },
+
+  // Searchbar Blocks
+  "search-bar": {
+    "blocks": ["autocomplete-result-list.v2"],
+    "props": {
+      "openAutocompleteOnFocus": true,
+      "placeholder": "What can we help you find?",
+      "blockClass": "header-search",
+      "displayMode": "clear-button",
+      "autocompleteAlignment": "center"
+    }
+  },
+
+  "search-bar#mobile": {
+    "blocks": ["autocomplete-result-list.v2"],
+    "props": {
+      "openAutocompleteOnFocus": true,
+      "hasIconLeft": false,
+      "containerMode": "overlay",
+      "placeholder": "",
+      "blockClass": "header-search-mobile",
+      "displayMode": "clear-button",
+      "autocompleteAlignment": "left"
+    }
+  },
+
+  "autocomplete-result-list.v2": {
+    "blocks": ["product-summary"],
+    "props": {
+      "maxTopSearches": 4,
+      "maxSuggestedTerms": 2,
+      "maxSuggestedProducts": 3,
+      "hideUnavailableItems": false
+    }
+  },
+
+  // Drawer Blocks
+  "drawer#mobile-layout": {
+    "children": ["flex-layout.col#drawer"]
+  },
+
+  "drawer#mega-menu": {
+    "blocks": ["drawer-header#my-drawer", "drawer-trigger"],
+    "children": ["mega-menu"],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "mega-menu-trigger"
+    }
+  },
+
+  "drawer-trigger": {
+    "children": ["rich-text#open-drawer", "rich-text#open-drawer-arrow"],
+    "props": {
+      "blockClass": "products-trigger"
+    }
+  },
+
+  "rich-text#open-drawer": {
+    "props": {
+      "text": "PRODUCTS",
+      "blockClass": "products-trigger-text"
+    }
+  },
+
+  "rich-text#open-drawer-arrow": {
+    "props": {
+      "text": "▶",
+      "blockClass": "products-trigger-text--arrow"
+    }
+  },
+
+  "mega-menu": {
+    "props": {
+      "defaultDepartmentActive": "Tecnología"
+    }
+  },
+  "drawer-header#my-drawer": {
+    "children": ["flex-layout.col#drawer-header"]
+  },
+
+  "flex-layout.row#menuitems": {
+    "title": "Menu",
+    "children": [
+      "menu-item#category-order-mobile",
+      "menu-item#category-catalog-mobile",
+      // removed for release
+      // "menu-item#category-clearance-mobile",
+      //"wishlist", 
+      "menu-item#promotions-link"
+    ],
+    "props": {
+      "verticalAlign": "middle",
+      "horizontalAlign": "left",
+      "colGap": 10,
+      "blockClass": "desktop"
+    }
+  },
+
+  "flex-layout.col#drawer": {
+    "children": [
+      "flex-layout.row#login",
+      "drawer#mega-menu",
+      "menu-item#category-order-mobile",
+      "menu-item#category-catalog-mobile",
+      "menu-item#promotions-link",
+      // removed for release
+      // "flex-layout.row#category-clearance-mobile",
+      //"wishlist",
+      "flex-layout.row#category-faq-mobile",
+      "flex-layout.row#contact-us-mobile",
+      "flex-layout.row#mobile-drawer-company-info"
+    ],
+    "props": {
+      "verticalAlign": "middle",
+      "horizontalAlign": "left"
+    }
+  },
+  "flex-layout.col#drawer-header": {
+    "children": [
+      "drawer-close-button",
+      "flex-layout.col#mega-menu-go-back-btn"
+    ],
+    "props": {
+      "blockClass": "drawer-header",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#mega-menu-go-back-btn": {
+    "children": ["mega-menu-go-back-btn"],
+    "props": {
+      "verticalAlign": "middle",
+      "horizontalAlign": "left",
+      "paddingLeft": 4
+    }
+  },
+
+  // Rich text Blocks
+  "rich-text#number": {
+    "title": "Phone number",
+    "props": {
+      "text": "800-123-4567",
+      "font": "t-small",
+      "textColor": "c-on-emphasis",
+      "blockClass": "number"
+    }
+  },
+
+  // Link Blocks
+  "link#faq": {
+    "title": "FAQ",
+    "props": {
+      "blockClass": "faq",
+      "label": "FAQ",
+      "href": "/faq"
+    }
+  },
+
+  "link#header-contact": {
+    "title": "Contact",
+    "props": {
+      "text": "[Contact](/contact-us)",
+      "label": "Contact",
+      "blockClass": "contact"
+    }
+  },
+
+  //Logo Blocks
+  "logo": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/whitebird-blue-logo_1.svg",
+      "width": "150"
+    }
+  }
+}

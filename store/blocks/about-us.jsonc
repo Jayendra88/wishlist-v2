@@ -1,0 +1,206 @@
+{
+  "store.custom#about-us": {
+    "blocks": ["flex-layout.row#about-us-layout"]
+  },
+  "flex-layout.row#about-us-layout": {
+    "title": "About us - Layout",
+    "children": ["flex-layout.col#about-us-layout"],
+    "props": {
+      "blockClass": "about-us-layout",
+      "fullWidth": "true",
+      "horizontalAlign": "center"
+    }
+  },
+  "disposition-layout#about-us-layout": {
+    "title": "About us - Disposition layout",
+    "children": [
+      "flex-layout.row#about-us-header",
+      "flex-layout.row#about-us-why-choose",
+      "flex-layout.row#badges-top-border",
+      "flex-layout.row#about-us-history",
+      "flex-layout.row#about-us-single-source",
+      "flex-layout.row#about-us-first-time"
+    ],
+    "props": {
+      "disposition": [
+        {
+          "order": 1
+        },
+        {
+          "order": 2
+        },
+        {
+          "order": 3
+        },
+        {
+          "order": 4
+        },
+        {
+          "order": 5
+        },
+        {
+          "order": 6
+        }
+      ]
+    }
+  },
+  "flex-layout.col#about-us-layout": {
+    "children": [
+      "whitebird-custom-breadcrumbs#about-us",
+      "disposition-layout#about-us-layout"
+    ]
+  },
+  "whitebird-custom-breadcrumbs#about-us": {
+    "props": {
+      "term": "About us",
+      "showOnMobile": true
+    }
+  },
+  "flex-layout.row#about-us-header": {
+    "title": "About us - Hero",
+    "children": ["flex-layout.col#about-us-header"]
+  },
+  "flex-layout.col#about-us-header": {
+    "props": {
+      "blockClass": "about-us-header"
+    },
+    "children": ["image#about-us", "rich-text#about-us-header"]
+  },
+  "image#about-us": {
+    "props": {
+      "src": "https://whitebird.vtexassets.com/assets/vtex.file-manager-graphql/images/9339c768-9f20-45bd-87fe-a507ac33706d___24ca6ba14057581937681712f4f9a161.jpg"
+    }
+  },
+  "rich-text#about-us-header": {
+    "props": {
+      "text": "# About Us"
+    }
+  },
+  "flex-layout.row#about-us-why-choose": {
+    "title": "About us - Why choose",
+    "children": ["flex-layout.col#about-us-why-choose"]
+  },
+  "flex-layout.col#about-us-why-choose": {
+    "props": {
+      "blockClass": "about-us-why-choose",
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "image#about-us-why-choose-image",
+      "rich-text#about-us-why-choose-header",
+      "rich-text#about-us-why-choose-text"
+    ]
+  },
+
+  "image#about-us-why-choose-image": {
+    "props": {
+      "src": "https://whitebird.vtexassets.com/assets/vtex.file-manager-graphql/images/4590408f-41f7-4cc7-9fbd-693dbe505fec___0c73013249355fbebab7137340cc73d5.jpg",
+      "blockClass": "about-us-deer-head"
+    }
+  },
+  "rich-text#about-us-why-choose-header": {
+    "props": {
+      "text": "### Why choose Whitebird?"
+    }
+  },
+  "rich-text#about-us-why-choose-text": {
+    "props": {
+      "text": "Whitebird is a leading distributor and manufacturer of corrugated solutions, packaging, sanitation and safety supplies. Our outstanding customer service team offers expertise and reliable assistance to make your experience with Whitebird, the best it can be. From the moment we receive your call, fax or online order, the order is processed and delivered with respect and proper attention.  We take pride in our personal service and delivery of quality products at a competitive price.",
+      "blockClass": "about-us-remove-margin"
+    }
+  },
+  "flex-layout.row#about-us-history": {
+    "title": "About us - History",
+    "children": ["rich-text#about-us-history-text", "image#about-us-history"],
+    "props": {
+      "horizontalAlign": "right"
+    }
+  },
+  "rich-text#about-us-history-text": {
+    "props": {
+      "text": "###### Our History\n Whitebird  was built on solid family principles and values by its founders, Henry Heikoop Sr. and Jack Tamminga. These values and principles have been passed down to the next generation owners, Hendrik Tamminga and William Heikoop, who carry on the same high standards of quality, reliability and integrity.",
+      "blockClass": "about-us-history-text"
+    }
+  },
+  "image#about-us-history": {
+    "props": {
+      "src": "https://whitebird.vtexassets.com/assets/vtex.file-manager-graphql/images/e76cc216-4aa6-4ba2-88d4-f441a4fbbda4___12486398d227bc9b4252d71482ac585d.png",
+      "blockClass": "about-us-history-image"
+    }
+  },
+  "flex-layout.row#about-us-single-source": {
+    "title": "About us - Single source",
+    "children": [
+      "image#about-us-single-source",
+      "rich-text#about-us-single-source-text"
+    ],
+    "props": {
+      "blockClass": "about-us-single-source"
+    }
+  },
+  "rich-text#about-us-single-source-text": {
+    "props": {
+      "text": "###### Single Source Advantage \n Whitebird was built on solid family principles and values by its founders, Henry Heikoop Sr. and Jack Tamminga. These values and principles have been passed down to the next generation owners, Hendrik Tamminga and William Heikoop, who carry on the same high standards of quality, reliability and integrity.",
+      "blockClass": "about-us-single-source-text"
+    }
+  },
+  "image#about-us-single-source": {
+    "props": {
+      "src": "https://whitebird.vtexassets.com/assets/vtex.file-manager-graphql/images/ce796cc4-0876-4b02-bdfb-712466893c42___dc869cdd3aaaf62b734fb9166c878c4c.jpg",
+      "blockClass": "about-us-single-source-image"
+    }
+  },
+  "flex-layout.row#about-us-first-time": {
+    "title": "About us - First time",
+    "children": ["flex-layout.col#about-us-first-time"]
+  },
+  "flex-layout.col#about-us-first-time": {
+    "children": [
+      "rich-text#about-us-first-time-header",
+      "rich-text#about-us-first-time-text",
+      "rich-text#about-us-first-time-phone",
+      "image#about-us-truck",
+      "rich-text#about-us-questions",
+      "link#about-us-faq"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "about-us-first-time"
+    }
+  },
+  "rich-text#about-us-first-time-header": {
+    "props": {
+      "text": "### Are you a first time customer?"
+    }
+  },
+  "rich-text#about-us-first-time-text": {
+    "props": {
+      "text": "Orders for new customers are as quick and easy as orders from our existing customers.  Fax us, call, or set up an online account to place your order - in most cases, you’ll receive our next-day delivery promise!",
+      "blockClass": "about-us-remove-margin"
+    }
+  },
+  "rich-text#about-us-first-time-phone": {
+    "props": {
+      "text": "For more information, call our friendly sales staff at [1-800-263-2128](tel:1-800-263-2128)",
+      "blockClass": "about-us-remove-margin"
+    }
+  },
+  "image#about-us-truck": {
+    "props": {
+      "src": "https://whitebird.vtexassets.com/assets/vtex.file-manager-graphql/images/c28628c4-7d30-4d66-a7ec-54d33b182c18___d8ffe732312d3b377b07ff63c4fc451e.jpg",
+      "blockClass": "about-us-truck"
+    }
+  },
+  "rich-text#about-us-questions": {
+    "props": {
+      "text": "###### Have some questions?"
+    }
+  },
+  "link#about-us-faq": {
+    "props": {
+      "href": "/faq",
+      "label": "Go to our FAQ",
+      "displayMode": "button"
+    }
+  }
+}

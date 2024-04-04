@@ -1,0 +1,30 @@
+.productPrice,
+.productPriceCurrency {
+  margin-left: 0.5rem;
+}
+
+.productPrice {
+  color: var(--star-blue);
+}
+
+.productBrandName {
+  display: none;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+}
+
+.productPriceCurrency {
+  margin: 0 0 0 5px;
+}
+
+.quantitySelectorDecrease {
+  background-color: #ffffff;
+  color: var(--star-blue);
+}
+
+.quantitySelectorButton:nth-child(odd):nth-child(odd) {
+  fill: blue !important;
+}

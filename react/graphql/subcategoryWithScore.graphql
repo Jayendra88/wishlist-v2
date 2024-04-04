@@ -1,0 +1,15 @@
+query subcategoryWithScore($id: Int) {
+  subcategoryWithScore(id: $id) @context(provider: "whitebird.minimumtheme") {
+    hasChildren
+    name
+    metaTagDescription
+    children {
+      id
+      name
+      slug
+      score
+      href
+      hasChildren
+    }
+  }
+}

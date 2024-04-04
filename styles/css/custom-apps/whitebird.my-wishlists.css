@@ -1,0 +1,192 @@
+/*Button PDP*/
+.containerSelectTitle,
+.containerTitleCreateList {
+  font-size: 14px;
+  color: #003764;
+}
+
+.container {
+  position: relative;
+}
+
+.containerButtonAddList {
+  width: 150px;
+  height: 32px;
+  border-radius: 5px;
+  background-color: #003764;
+  border: 1px solid #003764;
+  color: #fff;
+  margin-bottom: 15px;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.containerButtonCreate {
+  width: 150px;
+  height: 32px;
+  border-radius: 5px;
+  border: 1px solid #003764;
+  background-color: #fff;
+  color: #003764;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.containerButtonCreateList {
+  width: 150px;
+  height: 32px;
+  border-radius: 5px;
+  background-color: #003764;
+  border: 1px solid #003764;
+  color: #fff;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.containerInput {
+  width: 150px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+}
+
+.containerLoggedIn :global(.vtex-button),
+.container :global(.vtex-button) {
+  border-color: transparent !important;
+  background: transparent !important;
+}
+
+.containerLoggedIn :global(.vtex-button):hover,
+.container :global(.vtex-button):hover {
+  background-color: #fff !important;
+}
+
+.containerLoggedIn :global(.vtex-button__label),
+.container :global(.vtex-button__label) {
+  color: #264d9e !important;
+  padding-left: 0;
+  font-weight: bold;
+}
+
+.containerButtonClose {
+  background-color: #fff;
+  color: #003764;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.containerSelect {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  background-color: #fff;
+  width: 200px;
+  position: absolute;
+  top: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.containerButtonCloseBox {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.containerButtonCreateList2 {
+  width: 150px;
+  height: 32px;
+  border-radius: 5px;
+  background-color: #003764;
+  border: 1px solid #003764;
+  color: #fff;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.containerSelectFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container :global(.vtex-toast) :global(.vtex-button) {
+  background-color: #04044e !important;
+}
+
+.container :global(.vtex-toast) :global(.vtex-button__label) {
+  color: #fff !important;
+}
+
+.containerShowForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerMessageAddCreate {
+  width: 461.45px;
+  height: 56px;
+  color: #fff;
+  padding: 10px 15px;
+  position: absolute;
+  bottom: -170px;
+  left: -800px;
+  display: flex;
+  align-items: center;
+  background-color: #102266;
+}
+
+.containerError {
+  font-size: 11px;
+  color: #003764;
+  text-align: center;
+  margin-top: 0;
+}
+
+.containerErrorAdd {
+  font-size: 11px;
+  color: #003764;
+  text-align: center;
+}
+
+.containerSelectDropdown {
+  width: 150px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Button Account */
+.containerSelectFlexAccount {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  background-color: #fff;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto 0;
+}
+
+.wishlistCreationOptions {
+  position: relative;
+}
+
+.wishlistCreationOptions .containerSelectFlexAccount {
+  position: absolute;
+  left: 0;
+  bottom: -200px;
+  z-index: 1;
+}
+
+/*Button PDP*/

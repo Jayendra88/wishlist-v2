@@ -1,0 +1,46 @@
+{
+  "store.custom#about-us": {
+    "path": "/about-us",
+    "title": "About Us - Whitebird",
+    "isSitemapEntry": true
+  },
+  "store.custom#contact-us": {
+    "path": "/contact-us",
+    "title": "Contact Us - Whitebird",
+    "isSitemapEntry": true
+  },
+  "store.custom#delivery": {
+    "path": "/delivery_pickup",
+    "title": "Delivery - Whitebird",
+    "isSitemapEntry": true
+  },
+  "store.custom#faq": {
+    "path": "/faq",
+    "title": "FAQ - Whitebird",
+    "isSitemapEntry": true
+  },
+  "store.custom#careers": {
+    "path": "/careers",
+    "title": "Careers - Whitebird",
+    "isSitemapEntry": true
+  },
+  "store.custom#privacy-policy": {
+    "path": "/privacy-policy",
+    "title": "Privacy Policy - Whitebird",
+    "isSitemapEntry": true
+  },
+  "store.custom#validate-organization": {
+    "path": "/validate-organization",
+    "title": "Validate Organization - Whitebird",
+    "isSitemapEntry": true
+  },
+  "store.custom#wishlist-share": {
+    "path": "/wishlist-share",
+    "title": " Shared Favourites List - Whitebird"
+  },
+  "store.custom#april-promotion-template": {
+    "path": "/april-promotions",
+    "title": "April Promotions - Whitebird",
+    "isSitemapEntry": true
+  }
+}

@@ -1,0 +1,5 @@
+/* hide quick-view arrows on a product */
+.triggerContainer--quickview {
+  display: none;
+}
+/* end hide quick-view arrows on a product */

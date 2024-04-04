@@ -1,0 +1,101 @@
+{
+  "product-table": {
+    "component": "ProductTableWrapper"
+  },
+  "details-tab": {
+    "component": "DetailsTabRenderer",
+    "composition": "children",
+    "allowed": ["condition-layout.product"]
+  },
+  "table": {
+    "component": "Table"
+  },
+  "specifications-table": {
+    "component": "SpecificationsTable"
+  },
+  "product-specs-price": {
+    "component": "Price"
+  },
+  "pdp-price": {
+    "component": "PDPPrice"
+  },
+  "tooltip": {
+    "component": "Tooltip"
+  },
+  "inventorystatus": {
+    "component": "InventoryStatus"
+  },
+  "signupmodal": {
+    "component": "SignUpModal"
+  },
+  "priceselector": {
+    "component": "PriceSelector"
+  },
+  "wishlist": {
+    "component": "Wishlist"
+  },
+  "myaccountlogin": {
+    "component": "MyAccountLogin"
+  },
+  "category-landing": {
+    "component": "CategoryLandingPage"
+  },
+  "categorysuggestions": {
+    "component": "CategorySuggestions"
+  },
+  "subcategory-hero": {
+    "component": "SubcategoryHero"
+  },
+  "organization-form": {
+    "component": "OrganizationForm"
+  },
+  "icon-caret-up": {
+    "component": "IconCaretUp"
+  },
+  "icon-caret-down": {
+    "component": "IconCaretDown"
+  },
+  "my-account-link.my-app-link": {
+    "component": "MyAppLink"
+  },
+  "my-account-page.my-app-page": {
+    "component": "MyAppPage"
+  },
+  "whitebird-product-breadcrumbs": {
+    "component": "ProductBreadcrumb"
+  },
+  "whitebird-search-breadcrumbs": {
+    "component": "SearchBreadcrumb"
+  },
+  "whitebird-custom-breadcrumbs": {
+    "component": "CustomBreadcrumb"
+  },
+  "list-context.social-links": {
+    "component": "SocialLinks",
+    "composition": "children",
+    "allowed": "*",
+    "content": {
+      "properties": {
+        "socialLinks": {
+          "$ref": "app:whitebird.minimumtheme#/definitions/SocialLinks"
+        }
+      }
+    }
+  },
+  "list-context.collectionRow": {
+    "component": "CollectionsRow",
+    "composition": "children",
+    "allowed": "*",
+    "content": {
+      "properties": {
+        "collections": {
+          "$ref": "app:whitebird.minimumtheme#/definitions/CollectionsRow"
+        }
+      }
+    }
+  },
+  "search-grid-condition-layout": {
+    "component": "CustomConditionLayout",
+    "composition": "children"
+  }
+}

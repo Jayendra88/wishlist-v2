@@ -1,0 +1,643 @@
+@import '../color-variables.css';
+
+.notificationBarInner {
+  background: var(--star-blue);
+  min-height: 2.5rem;
+}
+
+.notificationContent {
+  font-size: 13px;
+}
+
+.autoCompleteOuterContainer--header-search-mobile
+  :global(.vtex-input-prefix__group) {
+  border: none;
+}
+
+.autoCompleteOuterContainer--header-search :global(.vtex-input-prefix__group) {
+  border-radius: 25px;
+  width: 205px;
+  border-width: 1px;
+}
+
+.searchIcon--header-search-mobile {
+  color: var(--text-french-blue);
+}
+
+.searchBarContainer :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
+  color: var(--text-french-blue);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.searchIcon--header-search {
+  color: var(--text-french-blue);
+}
+
+.infoCardContainer--hero-banner {
+  width: 100%;
+  height: 375px;
+}
+
+.infoCardTextContainer--hero-banner {
+  height: 100%;
+  justify-content: center;
+}
+
+.infoCardHeadline--hero-banner {
+  color: var(--text-white);
+  font-family: 'Poppins', sans-serif;
+}
+
+.infoCardTextContainer--custom-box,
+.infoCardTextContainer--airmiles {
+  padding: 30px 0;
+}
+
+.infoCardHeadline--hero-banner {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.infoCardCallActionContainer--custom-box :global(.vtex-button) {
+  height: 45px;
+  background-color: var(--bg-star-blue);
+  border: none;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  text-transform: none;
+  transition: background-color 0.5s;
+  border-radius: 0 !important;
+}
+
+.infoCardCallActionContainer--hero-banner :global(.vtex-button) {
+  height: 45px;
+  background-color: var(--bg-star-blue);
+  border: none;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  text-transform: none;
+  transition: background-color 0.5s;
+}
+
+.infoCardCallActionContainer--airmiles :global(.vtex-button) {
+  height: 45px;
+  background-color: var(--bg-white);
+  color: var(--text-star-blue);
+  border: none;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  text-transform: none;
+  transition: background-color 0.5s;
+}
+
+.infoCardCallActionContainer--custom-box :global(.vtex-button) {
+  height: 45px;
+  background-color: var(--bg-star-blue);
+  border: none;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  text-transform: none;
+  transition: background-color 0.5s;
+}
+
+.infoCardCallActionContainer--collection-cta :global(.vtex-button) {
+  height: 45px;
+  background-color: var(--bg-star-blue);
+  border: none;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  text-transform: none;
+  transition: background-color 0.5s;
+}
+
+.infoCardImageLinkWrapper :global(.vtex-button) {
+  text-transform: none;
+}
+
+.infoCardCallActionContainer--hero-banner :global(.vtex-button):hover {
+  background-color: var(--bg-carolina-blue);
+  transition: background-color 0.5s;
+}
+
+.infoCardCallActionContainer--custom-box :global(.vtex-button):hover {
+  background-color: var(--bg-carolina-blue);
+  transition: background-color 0.5s;
+}
+
+.infoCardCallActionContainer--airmiles :global(.vtex-button):hover {
+  background-color: var(--bg-carolina-blue);
+  transition: background-color 0.5s;
+}
+
+.infoCardCallActionContainer--collection-cta :global(.vtex-button):hover {
+  background-color: var(--bg-carolina-blue);
+  transition: background-color 0.5s;
+}
+
+.infoCardContainer--collection-cta {
+  margin-bottom: 50px;
+  border: none;
+}
+
+.infoCardContainer--custom-box,
+.infoCardContainer--airmiles {
+  flex-direction: column-reverse;
+  display: flex;
+  background-color: var(--bg-cultured-white);
+}
+
+.infoCardContainer--airmiles {
+  background-color: var(--bg-prussian-blue);
+}
+
+.infoCardHeadline--custom-box,
+.infoCardHeadline--airmiles {
+  font-size: 18px;
+  font-weight: 800;
+  font-family: 'Poppins', sans-serif;
+}
+
+.infoCardHeadline--airmiles,
+.infoCardSubhead--airmiles {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-white);
+}
+
+.infoCardSubhead--custom-box,
+.infoCardSubhead--airmiles {
+  font-size: 14px;
+  width: 90%;
+  line-height: 24px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.infoCardImageContainer--custom-box {
+  width: 100%;
+}
+
+.infoCardImageContainer--airmiles {
+  width: 100%;
+}
+
+.imageElement--carousel {
+  object-fit: cover;
+}
+
+.imageElement--image {
+  margin: 35px 0 55px 0;
+}
+
+.imageElement--social-image {
+  margin: 0 10px;
+}
+
+.imageElement--reviews {
+  max-width: 350px;
+}
+
+.imageElement--safety,
+.imageElement--sanitation,
+.imageElement--packaging,
+.imageElement--boxes {
+  border-radius: 5px;
+  height: 192px;
+  width: 328px;
+}
+
+.label {
+  color: var(--text-white);
+  font-size: 0.75rem;
+}
+
+.inputGroup {
+  display: flex;
+  align-items: flex-start;
+  margin: 20px 0 10px 0;
+}
+
+.inputGroup .buttonContainer {
+  padding: 0;
+}
+
+.inputGroup .buttonContainer :global(.vtex-button) {
+  background: var(--bg-white);
+  color: var(--text-french-blue);
+  font-weight: bold;
+  font-size: 14px;
+  border: none;
+  border-radius: 0 5px 5px 0px;
+}
+
+.inputGroup :global(.vtex-input-prefix__group) {
+  border: none;
+}
+
+.inputGroup :global(.vtex-styleguide-9-x-hideDecorators) {
+  background: var(--white-transparent);
+  color: var(--text-white);
+  border: none;
+}
+
+.inputGroup :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
+  color: var(--text-white);
+  font-size: 14px;
+}
+
+.newsletter .container {
+  padding: 0;
+  margin-bottom: 35px;
+}
+
+/* PDP */
+
+.productImageTag--main {
+  padding-bottom: 50px;
+}
+
+.productNameContainer {
+  font-size: 26px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.specificationsTable--specs-table {
+  border-collapse: collapse;
+}
+
+.specificationsTableContainer--specs-table {
+  margin: 25px 0;
+  font-size: 12px;
+  padding: 20px 0 0 0;
+  border-top: 1px solid var(--border-light-gray);
+}
+
+.specificationsTableRow--specs-table:nth-child(2n) {
+  background: var(--bg-cultured-white);
+}
+
+.specificationItemProperty--specs-table {
+  padding: 0.75rem 0 0.75rem 0.5rem;
+  border: 1px solid var(--border-light-gray);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.specificationItemSpecifications--specs-table {
+  border: 1px solid var(--border-light-gray);
+  padding: 0.75rem 0 0.75rem 0.5rem;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.specificationsTableHead--specs-table,
+.specificationsTitle--specs-table {
+  display: none;
+}
+
+.sellingPrice {
+  color: var(--text-french-blue);
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  text-align: end;
+}
+
+.swiperBullet {
+  background: var(--bg-roman-silver);
+  box-shadow: 0 2px 4px 0 var(--shadow-33);
+}
+
+.swiperBullet--active {
+  background: var(--bg-star-blue);
+  box-shadow: 0 2px 4px 0 var(--shadow-33);
+}
+
+.specificationsTitle--resources-tab,
+.specificationsTablePropertyHeading--resources-tab,
+.specificationsTableSpecificationHeading--resources-tab,
+.specificationItemProperty--resources-tab {
+  display: none;
+}
+
+.discountContainer {
+  display: flex;
+}
+
+.price_className {
+  margin-right: 8px;
+}
+
+@media (min-width: 625px) {
+  .productNameContainer {
+    text-align: start;
+  }
+
+  .price_className {
+    width: auto !important;
+  }
+
+  .productImagesContainer--product-images--carousel {
+    padding-top: 3rem;
+  }
+
+  .productImage--product-images,
+  .swiperPaginationClickable {
+    width: 80%;
+  }
+
+  .productImagesGallerySwiperContainer--product-image {
+    display: flex;
+    justify-content: center;
+  }
+
+  .productImagesGallerySlide--product-images {
+    display: flex;
+    justify-content: center;
+  }
+
+  .swiperPaginationClickable {
+    padding-left: 4rem;
+  }
+
+  .carouselGaleryThumbs--product-images {
+    padding-left: 5rem;
+  }
+
+  .specificationsTableContainer--resources-tab {
+    padding: 0.5rem 0 0 0;
+  }
+}
+
+.imageElement--image {
+  margin: 35px 0 45px 0;
+  height: 1rem;
+}
+
+.specificationsTableContainer--resources-tab {
+  margin-top: 0;
+}
+
+/* End of PDP */
+
+.searchBarContainer {
+  background: var(--bg-french-blue);
+  padding: 10px 13px;
+}
+
+@media (min-width: 760px) {
+  .imageElement--image {
+    margin: 35px 0 45px 0;
+    height: 1rem;
+  }
+
+  .infoCardContainer--hero-banner {
+    width: 100%;
+    height: 425px;
+  }
+
+  .infoCardHeadline--hero-banner {
+    font-size: 40px;
+  }
+
+  .productImagesGallerySlide--product-images {
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 960px) {
+  .infoCardImageContainer--airmiles,
+  .infoCardImageContainer--custom-box {
+    width: 60%;
+  }
+
+  .infoCardTextContainer--airmiles,
+  .infoCardTextContainer--custom-box {
+    width: 40%;
+  }
+
+  .infoCardSubhead--custom-box,
+  .infoCardSubhead--airmiles {
+    width: 70%;
+  }
+
+  .infoCardContainer--custom-box {
+    flex-direction: row-reverse;
+    padding: 0;
+  }
+
+  .infoCardContainer--airmiles {
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .infoCardTextContainer--custom-box,
+  .infoCardTextContainer--airmiles {
+    padding: 0;
+  }
+}
+
+@media (min-width: 1010px) {
+  .imageElement--reviews {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .searchBarContainer {
+    background: none;
+    padding: 12px 0;
+  }
+}
+
+@media (min-width: 1100px) {
+  .autoCompleteOuterContainer--header-search
+    :global(.vtex-input-prefix__group) {
+    width: 280px;
+  }
+
+  .productImagesGallerySlide--product-images {
+    padding-left: 3.5rem;
+  }
+}
+
+.productDescriptionText {
+  margin-top: 12px;
+  padding-left: 10px;
+  color: var(--text-dark-gray);
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/* Organization Page */
+
+.infoCardCallActionContainer--register-button :global(.vtex-button) {
+  height: 45px;
+  width: 100%;
+  background-color: var(--bg-white);
+  border: var(--border-star-blue) solid 2px;
+  color: var(--text-star-blue);
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  border-radius: 0;
+  text-transform: none;
+  transition: background-color 0.5s;
+}
+.infoCardCallActionContainer--register-button {
+  margin: 0;
+  width: 100%;
+}
+
+.infoCardCallActionContainer--register-button :global(.vtex-button):hover {
+  background-color: var(--bg-carolina-blue);
+  transition: background-color 0.5s;
+}
+
+.infoCardTextContainer--register-button {
+  width: 100%;
+}
+
+.infoCardContainer--register-button {
+  margin-bottom: 50px;
+  border: none;
+}
+
+:global(.vtex-address-form__receiverName) :global(.vtex-input__label) {
+  display: none;
+}
+
+:global(.vtex-address-form__receiverName)::before {
+  content: 'Company Name + Recipient';
+  display: block;
+  color: #000;
+  padding: 12px 0px;
+}
+
+/* Promotions Page */
+.imageBanner {
+  cursor: pointer;
+}
+
+.imageElementLink--promotionHeroDesktop,
+.imageElementLink--promotionImageHalf,
+.imageElementLink--promotionImageSection {
+  line-height: 0;
+}
+
+.imageElement--promotionHeroDesktop {
+  height: 100%;
+  width: 100%;
+}
+
+.imageElementLink--promotionHeroDesktop,
+.imageElement--promotionImageHalf,
+.imageElement--promotionHeroDesktop,
+.imageElement--promotionImageSection {
+  transition: transform 0.2s;
+  margin: 0 auto;
+  height: 200px;
+  width: 100%;
+}
+
+.imageElement--promotionBannerDesktopBottom,
+.flexRowContent--promotionImagesShelf.flexRowContent--desktopView {
+  width: 100%;
+}
+
+.imageElement--promotionBannerDesktopBottom {
+  max-width: 1280px;
+  height: 100%;
+}
+
+.imageElementLink--promotionBannerDesktopBottom {
+  text-align: center;
+}
+
+.imageElementLink--promotionHeroDesktop:hover,
+.imageElement--promotionImageHalf:hover,
+.imageElement--promotionHeroDesktop:hover,
+.imageElement--promotionImageSection:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.imageElementLink--promotionHeroDesktop {
+  text-align: center;
+  max-height: 300px;
+  max-width: 1280px;
+}
+
+.imageElement--marchPromotionSlider,
+.imageElementLink--marchPromotionSlider {
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .imageElement--promotionHeroDesktop {
+    height: 180px;
+  }
+
+  .imageElementLink--promotionHeroDesktop {
+    max-height: 179px;
+  }
+
+  .imageElement--promotionImageHalf {
+    height: 150px;
+  }
+
+  .imageElementLink--promotionImageHalf {
+    max-height: 149px;
+  }
+
+  .imageElement--promotionBannerMobile,
+  .imageElement--promotionBanner {
+    margin-bottom: -5px;
+  }
+}
+
+/* HomePage */
+.infoCardContainer--homepagePromotion {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.infoCardTextContainer--homepagePromotion {
+  position: absolute;
+  width: 80%;
+}
+
+.infoCardImageContainer--homepagePromotion {
+  width: 100%;
+}
+
+.infoCardHeadline--homepagePromotion {
+  color: #fff;
+  font-size: 24px;
+}
+
+.infoCardCallActionContainer--homepagePromotion :global(.vtex-button) {
+  background-color: var(--text-white);
+  border-color: var(--text-white);
+  color: var(--text-french-blue);
+  font-size: 14px;
+}
+
+/* HomePage */
+.infoCardImage--homepagePromotion {
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 639px) {
+  .imageElement--mobileView {
+    display: none;
+  }
+}

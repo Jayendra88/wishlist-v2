@@ -1,0 +1,35 @@
+.flexRow--mobile-login {
+  display: flex;
+  background: var(--bg-star-blue);
+  height: 50px;
+  display: flex;
+}
+
+.flexRow--mobile-login :global(.vtex-button) {
+  border: 1px solid var(--white);
+  padding: 0 17px;
+  transform: scale(0.8);
+}
+
+.flexRow--mobile-login :global(.vtex-login-2-x-label) {
+  font-size: 15px;
+}
+
+.flexRowContent--drawer-main-item-last {
+  border-bottom: 1px solid var(--gainsboro-gray);
+}
+
+.flexRowContent--drawer-secondary-item
+  :global(.vtex-menu-2-x-styledLinkContent) {
+  font-size: 13px;
+  color: var(--dark-gray);
+  font-weight: 600;
+}
+
+.flexRow--drawer-footer {
+  margin-top: 100px;
+}
+
+.flexRowContent--mobile-login {
+  display: flex;
+}

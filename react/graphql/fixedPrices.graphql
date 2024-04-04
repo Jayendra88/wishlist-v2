@@ -1,0 +1,11 @@
+query fixedPrices($ids: [String]) {
+  fixedPrices(ids: $ids) @context(provider: "whitebird.minimumtheme") {
+    productId
+    fixedPrices {
+      listPrice
+      minQuantity
+      tradePolicyId
+      value
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@media (max-width: 600px) {
+  .videoContainer--careers-video {
+    height: 350px;
+    width: 400px;
+  }
+  .videoElement--careers-video {
+    height: 300px;
+    width: 400px;
+  }
+}

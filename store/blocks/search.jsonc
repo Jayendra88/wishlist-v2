@@ -1,0 +1,69 @@
+{
+  // START Defining how the search query data should be fetched based on #page
+  "store.search": {
+    "blocks": ["search-result-layout"],
+    "props": {
+      "context": {
+        "skusFilter": "ALL",
+        "simulationBehavior": "skip"
+      }
+    }
+  },
+
+  "store.search#brand": {
+    "blocks": ["search-result-layout"],
+    "props": {
+      "context": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 10,
+        "skusFilter": "ALL",
+        "simulationBehavior": "skip"
+      }
+    }
+  },
+
+  "store.search#department": {
+    "blocks": [
+      "search-result-layout.desktop#breadcrumb",
+      "search-grid-condition-layout#category-landing"
+    ]
+  },
+
+  "store.search#category": {
+    "blocks": [
+      "search-result-layout.desktop#breadcrumb",
+      "search-grid-condition-layout#category-landing"
+    ],
+    "props": {
+      "context": {
+        "skusFilter": "ALL",
+        "simulationBehavior": "skip"
+      }
+    }
+  },
+  "store.search#subcategory": {
+    "blocks": [
+      "search-result-layout.desktop#breadcrumb",
+      "search-grid-condition-layout#category-landing"
+    ],
+    "props": {
+      "context": {
+        "skusFilter": "ALL",
+        "simulationBehavior": "skip"
+      }
+    }
+  },
+  // end
+
+  "search-grid-condition-layout#category-landing": {
+    "props": {
+      "Grid": "category-landing",
+      "Search": "search-result-layout#subiest"
+    }
+  },
+
+  "search-result-layout.desktop#breadcrumb": {
+    "children": ["whitebird-search-breadcrumbs"]
+  }
+}

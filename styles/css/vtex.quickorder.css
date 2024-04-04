@@ -1,0 +1,229 @@
+@import '../color-variables.css';
+
+.componentContainer {
+  width: 100%;
+}
+
+.autocomplete-input {
+  width: 80%;
+}
+
+.textContainer {
+  width: 100%;
+}
+
+.textContainer--autocomplete-input {
+  width: 100%;
+}
+
+.textContainerDescription--drag-drop {
+  color: var(--text-dark-gray);
+  text-align: left;
+}
+
+.categoryTitle--categories {
+  color: var(--text-dark-gray);
+}
+
+.textContainerDescription--textarea-container {
+  color: var(--text-dark-gray);
+}
+
+.textContainerDescription {
+  margin: 1.5rem 0 1.5rem 1.5rem;
+}
+
+.buttonValidate--textarea-container :global(.vtex-button) {
+  margin-top: 15px;
+  padding: 0.75rem;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: var(--bg-star-blue);
+  color: var(--text-white);
+  border-radius: 0;
+  width: 100%;
+}
+
+.buttonAdd--autocomplete-input :global(.vtex-button) {
+  border-radius: 0;
+}
+
+.buttonClear--autocomplete-input :global(.vtex-button__label) {
+  padding: 0;
+}
+
+.buttonValidate--drag-drop :global(.vtex-button) {
+  margin-top: 15px;
+  padding: 0.75rem;
+  font-size: 14px;
+  background-color: var(--french-blue);
+  color: var(--text-white);
+  border-radius: 0;
+}
+
+.componentContainer--textarea-container {
+  padding-right: 2.5rem;
+}
+
+.componentContainer :global(.vtex-textarea__input) {
+  height: 300px;
+}
+
+.textContainerDescription--autocomplete-input {
+  display: none;
+  margin: 2rem 0 1rem 0;
+  color: var(--text-dark-gray);
+}
+
+.textContainerTitle--autocomplete-input {
+  color: var(--text-dark-gray);
+  margin-left: 0;
+}
+
+.categoryProductItem--categories {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.categoryProductItem--categories :global(.vtex-styleguide-9-x-jsFocusVisible) {
+  padding: 1rem 0;
+  border-bottom: solid 1.5px #c7d5dc61;
+  width: 90%;
+}
+
+.categoryProductItem--categories :global(.vtex__icon-caret-down) {
+  margin-top: 5px;
+}
+
+.categoryProductItem--categories :global(.vtex__icon-caret-up) {
+  margin-top: 5px;
+}
+
+.categoriesProductContainer--categories {
+  padding: 1rem 0;
+}
+
+.categoryProductLabel--categories {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.categoryProductLabel--categories :global(.vtex-tag) {
+  font-size: 12px;
+  padding: 10px 15px;
+  margin-left: 1rem;
+  background-color: #ffebd6;
+  color: #ffb100;
+  border: none;
+}
+
+.categoryInputQuantity--categories {
+  padding: 1rem 0rem 1rem 0;
+}
+
+.categoryInputQuantity--categories :global(.vtex-styleguide-9-x-input) {
+  padding: 0;
+  text-align: center;
+}
+
+.categoryProductThumb--categories {
+  height: 30px;
+  width: 30px;
+}
+
+.categoryButtonAdd--categories {
+  margin-top: 1rem;
+}
+
+.categoryButtonAdd--categories :global(.vtex-button) {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0;
+  font-weight: 600;
+}
+
+.categoryProductReference--categories {
+  display: none;
+}
+
+.downloadLink--drag-drop {
+  text-align: left;
+  border-bottom: 1px solid var(--border-star-blue);
+  padding-bottom: 2px;
+  padding-right: 0;
+  font-weight: 600;
+  width: auto !important;
+  margin-top: 0.75rem;
+}
+
+.downloadLink--drag-drop:hover {
+  text-decoration: none;
+}
+
+.dropzoneContainer--test .flex {
+  border-color: var(--border-gray);
+}
+
+.dropzoneText--drag-drop {
+  font-size: 0;
+}
+.dropzoneText--drag-drop::after {
+  content: 'Drop your XLS file here or ';
+  font-size: 1.25rem;
+}
+
+.inputQuantity--autocomplete-input :global(.vtex-styleguide-9-x-input) {
+  padding: 0 2px 0 10px;
+  width: 60px;
+}
+
+.productTitle--autocomplete-input {
+  width: auto;
+  margin-left: 0.25rem;
+}
+
+.productLabel--autocomplete-input :global(.vtex-tag) {
+  font-size: 12px;
+  padding: 10px 15px;
+  background-color: #ffebd6;
+  margin-top: 0.5rem;
+  color: #ffb100;
+  border: none;
+  margin-bottom: 0.75rem;
+}
+
+@media (min-width: 960px) {
+  .dropzoneContainer--drag-drop {
+    padding-right: 4rem;
+  }
+
+  .textContainerDescription {
+    width: 100%;
+  }
+
+  .categoryInputQuantity--categories {
+    padding: 1rem 0.5rem 1rem 0;
+  }
+
+  .categoryProductReference--categories {
+    display: block;
+  }
+
+  .categoryProductLabel--categories {
+    flex-wrap: nowrap;
+  }
+
+  .textContainerDescription--autocomplete-input {
+    display: block;
+  }
+
+  .categoryButtonAdd--categories :global(.vtex-button) {
+    width: auto;
+  }
+
+  .buttonValidate--textarea-container :global(.vtex-button) {
+    width: auto;
+  }
+}

@@ -1,0 +1,11 @@
+.mobile-list-view {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 761px) {
+  .mobile-list-view {
+    display: none;
+  }
+}

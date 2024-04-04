@@ -1,0 +1,7 @@
+type Query {
+  fixedPrices(ids: [String]): [FixedPriceWithId] @cacheControl(maxAge: LONG)
+  productsByRefId(refIds: [[String]]): [[SingleProduct]]
+    @cacheControl(maxAge: LONG)
+  subcategoryWithScore(id: Int): SubcategoryWithScore
+    @cacheControl(maxAge: LONG)
+}

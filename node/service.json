@@ -1,0 +1,81 @@
+{
+  "memory": 256,
+  "ttl": 10,
+  "timeout": 20,
+  "minReplicas": 2,
+  "maxReplicas": 4,
+  "routes": {
+    "shipping": {
+      "path": "/_v/shipping",
+      "public": true
+    },
+    "shippingPriceUpdate": {
+      "path": "/_v/shippingPriceUpdate/:orderFormId",
+      "public": true
+    },
+    "shippingUpdate": {
+      "path": "/_v/shippingUpdate/:orderFormId",
+      "public": true
+    },
+    "product": {
+      "path": "/_v/productMinQty/:code",
+      "public": true
+    },
+    "getProductsByRefId": {
+      "path": "/_v/productsByRefId/",
+      "public": true
+    },
+    "orderHistory": {
+      "path": "/_v/orderHistory",
+      "public": true
+    },
+    "invoiceUrl": {
+      "path": "/_v/invoiceUrl/:invoiceId",
+      "public": true
+    },
+    "getOrder": {
+      "path": "/_v/getOrder/:id",
+      "public": true
+    },
+    "validateOrgAddUser": {
+      "path": "/_v/validateOrgAddUser/:id",
+      "public": true
+    },
+    "getUser": {
+      "path": "/_v/getUser/:email",
+      "public": true
+    },
+    "addUser": {
+      "path": "/_v/addUser",
+      "public": true
+    },
+    "masterDataCategories": {
+      "path": "/_v/mdCategories/:categoryId",
+      "public": true
+    },
+    "masterDataCategoriesByName": {
+      "path": "/_v/mdCategoriesByName/:categoryName/:pageNumber",
+      "public": true
+    },
+    "masterDataPutCategoryGrid": {
+      "path": "/_v/mdCategoriesSave",
+      "public": true
+    },
+    "masterDataCategoryImage": {
+      "path": "/_v/mdCategories/img/:hash/:categoryId",
+      "public": true
+    },
+    "masterDataCategoryHeroData": {
+      "path": "/_v/mdCategories/hero/:categoryId",
+      "public": true
+    },
+    "masterDataCategoryHeroImage": {
+      "path": "/_v/mdCategories/heroImg/:hash/:categoryId",
+      "public": true
+    },
+    "retrieveBusinessDocument": {
+      "path": "/_v/retrieveBusinessDocument",
+      "public": true
+    }
+  }
+}

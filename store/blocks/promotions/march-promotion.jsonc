@@ -1,0 +1,335 @@
+{
+    "store.custom#march-promotion-template": {
+        "children": [
+          "flex-layout.row#promotionBannerDesktopMarch",
+          "flex-layout.row#promotionHeroDesktop",
+          "flex-layout.row#marchPromotionImagesDesktopTwo",
+          "flex-layout.row#doubleImageRow",
+          "flex-layout.row#marchPromotionImagesDesktopThree",
+          "flex-layout.row#marchPromotionImagesDesktopTwoSecond",
+          "flex-layout.row#promoTripleBottom",
+          "flex-layout.row#marchPromotionBannerDesktopBottom",
+          "image#marchPromotionBanner",
+          "flex-layout.row#promotionHeroMobile",
+          "flex-layout.row#marchPromotionImages",
+          "flex-layout.row#marchPromotionImagesMobile",
+          "list-context.image-list#marchPromotionsListTop",
+          "flex-layout.row#marchPromotionImagesMobileSecond",
+          "list-context.image-list#marchPromotionsListBottom",
+          "image#marchPromotionBannerBottom"
+        ]
+    },
+    "responsive-layout.phone#march-promotions": {
+      "children": [
+        "image#promotionBanner",
+        "flex-layout.row#promotionHeroMobile",
+        "flex-layout.row#promotionImages",
+        "flex-layout.row#promotionImagesMobile",
+        "list-context.image-list#marchPromotionsListTop",
+        "flex-layout.row#promotionImagesMobileSecond",
+        "list-context.image-list#promotionsListBottom",
+        "image#promotionBannerBottom"
+      ]
+    },
+    "flex-layout.col#mobilePromotions": {
+      "children": [
+        "image#promotionBanner",
+        "flex-layout.row#promotionHeroMobile",
+        "flex-layout.row#promotionImages",
+        "flex-layout.row#promotionImagesMobile",
+        "list-context.image-list#promotionsListTop",
+        "flex-layout.row#promotionImagesMobileSecond",
+        "list-context.image-list#promotionsListBottom",
+        "image#promotionBannerBottom"
+      ],
+      "props": {
+        "blockClass": "mobilePromotions"
+      }
+    },
+    "flex-layout.row#promotionHeroDesktop": {
+        "props": {
+          "blockClass": ["promotionHero", "desktopView"]
+        },
+        "children": [
+            "image#heroDesktopImage"
+        ]
+    },
+    "image#heroDesktopImage": {
+        "props": {
+            "src": "https://fakeimg.pl/1280x200",
+            "blockClass": "promotionHeroDesktop"
+          },
+          "title": "Desktop Hero Banner"
+    },
+    "flex-layout.row#promotionHeroTablet": {
+        "props": {
+            "blockClass": "promotionHero"
+        },
+        "children": [
+            "image#heroTabletImage"
+        ]
+    },
+    "image#heroTabletImage": {
+        "props": {
+            "src": "https://fakeimg.pl/1024x200",
+            "blockClass": "promotionHeroDesktop"
+          },
+          "title": "Tablet Hero Banner"
+    },
+    "flex-layout.row#promotionHeroMobile": {
+        "props": {
+            "blockClass": ["promotionHero", "mobileView"]
+        },
+        "children": [
+            "image#heroMobileImage"
+        ]
+    },
+    "image#heroMobileImage": {
+        "props": {
+            "src": "https://fakeimg.pl/670x200",
+            "blockClass": "promotionHeroDesktop"
+          },
+          "title": "Mobile Hero Banner"
+    },
+    "flex-layout.row#doubleImageRow": {
+        "props": {
+            "blockClass": ["promotionImagesHalf", "desktopView"],
+            "fullWidth": true,
+            "horizontalAlign": "between"
+        },
+        "children": [
+            "image#leftImageRow",
+            "image#rightImageRow"
+        ]
+    },
+    "image#leftImageRow": {
+        "props": {
+            "src": "https://fakeimg.pl/640x200",
+            "blockClass": "promotionImageHalf"
+          },
+          "title": "Desktop Double Image"
+    },
+    "image#rightImageRow": {
+        "props": {
+            "src": "https://fakeimg.pl/640x200",
+            "blockClass": "promotionImageHalf"
+          },
+          "title": "Desktop Double Image"
+    },
+    "flex-layout.row#promoTripleBottom": {
+      "props": {
+            "blockClass": ["promotionImagesShelf", "desktopView", "tripleImages"],
+            "preventHorizontalStretch": false,
+            "colGap": 0,
+            "fullWidth": true
+        },
+        "children": [
+            "image#promoTripleLeft",
+            "image#promoTripleMiddle",
+            "image#promoTripleRight"
+        ]
+    },
+    "image#promoTripleLeft": {
+        "props": {
+            "src": "https://fakeimg.pl/427x320",
+            "blockClass": "promotionImageSection"
+          },
+          "title": "Desktop Tripple Left"
+    },
+    "image#promoTripleMiddle": {
+        "props": {
+            "src": "https://fakeimg.pl/427x320",
+            "blockClass": "promotionImageSection"
+          },
+          "title": "Desktop Triple Middle"
+    },
+    "image#promoTripleRight": {
+        "props": {
+            "src": "https://fakeimg.pl/427x320",
+            "blockClass": "promotionImageSection"
+          },
+          "title": "Desktop Triple Right"
+    },
+    "flex-layout.row#promoTripleBottomTablet": {
+      "props": {
+            "blockClass": "promotionImagesShelf",
+            "preventHorizontalStretch": false,
+            "colGap": 0,
+            "fullWidth": true
+        },
+        "children": [
+            "image#promoTripleLeftTablet",
+            "image#promoTripleMiddleTablet",
+            "image#promoTripleRightTablet"
+        ]
+    },
+    "image#promoTripleLeftTablet": {
+        "props": {
+            "src": "https://fakeimg.pl/427x320",
+            "blockClass": "promotionImageSection"
+          },
+          "title": "Tablet Tripple Left"
+    },
+    "image#promoTripleMiddleTablet": {
+        "props": {
+            "src": "https://fakeimg.pl/427x320",
+            "blockClass": "promotionImageSection"
+          },
+          "title": "Tablet Triple Middle"
+    },
+    "image#promoTripleRightTablet": {
+        "props": {
+            "src": "https://fakeimg.pl/427x320",
+            "blockClass": "promotionImageSection"
+          },
+          "title": "Tablet Triple Right"
+    },
+    "list-context.image-list#marchPromotionsListBottom": {
+      "children": [
+        "slider-layout#marchPromotionHero"
+      ],
+      "props": {
+        "blockClass": "mobileView",
+        "images": [
+          {
+            "image": "https://fakeimg.pl/540x210" 
+          },
+          {
+            "image": "https://fakeimg.pl/540x210" 
+          }
+        ]
+      }
+    },
+    "flex-layout.row#promotionBannerDesktopMarch": {
+      "props": {
+        "blockClass": ["promotionBannerDesktop", "desktopView", "marchHeaderBanner"],
+        "fullWidth": true
+      },
+      "children": [
+        "image#promotionBannerDesktop"
+      ]
+    },
+    "flex-layout.row#marchPromotionImagesDesktopTwo": {
+      "children": [
+        "image#promotionImageHalfDesktopOne",
+        "image#promotionImageHalfDesktopTwo"
+      ],
+      "props": {
+        "blockClass": ["promotionImagesHalf", "desktopView"],
+        "fullWidth": true,
+        "horizontalAlign": "between"
+      }
+    },
+    "flex-layout.row#marchPromotionImagesDesktopThree": {
+      "children": [
+        "image#promotionImageOne",
+        "image#promotionImageTwo",
+        "image#promotionImageThree"
+      ],
+      "props": {
+        "blockClass": ["promotionImagesShelf", "desktopView", "tripleImages"],
+        "preventHorizontalStretch": false,
+        "colGap": 0,
+        "fullWidth": true
+      }
+    },
+    "flex-layout.row#marchPromotionImagesDesktopTwoSecond": {
+      "children": [
+        "image#promotionImageHalfDesktopOneBottom",
+        "image#promotionImageHalfDesktopTwoBottom"
+      ],
+      "props": {
+        "blockClass": ["promotionImagesHalf", "desktopView"],
+        "fullWidth": true,
+        "horizontalAlign": "between"
+      }
+    },
+    "flex-layout.row#marchPromotionBannerDesktopBottom": {
+      "props": {
+        "blockClass": ["promotionBannerDesktopBottom","desktopView"],
+        "fullWidth": true
+      },
+      "children": [
+        "image#promotionBannerDesktopBottom"
+      ]
+    },
+    "image#marchPromotionBanner": {
+        "props": {
+            "src": "https://fakeimg.pl/670x150",
+            "blockClass": ["promotionBannerMobile", "mobileView"]
+          },
+          "title": "Mobile Promotion Banner - Top"
+    },
+    "flex-layout.row#marchPromotionImages": {
+      "children": [
+        "image#promotionImageLeft",
+        "image#promotionImageRight"
+      ],
+      "props": {
+        "blockClass": ["promotionImagesHalfMobileFirst", "mobileView"],
+        "colSizing": "equal",
+        "fullWidth": "true"
+      }
+    },
+    "flex-layout.row#marchPromotionImagesMobile": {
+      "children": [
+        "image#promotionImageLeftMobile",
+        "image#promotionImageRightMobile"
+      ],
+      "props": {
+        "blockClass": ["promotionImagesHalfMobile", "mobileView"],
+        "colSizing": "equal",
+        "fullWidth": "true"
+      }
+    },
+    "list-context.image-list#marchPromotionsListTop": {
+      "children": [
+        "slider-layout#marchPromotionHero"
+      ],
+      "props": {
+        "blockClass": "mobileView",
+        "images": [
+          {
+            "image": "https://fakeimg.pl/540x210" 
+          },
+          {
+            "image": "https://fakeimg.pl/540x210" 
+          }
+        ]
+      }
+    },
+    "flex-layout.row#marchPromotionImagesMobileSecond": {
+      "children": [
+        "image#promotionImageLeftMobileSecond",
+        "image#promotionImageRightMobileSecond"
+      ],
+      "props": {
+        "blockClass": ["promotionImagesHalfMobile", "mobileView"],
+        "colSizing": "equal",
+        "fullWidth": "true"
+      }
+    },
+    "image#marchPromotionBannerBottom": {
+        "props": {
+            "src": "https://fakeimg.pl/670x150",
+            "blockClass": ["promotionBanner", "mobileView"]
+          },
+          "title": "Mobile Promotion Banner Bottom"
+    },
+    "slider-layout#marchPromotionHero": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 1,
+          "tablet": 1,
+          "phone": 1
+        },
+        "autoplay": {
+          "timeout": 3000,
+          "stopOnHover": false
+        },
+        "infinite": true,
+        "showNavigationArrows": "always",
+        "blockClass": "marchPromotionSlider"
+      }
+    }
+}

@@ -1,0 +1,105 @@
+.menuContainer {
+  margin-top: 1rem;
+}
+
+.menuContainerNav {
+  top: 6.75rem;
+  padding-left: 10.5rem;
+}
+
+.menuContainerNav :global(.vtex-mega-menu-2-x-styledLinkContainer) {
+  padding: 1rem 0;
+}
+
+.submenuContainer :global(.vtex-mega-menu-2-x-styledLinkContainer) {
+  padding: 0;
+}
+
+.menuContainer :global(.vtex-mega-menu-header) {
+  display: none;
+}
+
+.triggerContainer {
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.submenuItem :global(.vtex-title-link) {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #dce2e5;
+}
+
+.submenuItem :global(.vtex-title-link) :nth-child(odd) {
+  font-weight: 500;
+  color: var(--star-blue);
+}
+
+.seeAllLinkContainer {
+  margin-left: 0;
+}
+
+.accordionIconContainer {
+  display: none;
+}
+
+.menuContainer :global(.vtex-active-menu) {
+  background-color: var(--french-blue);
+}
+
+.menuContainerVertical :global(.vtex-mega-menu-2-x-styledLinkText),
+.collapsibleHeaderText {
+  color: #032b3f;
+  font-weight: 500;
+}
+
+.menuItem :global(.vtex-mega-menu-2-x-styledLink) {
+  font-weight: 600;
+}
+
+.menuItem :global(.vtex-active-menu-link) :nth-child(odd) {
+  color: #ffffff;
+}
+
+.submenuContainerVertical :global(.vtex-mega-menu-2-x-seeAllLink) {
+  text-decoration: none;
+  color: #032b3f;
+  font-weight: 500;
+}
+
+.submenuItemVertical--isOpen {
+  padding-bottom: 0.5rem;
+}
+
+.menuContainerVertical {
+  margin: 0;
+}
+
+.departmentsTitle {
+  background-color: var(--french-blue);
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  padding: 15px 0;
+}
+
+.caretIcon {
+  fill: #ffffff;
+}
+
+.goBackButtonText {
+  font-size: 14px;
+  margin-left: 1rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+@media (min-width: 790px) {
+  .triggerContainer {
+    font-size: 12px;
+    font-family: 'Poppins';
+    font-weight: bold;
+    color: #ffffff;
+  }
+}

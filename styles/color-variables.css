@@ -1,0 +1,70 @@
+:root {
+  /* Colors */
+  --beau-blue: #c7d5dc;
+  --black: #000;
+  --blue-ncs: #1682bb;
+  --carolina-blue: #1fa2e1;
+  --cerulean-frost: #5594be;
+  --cultured-white: #f6f6f6;
+  --dark-gray: #343d33;
+  --french-blue: #002266;
+  --light-blue: #bfd0d8;
+  --gray: #8b959a;
+  --gainsboro-gray: #dce2e5;
+  --indigo-dye: #0b4f71;
+  --light-gray: #d5d5d5;
+  --pewter-blue: #93aebc;
+  --prussian-blue: #032b3f;
+  --roman-silver: #878e92;
+  --star-blue: #002266;
+  --star-blue-secondary: #0077b0;
+  --star-blue-85: #0077b085;
+  --white: #fff;
+  --white-transparent: #ffffff3a;
+  --blue: #0065ac;
+  --mint: #00b795;
+  --gold: #fb9600;
+  --grapefruit: #ff5f5e;
+
+  /* Background-colors */
+  --bg-blue-ncs: var(--blue-ncs);
+  --bg-carolina-blue: var(--carolina-blue);
+  --bg-cerulean-frost: var(--cerulean-frost);
+  --bg-cultured-white: var(--cultured-white);
+  --bg-french-blue: var(--french-blue);
+  --bg-light-blue: var(--light-blue);
+  --bg-indigo-dye: var(--indigo-dye);
+  --bg-prussian-blue: var(--prussian-blue);
+  --bg-roman-silver: var(--roman-silver);
+  --bg-star-blue: var(--star-blue);
+  --bg-star-blue-85: var(--star-blue-85);
+  --bg-white: var(--white);
+
+  /* Border colors */
+  --border-beau-blue: var(--beau-blue);
+  --border-french-blue: var(--french-blue);
+  --border-gray: var(--gray);
+  --border-light-gray: var(--gainsboro-gray);
+  --border-star-blue: var(--star-blue);
+  --border-white: var(--white);
+
+  /* Text colors */
+  --text-black: var(--black);
+  --text-carolina-blue: var(--carolina-blue);
+  --text-cultured-white: var(--cultured-white);
+  --text-dark-gray: var(--dark-gray);
+  --text-french-blue: var(--french-blue);
+  --text-gray: var(--gray);
+  --text-pewter-blue: var(--pewter-blue);
+  --text-prussian-blue: var(--prussian-blue);
+  --text-star-blue: var(--star-blue);
+  --text-white: var(--white);
+  --text-blue: var(--blue);
+  --text-mint: var(--mint);
+  --text-gold: var(--gold);
+  --text-grapefruit: var(--grapefruit);
+
+  /* Shadows */
+  --shadow: rgba(0, 0, 0, 0.1);
+  --shadow-33: rgba(0, 0, 0, 0.33);
+}

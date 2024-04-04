@@ -1,0 +1,13 @@
+@import '../color-variables.css';
+
+.footerLayout {
+  background: var(--bg-french-blue);
+}
+
+.flexRowContent {
+  color: var(--text-french-blue);
+}
+
+.flexRowContent--topFooter {
+  justify-content: center;
+}

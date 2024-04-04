@@ -1,0 +1,42 @@
+.inventoryStatusContainer {
+  display: flex;
+  align-items: center;
+}
+
+.inventoryStatusContainer svg {
+  height: 20px;
+  width: 40px;
+  overflow: visible;
+}
+
+.inventoryStatusImage {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 0.5rem 0 1rem;
+}
+
+.inventoryStatusContainer {
+  display: flex;
+  align-items: center;
+}
+
+.inventoryStatusText {
+  font-weight: 600;
+  font-family: 'Poppins';
+}
+
+.in-stock {
+  color: var(--text-mint);
+}
+
+.limited {
+  color: var(--text-gold);
+}
+
+.available {
+  color: var(--text-blue);
+}
+
+.unavailable {
+  color: var(--text-grapefruit);
+}

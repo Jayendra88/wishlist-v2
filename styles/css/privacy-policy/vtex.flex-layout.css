@@ -1,0 +1,31 @@
+@import '../../color-variables.css';
+
+.flexRowContent--about-us-breadcrumb,
+.flexRowContent--privacy-policy-breadcrumb {
+  align-items: center;
+  font-size: 12px;
+}
+
+.flexRowContent--about-us-breadcrumb :global(.vtex-store-link-0-x-link),
+.flexRowContent--privacy-policy-breadcrumb :global(.vtex-store-link-0-x-link) {
+  text-decoration: none;
+  color: var(--text-star-blue);
+  margin-right: 5px;
+}
+
+.flexColChild--privacy-policy :global(.vtex-rich-text-0-x-heading-level-3) {
+  margin-bottom: 6px;
+}
+
+.flexColChild--privacy-policy :global(.vtex-rich-text-0-x-paragraph) {
+  max-width: 860px;
+  padding: 14px;
+  text-align: center;
+}
+
+.flexRow--about-us-layout :global(.vtex-store-components-3-x-container),
+.flexRow--privacy-policy-layout :global(.vtex-store-components-3-x-container) {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}

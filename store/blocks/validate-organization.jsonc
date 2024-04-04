@@ -1,0 +1,107 @@
+{
+    "store.custom#validate-organization": {
+      "blocks": [
+        "flex-layout.row#breadcrumb-organizations",
+        "flex-layout.row#register-organization"
+      ]
+    },
+    "flex-layout.row#welcome": {
+      "children": ["rich-text#validate-title"],
+      "props": {
+        "blockClass": "validate-page__title",
+        "fullWidth": true
+      }
+    },
+    "flex-layout.row#breadcrumb-organizations": {
+      "props": {
+        "preventHorizontalStretch": true,
+        "preserveLayoutOnMobile": true,
+        "blockClass": "organizations-breadcrumb"
+      },
+      "children": [
+        "link#organizations-breadcrumb", 
+        "rich-text#organizations-breadcrumb"
+      ]
+    },
+    "flex-layout.row#register-organization": {
+      "props": {
+        "preventHorizontalStretch": true,
+        "preserveLayoutOnMobile": true,
+        "horizontalAlign": "center"
+      },
+      "children": ["flex-layout.col#register-organization"]
+    },
+    "flex-layout.col#register-organization": {
+      "props": {
+        "preventHorizontalStretch": true,
+        "preserveLayoutOnMobile": true,
+        "horizontalAlign": "center",
+        "blockClass": "organizations-col"
+      },
+      "children": [
+        "flex-layout.row#welcome",
+        "flex-layout.row#validate-sub-text",
+        "organization-form"
+      ]
+    },
+    "flex-layout.row#validate-sub-text": {
+      "props": {
+        "preventHorizontalStretch": true,
+        "preserveLayoutOnMobile": true,
+        "horizontalAlign": "center"
+      },
+      "children": [
+        "rich-text#validate-sub-text"
+      ]
+    },
+    "flex-layout.row#validate-contact": {
+      "props": {
+        "preventHorizontalStretch": true,
+        "preserveLayoutOnMobile": true,
+        "horizontalAlign": "center"
+      },
+      "children": [
+        "rich-text#contact-us"
+      ]
+    },
+    "link#organizations-breadcrumb": {
+      "props": {
+        "href": "/",
+        "label": "Home"
+      }
+    },
+    "rich-text#organizations-breadcrumb": {
+      "props": {
+        "text": "| Organizations",
+        "font": "t-mini"
+      }
+    },
+    "rich-text#validate-title": {
+      "props": {
+        "blockClass": "validate-title",
+        "text": "Organization Lookup",
+        "font": "t-heading-3"
+      }
+    },
+    "rich-text#validate-sub-text": {
+      "props": {
+        "blockClass": "validate-sub-text",
+        "text": "Do you have an existing account? Enter the account number and postal code below.",
+        "font": "t-body"
+      }
+    },
+    "rich-text#contact-us": {
+      "props": {
+        "blockClass": "organizations-contact-us",
+        "text": "[Forgot your account number? Give us a call at 905.544.7575](tel:+9055447575)",
+        "font": "t-mini"
+      }
+    },
+    "link#register-button": {
+      "props": {
+        "href": "/",
+        "label": "Register an account"
+      }
+    }
+  }
+  

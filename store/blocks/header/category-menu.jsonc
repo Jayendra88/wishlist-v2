@@ -1,0 +1,318 @@
+{
+  "vtex.menu@2.x:menu#category-menu": {
+    "props": {
+      "experimentalOptimizeRendering": true,
+      "blockClass": "menu-container"
+    },
+    "children": [
+      "menu-item#category-products",
+      "menu-item#category-quick-order",
+      "menu-item#airmilesoffers",
+      "menu-item#catalog"
+      // removed for release
+      // "menu-item#clearance"
+    ]
+  },
+
+  "menu-item#category-products": {
+    "props": {
+      "id": "menu-item-category-products",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-text",
+      "iconProps": {
+        "id": "mpa-angle--down",
+        "size": 14,
+        "viewBox": "0 0 16 16"
+      },
+      "iconPosition": "right",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Products",
+        "text": "Products"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#category-products"]
+  },
+
+  "vtex.menu@2.x:submenu#category-products": {
+    "props": {
+      "width": "auto"
+    },
+    "children": ["vtex.menu@2.x:menu#category-products"]
+  },
+
+  "vtex.menu@2.x:menu#category-products": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": ["menu-item#category-placeholder", "menu-item#category-cups"]
+  },
+
+  "menu-item#category-placeholder": {
+    "props": {
+      "id": "menu-item-category-placeholder",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Place Holder",
+        "text": "Placeholder"
+      }
+    }
+  },
+  "menu-item#category-cups": {
+    "props": {
+      "id": "menu-item-category-cafeteria-cup",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/cafeteria",
+        "noFollow": false,
+        "tagTitle": "Cups",
+        "text": "Cups"
+      }
+    }
+  },
+
+  "menu-item#category-quick-order": {
+    "props": {
+      "id": "menu-item-category-quick-order",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-text",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Quick order",
+        "text": "Quick order"
+      }
+    }
+  },
+
+  "menu-item#airmilesoffers": {
+    "props": {
+      "id": "menu-item-airmilesoffers",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-text",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Air Miles/Offers",
+        "text": "Air Miles/Offers"
+      }
+    }
+  },
+
+  "menu-item#catalog": {
+    "props": {
+      "id": "menu-item-catalog",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-text",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Catalog",
+        "text": "Catalog"
+      }
+    }
+  },
+
+  "menu-item#clearance": {
+    "props": {
+      "id": "menu-item-clearance",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-text",
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Clearance",
+        "text": "Clearance"
+      }
+    }
+  },
+
+  "menu-item#category-products-mobile": {
+    "props": {
+      "id": "menu-item-category-products-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Products",
+        "text": "Products"
+      }
+    }
+  },
+
+  "menu-item#category-order-mobile": {
+    "props": {
+      "id": "menu-item-category-order-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/quickorder",
+        "noFollow": false,
+        "tagTitle": "QUICK ORDER",
+        "text": "QUICK ORDER"
+      }
+    }
+  },
+
+  "menu-item#category-catalog-mobile": {
+    "props": {
+      "id": "menu-item-category-catalog-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "CATALOG",
+        "text": "CATALOG"
+      }
+    }
+  },
+  "menu-item#promotions-link": {
+    "props": {
+      "id": "menu-item-category-catalog-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/promotions",
+        "noFollow": false,
+        "tagTitle": "PROMOTIONS",
+        "text": "PROMOTIONS"
+      }
+    }
+  },
+
+  "flex-layout.row#category-clearance-mobile": {
+    "children": ["menu-item#category-clearance-mobile"],
+    "props": {
+      "blockClass": "drawer-main-item-last"
+    }
+  },
+  "menu-item#category-clearance-mobile": {
+    "props": {
+      "id": "menu-item-category-clearance-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clearance",
+        "noFollow": false,
+        "tagTitle": "CLEARANCE",
+        "text": "CLEARANCE"
+      }
+    }
+  },
+
+  "flex-layout.row#category-faq-mobile": {
+    "children": ["menu-item#faq-mobile"],
+    "props": {
+      "blockClass": "drawer-secondary-item"
+    }
+  },
+  "menu-item#faq-mobile": {
+    "props": {
+      "id": "menu-item-category-faq-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/faq",
+        "noFollow": false,
+        "tagTitle": "FAQ",
+        "text": "FAQ"
+      }
+    }
+  },
+
+  "flex-layout.row#contact-us-mobile": {
+    "children": ["menu-item#contact-us-mobile"],
+    "props": {
+      "blockClass": "drawer-secondary-item"
+    }
+  },
+  "menu-item#contact-us-mobile": {
+    "props": {
+      "id": "menu-item-category-contact-us-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact-us",
+        "noFollow": false,
+        "tagTitle": "Contact Us",
+        "text": "Contact Us"
+      }
+    }
+  },
+
+  "flex-layout.row#login": {
+    "children": ["login#mobile"],
+    "props": {
+      "blockClass": "mobile-login"
+    }
+  },
+
+  "login#mobile": {
+    "props": {
+      "iconLabel": "Sign in / Register",
+      "optionsTitle": "Sign in / Register",
+      "logInButtonBehavior": "link"
+    }
+  },
+
+  "flex-layout.row#mobile-drawer-company-info": {
+    "children": ["flex-layout.col#mobile-drawer-company-info"],
+    "props": {
+      "blockClass": "drawer-footer"
+    }
+  },
+  "flex-layout.col#mobile-drawer-company-info": {
+    "children": ["logo", "rich-text#mobile-drawer-company-info"],
+    "props": {
+      "horizontalAlign": "center",
+      "preventVerticalStretch": true,
+      "blockClass": "drawer-footer-col"
+    }
+  },
+  "rich-text#mobile-drawer-company-info": {
+    "props": {
+      "text": "800-263-2128",
+      "blockClass": "drawer-footer-text"
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "definitions": {
+    "SocialLinks": {
+      "type": "array",
+      "title": "Social Links",
+      "items": {
+        "properties": {
+          "imageUrl": {
+            "$ref": "app:vtex.native-types#/definitions/url",
+            "default": "",
+            "title": "Image",
+            "widget": {
+              "ui:widget": "image-uploader"
+            }
+          },
+          "alt": {
+            "title": "Image alt name",
+            "$ref": "app:vtex.native-types#/definitions/text"
+          },
+          "url": {
+            "title": "Social Link URL",
+            "$ref": "app:vtex.native-types#/definitions/url"
+          },
+          "title": {
+            "$ref": "app:vtex.native-types#/definitions/text",
+            "default": "",
+            "title": "Title"
+          }
+        }
+      }
+    },
+    "CollectionsRow": {
+      "type": "array",
+      "title": "Collections",
+      "items": {
+        "properties": {
+          "imageUrl": {
+            "$ref": "app:vtex.native-types#/definitions/url",
+            "default": "",
+            "title": "Image",
+            "widget": {
+              "ui:widget": "image-uploader"
+            }
+          },
+          "alt": {
+            "title": "Image alt name",
+            "$ref": "app:vtex.native-types#/definitions/text"
+          },
+          "url": {
+            "title": "Collections URL",
+            "$ref": "app:vtex.native-types#/definitions/url"
+          },
+          "title": {
+            "$ref": "app:vtex.native-types#/definitions/text",
+            "default": "",
+            "title": "Title"
+          }
+        }
+      }
+    }
+  }
+}

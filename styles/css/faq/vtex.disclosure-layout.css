@@ -1,0 +1,46 @@
+@import '../../color-variables.css';
+
+.trigger--faq-disclosure-layout {
+  width: 100%;
+  margin: 0 10px 10px 10px;
+  padding: 5px 25px;
+  max-width: 990px;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--border-light-gray);
+  border-radius: 4px;
+  background-color: var(--bg-white);
+  cursor: pointer;
+}
+
+/* phone media query */
+@media (max-width: 1025px) {
+  .trigger--faq-disclosure-layout {
+    max-width: calc(100% - 20px);
+  }
+}
+
+.trigger--faq-disclosure-layout :global(.vtex-rich-text-0-x-paragraph) {
+  margin-top: 0;
+}
+
+.trigger--faq-disclosure-layout :global(.vtex-rich-text-0-x-link) {
+  color: var(--text-star-blue);
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.trigger--faq-disclosure-layout
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  width: fit-content !important;
+}
+
+.trigger--faq-disclosure-layout :global(.vtex-flex-layout-0-x-flexRowContent) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.trigger--faq-disclosure-layout :global(.vtex-rich-text-0-x-headingLevel6) {
+  margin: 18px 0;
+}

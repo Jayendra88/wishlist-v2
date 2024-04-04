@@ -1,0 +1,129 @@
+.product-card {
+  border: 1px solid #dce2e5;
+  margin-bottom: 5px;
+}
+
+.product-card img {
+  max-height: 85px;
+  max-width: 100%;
+  object-fit: contain;
+  padding: 8px 8px 0 4px;
+  height: 65px;
+}
+
+.product-card h5 {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+h5 a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.product-card .description-add-to-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px;
+  margin-bottom: 0px;
+}
+
+.product-card .description-add-to-cart > div {
+  width: 100%;
+}
+
+.product-card .description-add-to-cart > p {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.product-card__text-add-to-cart {
+  margin-left: 6px;
+}
+
+.product-card .description-add-to-cart .add-to-cart-wrapper {
+  align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+@media (max-width: 480px) {
+  .product-card .description-add-to-cart .add-to-cart-wrapper {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.add-to-cart-wrapper a {
+  color: var(--star-blue);
+  display: block;
+  font-size: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.product-card .description-add-to-cart .add-to-cart-wrapper span input {
+  height: 26px;
+  width: 50px;
+}
+
+.product-card .description-add-to-cart .add-to-cart-wrapper span button {
+  background-color: var(--french-blue);
+  border: none;
+  color: #ffffff;
+  height: 26px;
+  margin-left: 8px;
+  width: 62px;
+}
+
+.product-card .price-table {
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+.product-card .price-table button {
+  background-color: #93aebc;
+  border: none;
+  color: #ffffff;
+  height: 26px;
+  width: 100%;
+}
+
+.product-card .price-table table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.product-card .price-table table th,
+.product-card .price-table table td {
+  border: 1px solid #dce2e5;
+  padding: 5px;
+}
+
+.product-card .price-table table td {
+  background-color: #f6f6f6;
+  color: var(--star-blue);
+}
+
+.product-card .hidden {
+  display: none;
+  height: 0px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}

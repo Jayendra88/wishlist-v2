@@ -1,0 +1,21 @@
+@import '../color-variables.css';
+
+.product-identifier--productReference {
+  display: flex;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: var(--text-dark-gray);
+  margin-bottom: 15px;
+}
+
+.product-identifier__value {
+  margin-left: 5px;
+}
+
+@media (min-width: 625px) {
+  .product-identifier--productReference {
+    display: flex;
+    justify-content: flex-start;
+  }
+}

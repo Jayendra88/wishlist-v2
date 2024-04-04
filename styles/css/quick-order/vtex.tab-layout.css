@@ -1,0 +1,32 @@
+@import '../../color-variables.css';
+
+.listContainer--quick-order {
+  margin-left: 1.5rem;
+  justify-content: start;
+  width: auto;
+}
+
+.listItem {
+  padding: 0;
+  margin: 0;
+}
+
+.listItem :global(.vtex-button) {
+  color: var(--text-dark-gray);
+  background-color: var(--bg-cultured-white);
+  border-radius: 0;
+  border-bottom: 1px solid var(--border-light-gray);
+}
+
+.listItem:first-child {
+  border-right: 1px solid var(--border-light-gray);
+  border-left: none;
+}
+
+.listItemActive :global(.vtex-button) {
+  background-color: var(--bg-white);
+  color: var(--text-dark-gray);
+  border: none;
+  border-radius: 0;
+  border-top: 1px solid var(--border-light-gray);
+}

@@ -1,0 +1,11 @@
+@import '../../color-variables.css';
+
+.link--careers-layout-btn {
+  margin: auto;
+  background: var(--bg-star-blue);
+  border-radius: 0;
+  font-size: 14px;
+  height: 44px;
+  line-height: 20px;
+  width: 195px;
+}

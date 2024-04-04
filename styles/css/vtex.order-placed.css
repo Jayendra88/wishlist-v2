@@ -1,0 +1,32 @@
+.noticesList,
+.orderOptionsWrapper--mobile,
+.orderOptionsWrapper {
+  display: none;
+}
+
+.totalListItem:nth-child(even)
+  :global(.vtex-order-placed-2-x-totalListItemLabel),
+.packageShippingEstimate {
+  font-size: 0;
+}
+
+.packageSLA {
+  display: none;
+}
+
+.totalListItem:nth-child(even)
+  :global(.vtex-order-placed-2-x-totalListItemLabel)::after {
+  content: 'Shipping';
+  font-size: 14px;
+}
+
+.totalListItem:last-child
+  :global(.vtex-order-placed-2-x-totalListItemLabel)::after {
+  content: 'Total';
+  font-size: 14px;
+}
+
+.packageShippingEstimate::after {
+  font-size: 14px;
+  content: 'In-stock items will ship-out next day';
+}

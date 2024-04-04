@@ -1,0 +1,42 @@
+@import '../color-variables.css';
+
+/* similar shelf component */
+.shelfContentContainer--similar-shelf {
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 157px;
+}
+
+.title--similar-shelf {
+  color: var(--text-dark-gray);
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.relatedProducts--similar-shelf {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.slide--similar-shelf {
+  margin: 0 5px;
+}
+
+@media (min-width: 760px) {
+  .slide--similar-shelf {
+    margin: 0 10px;
+  }
+}
+
+.dot {
+  background: var(--bg-star-blue-85);
+  box-shadow: 0 2px 4px 0 var(--shadow-33);
+}
+
+.dot--isActive--similar-shelf {
+  background: var(--bg-star-blue);
+  box-shadow: 0 2px 4px 0 var(--shadow-33);
+}
+
+/* similar shelf component */

@@ -1,0 +1,46 @@
+{
+  "store.custom#faq": {
+    "blocks": ["flex-layout.row#faq-layout-wrapper"]
+  },
+  "flex-layout.row#faq-layout-wrapper": {
+    "title": "FAQ - Layout",
+    "children": ["flex-layout.col#faq-layout-wrapper"],
+    "props": {
+      "blockClass": "faq-layout",
+      "fullWidth": "true"
+    }
+  },
+  "flex-layout.col#faq-layout-wrapper": {
+    "children": [
+      "whitebird-custom-breadcrumbs#faq",
+      "flex-layout.row#faq-header",
+      "flex-layout.row#faq-layout"
+    ]
+  },
+  "whitebird-custom-breadcrumbs#faq": {
+    "props": {
+      "term": "Frequently Asked Questions",
+      "showOnMobile": true
+    }
+  },
+  "flex-layout.row#faq-header": {
+    "title": "FAQ - Hero",
+    "children": ["flex-layout.col#faq-header"]
+  },
+  "flex-layout.col#faq-header": {
+    "props": {
+      "blockClass": "faq-header"
+    },
+    "children": ["image#faq", "rich-text#faq-header"]
+  },
+  "image#faq": {
+    "props": {
+      "src": "https://whitebird.vtexassets.com/assets/vtex.file-manager-graphql/images/5c1a0c20-32e8-48d0-be8b-3304dd686e89___964381ec5dd8ca73cf3d52f470595037.jpg"
+    }
+  },
+  "rich-text#faq-header": {
+    "props": {
+      "text": "# FAQ"
+    }
+  }
+}

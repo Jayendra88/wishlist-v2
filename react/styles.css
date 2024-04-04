@@ -1,0 +1,254 @@
+.wishlist-list {
+  list-style: none;
+}
+
+.wishlist-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin: 1rem;
+}
+
+.wishlist-link,
+.wishlist-link:visited,
+.wishlist-link:hover,
+.wishlist-link:active {
+  color: inherit;
+}
+
+.wishlist-text {
+  font-family: 'Poppins';
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-white);
+}
+
+@media (max-width: 639px) {
+  .wishlist-text {
+    color: var(--star-blue);
+  }
+}
+
+.toolTipContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #249fda;
+  margin-left: 5px;
+}
+
+.toolTipContainer :first-child {
+  border-bottom: 1px solid #249fda;
+  margin: 0 0 5px 0;
+}
+
+.toolTipContainer:first-child {
+  cursor: help;
+}
+
+.toolTipMessage {
+  top: 70px;
+  position: absolute;
+  padding: 5px 15px;
+  border-radius: 5px;
+  background: #249fda;
+  font-size: 13px;
+  font-weight: 400;
+  color: #fff;
+  width: 150px;
+  z-index: 1;
+  font-family: 'Poppins';
+}
+
+.signInButton {
+  background-color: #bfd0d8;
+  color: var(--text-cultured-white);
+  text-decoration: none;
+  padding: 0.85rem 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.priceSelector {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.priceSelectorContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.priceSelectorPrice {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+  font-family: 'Poppins';
+  font-size: 14px;
+}
+
+.priceSelectorInput {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  padding: 5px 10px;
+  border: 2px solid #032b3f;
+  color: #032b3f;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.priceSelectorInput:hover {
+  border: 2px solid var(--star-blue);
+  background: var(--star-blue);
+  border-radius: 5px;
+  font-size: 12px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.pricePer {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.categorySuggestion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 25px 0;
+  border-bottom: 1px solid #dce2e5;
+}
+
+.categoryTitle {
+  color: #9da1a3;
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+}
+
+.categorySubTitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  margin: 15px 0 30px 0;
+}
+
+.categorySuggestionName {
+  color: var(--star-blue);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.categorySuggestionCard:hover {
+  color: #0b4f71;
+}
+
+a {
+  text-decoration: none;
+}
+
+.categorySuggestionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.categorySuggestionContainer a {
+  margin-bottom: 15px;
+}
+
+.categorySuggestionCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 20px 0;
+  width: 175px;
+}
+
+.categorySuggestionImage {
+  width: 115px;
+  height: 100px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  background: #efefef;
+}
+
+.success-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.success-header {
+  display: flex;
+  position: relative;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+.success-header__image {
+  display: flex;
+  align-items: center;
+}
+
+.success-header__image svg {
+  height: 20px;
+  margin-right: 1rem;
+  overflow: visible;
+}
+
+.success-header__title {
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.success-container__message {
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .priceSelectorContainer {
+    display: none;
+  }
+  .mytable {
+    width: 100%;
+  }
+}
+
+@media (min-width: 790px) {
+  .priceSelectorContainer {
+    display: none;
+  }
+
+  .priceSelectorPrice {
+    display: none;
+  }
+
+  .categorySuggestion {
+    padding: 0 0 70px 0;
+  }
+
+  .categoryTitle {
+    font-size: 40px;
+  }
+
+  .categorySuggestionContainer {
+    width: 80%;
+  }
+
+  .categorySuggestionCard {
+    margin: 0 40px;
+  }
+}

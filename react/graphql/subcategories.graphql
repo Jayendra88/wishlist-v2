@@ -1,0 +1,21 @@
+query subcategories($categoryId: Int) {
+  category(id: $categoryId) @context(provider: "vtex.store-graphql") {
+    hasChildren
+    name
+    metaTagDescription
+    children {
+      id
+      name
+      slug
+      href
+      hasChildren
+      children {
+        id
+        name
+        slug
+        href
+        hasChildren
+      }
+    }
+  }
+}

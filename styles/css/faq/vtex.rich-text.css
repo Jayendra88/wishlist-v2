@@ -1,0 +1,10 @@
+.wrapper--faq-row-first__column {
+  margin-right: 80px;
+}
+
+.listOrdered--faq-numbered-list,
+.container--faq-numbered-list :global(.vtex-rich-text-0-x-listOrdered) {
+  padding-left: 14px;
+  margin-top: 0;
+  line-height: 26px;
+}

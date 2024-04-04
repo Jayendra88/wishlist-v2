@@ -1,0 +1,27 @@
+{
+  "id": 26809647,
+  "categoryId": 26809647,
+  "categoryName": "1 Mil Flat Poly Bags",
+  "imgUrl": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+  "heroImgUrl": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+  "heroText": "<div><ul><li><span ><span >100% virgin, high clarity polyethylene film</span></span></li>  <li><span ><span >Light duty use for economical protection</span></span></li><li><span ><span >W</span><span >ide variety of sizes</span></span></li><li><span ><span ><a href='https://whitebird.ca/page/mix-save' target='blank'>Mix &amp; Save</a>: save more by mixing poly bag sizes and take the total quantity price break</span></span></li></ul></div>",
+  "grids": [
+    {
+      "categoryName": "1 Mil Flat Poly Bags",
+      "categoryHeaders": [
+        { "originalProperty": "Colour", "replacementProperty": "Shade" }
+      ],
+      "nonProntoFieldData": [
+        {
+          "name": "custom-non-pronto-1",
+          "values": ["a", "b", "c", "d", "e", "f", "g", "h", "i"]
+        },
+        {
+          "name": "custom-non-pronto-2",
+          "values": ["aa", "bb", "cc", "dd", "ee", "ff", "gg", "hh", "ii"]
+        }
+      ],
+      "productList": ["W1M0304", "W1M0204"]
+    }
+  ]
+}

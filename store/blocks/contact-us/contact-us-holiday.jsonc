@@ -1,0 +1,65 @@
+{
+  // Holiday Hours
+  "flex-layout.col#holiday-hours": {
+    "children": [
+      "rich-text#holiday-hours-header",
+      "rich-text#holiday-hours-day1",
+      "rich-text#holiday-hours-day2",
+      "rich-text#holiday-hours-day3",
+      "rich-text#holiday-hours-day4",
+      "rich-text#holiday-hours-day5",
+      "rich-text#holiday-hours-day6",
+      "rich-text#holiday-hours-day7"
+    ],
+    "props": {
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#holiday-hours-header": {
+    "props": {
+      "text": "##### Holiday Hours",
+      "blockClass": "contact-us-header"
+    }
+  },
+  "rich-text#holiday-hours-day1": {
+    "props": {
+      "text": "Dec. 24th: 8am-Noon EST",
+      "blockClass": "contact-us-text"
+    }
+  },
+  "rich-text#holiday-hours-day2": {
+    "props": {
+      "text": "Dec. 25th: **Closed**",
+      "blockClass": "contact-us-text"
+    }
+  },
+  "rich-text#holiday-hours-day3": {
+    "props": {
+      "text": "Dec. 28th: **Closed**",
+      "blockClass": "contact-us-text"
+    }
+  },
+  "rich-text#holiday-hours-day4": {
+    "props": {
+      "text": "Dec. 31th: 8am-Noon EST",
+      "blockClass": "contact-us-text"
+    }
+  },
+  "rich-text#holiday-hours-day5": {
+    "props": {
+      "text": "Jan. 1st: **Closed**",
+      "blockClass": "contact-us-text"
+    }
+  },
+  // Empty rows to fill if needed, don't affect layout
+  "rich-text#holiday-hours-day6": {
+    "props": {
+      "text": ""
+    }
+  },
+  "rich-text#holiday-hours-day7": {
+    "props": {
+      "text": ""
+    }
+  }
+}

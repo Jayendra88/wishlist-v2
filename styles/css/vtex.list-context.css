@@ -1,0 +1,14 @@
+.imageElement--social-links {
+  height: 2rem;
+  margin-right: 5px;
+}
+
+.list--social-links {
+  display: flex;
+}
+
+.list--collections-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

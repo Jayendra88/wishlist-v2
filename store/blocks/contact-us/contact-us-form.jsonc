@@ -1,0 +1,116 @@
+{
+  "flex-layout.row#form": {
+    "children": ["flex-layout.col#form"]
+  },
+  "flex-layout.col#form": {
+    "props": {
+      "blockClass": "contact-us-form"
+    },
+    "children": ["form"]
+  },
+  "form": {
+    "props": {
+      "entity": "CU",
+      "schema": "ContactUs"
+    },
+    "children": [
+      "form-input.dropdown#contactType",
+      "flex-layout.row#name-company",
+      "flex-layout.row#email-phone",
+      "flex-layout.col#companyAddress",
+      "flex-layout.row#city-province",
+      "flex-layout.col#contact-us-message",
+      "form-submit"
+    ],
+    "blocks": ["form-success"]
+  },
+  "flex-layout.row#name-company": {
+    "children": ["form-input.text#fullName", "form-input.text#companyName"]
+  },
+  "flex-layout.row#email-phone": {
+    "children": ["form-input.text#email", "form-input.text#phone"]
+  },
+  "flex-layout.row#city-province": {
+    "children": ["form-input.text#companyCity", "form-input.text#companyState"]
+  },
+
+  "form-input.dropdown#contactType": {
+    "props": {
+      "pointer": "#/properties/contactType"
+    }
+  },
+  "form-input.text#fullName": {
+    "props": {
+      "pointer": "#/properties/fullName",
+      "placeholder": "Name"
+    }
+  },
+  "form-input.text#companyName": {
+    "props": {
+      "pointer": "#/properties/companyName",
+      "placeholder": "Company"
+    }
+  },
+  "form-input.text#email": {
+    "props": {
+      "pointer": "#/properties/email",
+      "placeholder": "Email"
+    }
+  },
+  "form-input.text#phone": {
+    "props": {
+      "pointer": "#/properties/phone",
+      "placeholder": "Phone"
+    }
+  },
+  "form-input.text#companyAddress": {
+    "props": {
+      "pointer": "#/properties/companyAddress",
+      "placeholder": "Address"
+    }
+  },
+  "flex-layout.col#companyAddress": {
+    "children": ["form-input.text#companyAddress"]
+  },
+  "form-input.text#companyCity": {
+    "props": {
+      "pointer": "#/properties/companyCity",
+      "placeholder": "City"
+    }
+  },
+  "form-input.text#companyState": {
+    "props": {
+      "pointer": "#/properties/companyState",
+      "placeholder": "Province",
+      "label": "Province"
+    }
+  },
+  "form-input.textarea#contact-us-message": {
+    "props": {
+      "pointer": "#/properties/message",
+      "placeholder": "Message"
+    }
+  },
+  "flex-layout.col#contact-us-message": {
+    "props": {
+      "blockClass": "contact-us-message"
+    },
+    "children": ["form-input.textarea#contact-us-message"]
+  },
+  "form-submit": {
+    "props": {
+      "label": "Submit"
+    }
+  },
+  "form-success": {
+    "children": ["rich-text#successSubmit"]
+  },
+  "rich-text#successSubmit": {
+    "props": {
+      "text": "Succesfully submitted the data!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  }
+  // CONTACT US FORM
+}

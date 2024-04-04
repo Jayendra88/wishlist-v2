@@ -1,0 +1,15 @@
+.flexRow--orderByAndSwitcher {
+  padding-right: 0.9rem;
+  padding-left: 4.75rem;
+}
+.flexRowContent--orderByAndSwitcher {
+  justify-content: space-between !important;
+}
+
+@media (max-width: 650px) {
+  .flexRowContent--mobileSearchContent {
+    /* cannot target container that wraps this class in VTEX, need to make container 1rem wider */
+    width: calc(100% + 1rem);
+    margin-left: -0.5rem;
+  }
+}

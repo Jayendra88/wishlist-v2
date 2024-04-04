@@ -1,0 +1,59 @@
+@import '../../color-variables.css';
+
+.container--contact-us-text {
+  font-weight: 500;
+  color: var(--text-black);
+  font-size: 14px;
+}
+
+.wrapper--contact-us-text :global(.vtex-rich-text-0-x-link) {
+  color: var(--text-star-blue);
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.wrapper--contact-us-header {
+  color: var(--text-gray);
+}
+
+.wrapper--contact-us-header :global(.vtex-rich-text-0-x-heading-level-5) {
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.wrapper--contact-us-header :global(.vtex-rich-text-0-x-paragraph) {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.wrapper--contact-us-text :global(.vtex-rich-text-0-x-paragraph) {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.wrapper--contact-us-address-header
+  :global(.vtex-rich-text-0-x-heading-level-4) {
+  font-weight: 600;
+  color: var(--text-black);
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+
+.container--contact-us-header-image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.headingLevel3--contact-us-top-header {
+  margin-top: 50px;
+}
+
+.paragraph--contact-us-top-header-explanation {
+  margin: 0 0 40px 0;
+}

@@ -1,0 +1,40 @@
+{
+  // Hours
+  "flex-layout.col#work-hours": {
+    "children": [
+      "rich-text#work-hours-header",
+      "rich-text#work-hours",
+      "rich-text#pickup-hours-header",
+      "rich-text#pickup-hours"
+    ],
+    "props": {
+      "preventVerticalStretch": true,
+      "blockClass": "work-hours-wrapper"
+    }
+  },
+  "rich-text#work-hours-header": {
+    "props": {
+      "text": "##### Hours",
+      "blockClass": "contact-us-header"
+    }
+  },
+  "rich-text#pickup-hours-header": {
+    "props": {
+      "text": "##### Pickup Hours",
+      "blockClass": "contact-us-header"
+    }
+  },
+  "rich-text#work-hours": {
+    "props": {
+      "text": "Mon-Fri: 8am-5pm EST",
+      "blockClass": "contact-us-text"
+    }
+  },
+
+  "rich-text#pickup-hours": {
+    "props": {
+      "text": "Mon-Fri: 8am-5pm EST",
+      "blockClass": "contact-us-text"
+    }
+  }
+}

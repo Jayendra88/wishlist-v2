@@ -1,0 +1,54 @@
+type FixedPrice {
+  listPrice: Float
+  minQuantity: Int
+  tradePolicyId: String
+  value: Float
+}
+
+type SingleProduct {
+  categoryName: String
+  image: String
+  link: String
+  name: String
+  productId: String
+  properties: [Property]
+  reference: String
+  ABCClassCode: String
+  UOM: String
+  unitMultiplier: Int
+}
+
+type Property {
+  name: String
+  value: String
+}
+
+type FixedPriceWithId {
+  productId: String
+  fixedPrices: [FixedPrice]
+}
+
+type SubcategoryWithScore {
+  cacheId: Int
+  href: String
+  slug: String
+  id: Int
+  name: String
+  titleTag: String
+  hasChildren: Boolean
+  metaTagDescription: String
+  children: [Category]
+}
+
+type Category {
+  cacheId: Int
+  href: String
+  score: Int
+  slug: String
+  id: Int
+  name: String
+  titleTag: String
+  hasChildren: Boolean
+  metaTagDescription: String
+  children: [Category]
+}

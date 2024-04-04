@@ -1,0 +1,46 @@
+{
+  "store.custom#careers": {
+    "blocks": ["flex-layout.row#careers-layout-wrapper"]
+  },
+  "flex-layout.row#careers-layout-wrapper": {
+    "title": "Careers - Layout",
+    "children": ["flex-layout.col#careers-layout-wrapper"],
+    "props": {
+      "blockClass": "careers-layout",
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#careers-layout-wrapper": {
+    "children": [
+      "whitebird-custom-breadcrumbs#careers",
+      "flex-layout.row#careers-header",
+      "flex-layout.row#careers-layout"
+    ]
+  },
+  "whitebird-custom-breadcrumbs#careers": {
+    "props": {
+      "term": "Careers",
+      "showOnMobile": true
+    }
+  },
+  "flex-layout.row#careers-header": {
+    "title": "Careers - Hero",
+    "children": ["flex-layout.col#careers-header"]
+  },
+  "flex-layout.col#careers-header": {
+    "props": {
+      "blockClass": "careers-header"
+    },
+    "children": ["image#careers", "rich-text#careers-header"]
+  },
+  "image#careers": {
+    "props": {
+      "src": "https://whitebird.vteximg.com.br/arquivos/CareersHeader.jpg"
+    }
+  },
+  "rich-text#careers-header": {
+    "props": {
+      "text": "# Careers"
+    }
+  }
+}

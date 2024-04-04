@@ -1,0 +1,618 @@
+{
+  "flex-layout.row#faq-layout": {
+    "children": ["flex-layout.col#faq-layout"],
+    "props": {
+      "fullWidth": "true"
+    }
+  },
+  "flex-layout.col#faq-layout": {
+    "children": ["disclosure-layout-group#faq-group"],
+    "props": {
+      "blockClass": "faq-layout"
+    }
+  },
+  "disclosure-layout-group#faq-group": {
+    "children": ["disposition-layout#faq-layout"]
+  },
+  "disposition-layout#faq-layout": {
+    "title": "FAQ - Disposition layout",
+    "children": [
+      "disclosure-layout#faq-1",
+      "disclosure-layout#faq-2",
+      "disclosure-layout#faq-3",
+      "disclosure-layout#faq-4",
+      "disclosure-layout#faq-5",
+      "disclosure-layout#faq-6",
+      "disclosure-layout#faq-7",
+      "disclosure-layout#faq-8",
+      "disclosure-layout#faq-9",
+      "disclosure-layout#faq-10",
+      "disclosure-layout#faq-11",
+      "disclosure-layout#faq-12",
+      "disclosure-layout#faq-13",
+      "disclosure-layout#faq-14",
+      "disclosure-layout#faq-15",
+      "disclosure-layout#faq-16",
+      "disclosure-layout#faq-17"
+    ],
+    "props": {
+      "disposition": [
+        {
+          "order": 1
+        },
+        {
+          "order": 2
+        },
+        {
+          "order": 3
+        },
+        {
+          "order": 4
+        },
+        {
+          "order": 5
+        },
+        {
+          "order": 6
+        },
+        {
+          "order": 7
+        },
+        {
+          "order": 8
+        },
+        {
+          "order": 9
+        },
+        {
+          "order": 10
+        },
+        {
+          "order": 11
+        },
+        {
+          "order": 12
+        },
+        {
+          "order": 13
+        },
+        {
+          "order": 14
+        },
+        {
+          "order": 15
+        },
+        {
+          "order": 16
+        },
+        {
+          "order": 17
+        }
+      ]
+    }
+  },
+
+  // 1
+  "disclosure-layout#faq-1": {
+    "title": "FAQ - 1",
+    "children": ["disclosure-trigger#faq-1"]
+  },
+  "disclosure-trigger#faq-1": {
+    "children": ["flex-layout.row#faq-1", "disclosure-content#faq-1"],
+    "props": {
+      "blockClass": "faq-disclosure-layout"
+    }
+  },
+  "flex-layout.row#faq-1": {
+    "children": ["rich-text#faq-question-1", "disclosure-state-indicator#faq"]
+  },
+  "disclosure-content#faq-1": {
+    "children": ["rich-text#faq-answer-1"]
+  },
+  "rich-text#faq-question-1": {
+    "props": {
+      "text": "###### How much do your boxes cost?"
+    }
+  },
+  "rich-text#faq-answer-1": {
+    "props": {
+      "text": "Our boxes vary in price depending on size and quantity, but we are proud to offer competitive rates for quality products. See more information on our [corrugated boxes page](/Corrugated-Products)."
+    }
+  },
+
+  // 2
+  "disclosure-layout#faq-2": {
+    "title": "FAQ - 2",
+    "children": ["disclosure-trigger#faq-2"]
+  },
+  "disclosure-trigger#faq-2": {
+    "children": ["flex-layout.row#faq-2", "disclosure-content#faq-2"],
+    "props": {
+      "blockClass": "faq-disclosure-layout"
+    }
+  },
+  "flex-layout.row#faq-2": {
+    "children": ["rich-text#faq-question-2", "disclosure-state-indicator#faq"]
+  },
+  "disclosure-content#faq-2": {
+    "children": ["rich-text#faq-answer-2"]
+  },
+  "rich-text#faq-question-2": {
+    "props": {
+      "text": "###### Do you offer custom-made boxes?"
+    }
+  },
+  "rich-text#faq-answer-2": {
+    "props": {
+      "text": "Yes, we do! We can create custom boxes and packaging of any size for your business and brand. See more information on our [custom boxes page](custom-printed-boxes)."
+    }
+  },
+
+  // 3
+  "disclosure-layout#faq-3": {
+    "title": "FAQ - 3",
+    "children": ["disclosure-trigger#faq-3"]
+  },
+  "disclosure-trigger#faq-3": {
+    "children": ["flex-layout.row#faq-3", "disclosure-content#faq-3"],
+    "props": {
+      "blockClass": "faq-disclosure-layout"
+    }
+  },
+  "flex-layout.row#faq-3": {
+    "children": ["rich-text#faq-question-3", "disclosure-state-indicator#faq"]
+  },
+  "disclosure-content#faq-3": {
+    "children": [
+      "rich-text#faq-answer-top-paragraph-3",
+      "flex-layout.row#faq-answer-3",
+      "rich-text#faq-answer-bottom-paragraph-3"
+    ]
+  },
+  "rich-text#faq-question-3": {
+    "props": {
+      "text": "###### What else do you sell besides boxes?"
+    }
+  },
+  "rich-text#faq-answer-top-paragraph-3": {
+    "props": {
+      "text": "We’re much more than just a box company! In addition to our corrugated products, we also offer a wide range of:"
+    }
+  },
+  "rich-text#faq-answer-bottom-paragraph-3": {
+    "props": {
+      "text": "We also have a line of promotional products and work wear, fully customizable for your business. Visit the website here."
+    }
+  },
+  "flex-layout.row#faq-answer-3": {
+    "children": ["rich-text#faq-answer-3a", "rich-text#faq-answer-3b"],
+    "props": {
+      "blockClass": "faq-row"
+    }
+  },
+
+  "rich-text#faq-answer-3a": {
+    "props": {
+      "text": "- [Mailers](/) \n- [Packaging & Shipping Materials](/) \n- [Janitorial & Cleaning Supplies](/) \n- [Safety Products](/) \n- [Packaging Protection](/) \n- [Pallet Wraps](/) \n- [Tape](/) ",
+      "blockClass": "faq-row-first__column"
+    }
+  },
+  "rich-text#faq-answer-3b": {
+    "props": {
+      "text": "- [3M Products](/) \n- [Poly Bags](/) \n- [Anti-Corrosion Products](/) \n- [Wipers & Rags](/) \n- [Storage/Shelving Workstations](/) \n- [Material Handling & Warehouse Supplies](/) \n- [Cafeteria Supplies](/)"
+    }
+  },
+
+  // 4
+  "disclosure-layout#faq-4": {
+    "title": "FAQ - 4",
+    "children": ["disclosure-trigger#faq-4"]
+  },
+  "disclosure-trigger#faq-4": {
+    "children": ["flex-layout.row#faq-4", "disclosure-content#faq-4"],
+    "props": {
+      "blockClass": "faq-disclosure-layout"
+    }
+  },
+  "flex-layout.row#faq-4": {
+    "children": ["rich-text#faq-question-4", "disclosure-state-indicator#faq"]
+  },
+  "disclosure-content#faq-4": {
+    "children": ["flex-layout.row#faq-answer-4"]
+  },
+  "rich-text#faq-question-4": {
+    "props": {
+      "text": "###### Product knowledge"
+    }
+  },
+  "flex-layout.row#faq-answer-4": {
+    "children": ["rich-text#faq-answer-4a", "rich-text#faq-answer-4b"],
+    "props": {
+      "blockClass": "faq-row"
+    }
+  },
+  "rich-text#faq-answer-4a": {
+    "props": {
+      "text": "###### **Corrugated Information** \n- [Box Styles](/) \n- [Corrugated Recycles](/) \n- [Edge Crush Test](/) \n- [ECT Test vs Mullen Test](/) \n- [Flute Profiles](/) \n- [How to Fold a Mailer](/) \n- [How to Fold a Regular Box (RSC)](/) \n- [How to Measure a Box](/)",
+      "blockClass": "faq-row-first__column"
+    }
+  },
+  "rich-text#faq-answer-4b": {
+    "props": {
+      "text": "###### **Custom packaging** \n- [Custom Guidelines](/) \n- [Nozomi Digital Printer](/) \n ###### **Safety** \n- [How to Measure Gloves](/)"
+    }
+  },
+
+  // 5
+  "disclosure-layout#faq-5": {
+    "title": "FAQ - 5",
+    "children": ["disclosure-trigger#faq-5"]
+  },
+  "disclosure-trigger#faq-5": {
+    "children": ["flex-layout.row#faq-5", "disclosure-content#faq-5"],
+    "props": {
+      "blockClass": "faq-disclosure-layout"
+    }
+  },
+  "flex-layout.row#faq-5": {
+    "children": ["rich-text#faq-question-5", "disclosure-state-indicator#faq"]
+  },
+  "disclosure-content#faq-5": {
+    "children": ["rich-text#faq-answer-5"]
+  },
+  "rich-text#faq-question-5": {
+    "props": {
+      "text": "###### Is there a minimum order requirement?"
+    }
+  },
+  "rich-text#faq-answer-5": {
+    "props": {
+      "text": "There is no minimum order requirement. \n Orders over $1500 before tax will receive FREE delivery within our [designated delivery area](https://whitebird.ca/delivery_pickup), some restrictions apply, Orders under $1500 before tax are subject to a $45 service charge."
+    }
+  },
+
+  // 6
+  "disclosure-layout#faq-6": {
+    "title": "FAQ - 6",
+    "children": ["disclosure-trigger#faq-6"]
+  },
+  "disclosure-trigger#faq-6": {
+    "children": ["flex-layout.row#faq-6", "disclosure-content#faq-6"],
+    "props": {
+      "blockClass": "faq-disclosure-layout"
+    }
+  },
+  "flex-layout.row#faq-6": {
+    "children": ["rich-text#faq-question-6", "disclosure-state-indicator#faq"]
+  },
+  "disclosure-content#faq-6": {
+    "children": ["rich-text#faq-answer-6"]
+  },
+  "rich-text#faq-question-6": {
+    "props": {
+      "text": "###### How do I pay by credit card?"
+    }
+  },
+  "rich-text#faq-answer-6": {
+    "props": {
+      "text": "1. Set up an account. \n2. Download the Credit Card Authorization Form \n3. Send the completed for to sales@whitebird.ca",
+      "blockClass": "faq-numbered-list"
+    }
+  },
+
+  // 7
+  "disclosure-layout#faq-7": {
+    "title": "FAQ - 7",
+    "children": ["disclosure-trigger#faq-7"]
+  },
+  "disclosure-trigger#faq-7": {
+    "children": ["flex-layout.row#faq-7", "disclosure-content#faq-7"],
+    "props": {
+      "blockClass": "faq-disclosure-layout"
+    }
+  },
+  "flex-layout.row#faq-7": {
+    "children": ["rich-text#faq-question-7", "disclosure-state-indicator#faq"]
+  },
+  "disclosure-content#faq-7": {
+    "children": ["rich-text#faq-answer-7"]
+  },
+  "rich-text#faq-question-7": {
+    "props": {
+      "text": "###### Why is there a credit card authorization form?"
+    }
+  },
+  "rich-text#faq-answer-7": {
+    "props": {
+      "text": "Legally, Whitebird requires a signature on file that authorizes us to charge the card number provided. It is for your protection and ours."
+    }
+  },
+
+  // 8
+  "disclosure-layout#faq-8": {
+    "title": "FAQ - 8",
+    "children": ["disclosure-trigger#faq-8"]
+  },
+  "disclosure-trigger#faq-8": {
+    "children": ["flex-layout.row#faq-8", "disclosure-content#faq-8"],
+    "props": {
+      "blockClass": "faq-disclosure-layout"
+    }
+  },
+  "flex-layout.row#faq-8": {
+    "children": ["rich-text#faq-question-8", "disclosure-state-indicator#faq"]
+  },
+  "disclosure-content#faq-8": {
+    "children": ["rich-text#faq-answer-8"]
+  },
+  "rich-text#faq-question-8": {
+    "props": {
+      "text": "###### Why do you require so much info to setup an account?"
+    }
+  },
+  "rich-text#faq-answer-8": {
+    "props": {
+      "text": "A lot of our customers have Terms accounts set up with us, so customers looking to have that set up need to provide references for our accounting department. \n If you are not looking to have a Terms account and would like to pay by another method, please check the box for Credit Card or C.O.D., and your banking info will not be required."
+    }
+  },
+
+  // 9
+  "disclosure-layout#faq-9": {
+    "title": "FAQ - 9",
+    "children": ["disclosure-trigger#faq-9"]
+  },
+  "disclosure-trigger#faq-9": {
+    "children": ["flex-layout.row#faq-9", "disclosure-content#faq-9"],
+    "props": {
+      "blockClass": "faq-disclosure-layout"
+    }
+  },
+  "flex-layout.row#faq-9": {
+    "children": ["rich-text#faq-question-9", "disclosure-state-indicator#faq"]
+  },
+  "disclosure-content#faq-9": {
+    "children": ["rich-text#faq-answer-9"]
+  },
+  "rich-text#faq-question-9": {
+    "props": {
+      "text": "###### How do I place an order?"
+    }
+  },
+  "rich-text#faq-answer-9": {
+    "props": {
+      "text": "1. If you are not an existing customer, but would like to place an order for pick up, please phone in your order or email it in to sales@whitebird.ca. \n2. If you are not an existing customer, but would like to place an order delivery, please set up an account. Once your account has been fully set up, a member from our client experience team will be in contact letting you know that you can proceed with your order. Please refer to the map to see if your shipping address falls within our delivery route. *Note that our trucks are not able to deliver to addresses located in residential areas*.",
+      "blockClass": "faq-numbered-list"
+    }
+  },
+
+  // 10
+  "disclosure-layout#faq-10": {
+    "title": "FAQ - 10",
+    "children": ["disclosure-trigger#faq-10"]
+  },
+  "disclosure-trigger#faq-10": {
+    "children": ["flex-layout.row#faq-10", "disclosure-content#faq-10"],
+    "props": {
+      "blockClass": "faq-disclosure-layout"
+    }
+  },
+  "flex-layout.row#faq-10": {
+    "children": ["rich-text#faq-question-10", "disclosure-state-indicator#faq"]
+  },
+  "disclosure-content#faq-10": {
+    "children": ["rich-text#faq-answer-10"]
+  },
+  "rich-text#faq-question-10": {
+    "props": {
+      "text": "###### When can I pickup my order at the warehouse?"
+    }
+  },
+  "rich-text#faq-answer-10": {
+    "props": {
+      "text": "Our pick-up hours are Monday – Friday, 8:00 AM – 4:00 PM EST."
+    }
+  },
+
+  // 11
+  "disclosure-layout#faq-11": {
+    "title": "FAQ - 11",
+    "children": ["disclosure-trigger#faq-11"]
+  },
+  "disclosure-trigger#faq-11": {
+    "children": ["flex-layout.row#faq-11", "disclosure-content#faq-11"],
+    "props": {
+      "blockClass": "faq-disclosure-layout"
+    }
+  },
+  "flex-layout.row#faq-11": {
+    "children": ["rich-text#faq-question-11", "disclosure-state-indicator#faq"]
+  },
+  "disclosure-content#faq-11": {
+    "children": ["rich-text#faq-answer-11"]
+  },
+  "rich-text#faq-question-11": {
+    "props": {
+      "text": "###### Do you have a storefront?"
+    }
+  },
+  "rich-text#faq-answer-11": {
+    "props": {
+      "text": "No, we are a warehouse. We require orders to be phoned in or emailed into sales@whitebird.ca. Once the order has been processed, the customer will receive an order confirmation. \n Orders that are not placed prior to pick up are subject to a $25.00 counter fee."
+    }
+  },
+
+  // 12
+  "disclosure-layout#faq-12": {
+    "title": "FAQ - 12",
+    "children": ["disclosure-trigger#faq-12"]
+  },
+  "disclosure-trigger#faq-12": {
+    "children": ["flex-layout.row#faq-12", "disclosure-content#faq-12"],
+    "props": {
+      "blockClass": "faq-disclosure-layout"
+    }
+  },
+  "flex-layout.row#faq-12": {
+    "children": ["rich-text#faq-question-12", "disclosure-state-indicator#faq"]
+  },
+  "disclosure-content#faq-12": {
+    "children": ["flex-layout.row#faq-answer-12"]
+  },
+  "rich-text#faq-question-12": {
+    "props": {
+      "text": "###### How long does it take to process my order?"
+    }
+  },
+  "flex-layout.row#faq-answer-12": {
+    "children": ["rich-text#faq-answer-12"],
+    "props": {
+      "blockClass": "faq-row--bullets"
+    }
+  },
+  "rich-text#faq-answer-12": {
+    "props": {
+      "text": "Next-Day Delivery in our [Truck Route Area](https://whitebird.ca/delivery_pickup). \n- Orders placed before 4:30pm will be processed for next day delivery.\n- Our drivers and friendly and experienced. \n- New fleet of trucks will give you confidence your order will be delivered on time.\n\nSame-Day Shipping Outside our [Truck Route Area](https://whitebird.ca/delivery_pickup), some exceptions apply.\n- Orders placed before 12:00pm will be processed and shipped same-day, some exceptions apply.\n- All orders are shipping from our warehouse location in Hamilton. \n- Courier is normally used. \n- If the order exceeds weight limits, a common carrier will be dispatched. \n- You will be notified with your delivery charge as soon as your order is complete. \n- If you have an account with a particular courier, setting up delivery is easy."
+    }
+  },
+
+  // 13
+  "disclosure-layout#faq-13": {
+    "title": "FAQ - 13",
+    "children": ["disclosure-trigger#faq-13"]
+  },
+  "disclosure-trigger#faq-13": {
+    "children": ["flex-layout.row#faq-13", "disclosure-content#faq-13"],
+    "props": {
+      "blockClass": "faq-disclosure-layout"
+    }
+  },
+  "flex-layout.row#faq-13": {
+    "children": ["rich-text#faq-question-13", "disclosure-state-indicator#faq"]
+  },
+  "disclosure-content#faq-13": {
+    "children": ["rich-text#faq-answer-13"]
+  },
+  "rich-text#faq-question-13": {
+    "props": {
+      "text": "###### Is shipping available in my area?"
+    }
+  },
+  "rich-text#faq-answer-13": {
+    "props": {
+      "text": "We deliver across Canada, see our Delivery Map for free shipping requirements \n We offer shipping with our own trucks to the areas of Hamilton, Niagara, Cambridge, Kitchener, Waterloo, Guelph, Burlington, Mississauga, Brampton, Toronto & the GTA.\n Orders placed for this area before 4:30 PM EST will be processed for next day delivery. \n We also have a courier network that delivers coast to coast across Canada.\n Orders placed outside of our truck route area before 12:00 PM will be processed and shipped by the next business day. All orders are shipped from our Hamilton warehouse."
+    }
+  },
+
+  // 14
+  "disclosure-layout#faq-14": {
+    "title": "FAQ - 14",
+    "children": ["disclosure-trigger#faq-14"]
+  },
+  "disclosure-trigger#faq-14": {
+    "children": ["flex-layout.row#faq-14", "disclosure-content#faq-14"],
+    "props": {
+      "blockClass": "faq-disclosure-layout"
+    }
+  },
+  "flex-layout.row#faq-14": {
+    "children": ["rich-text#faq-question-14", "disclosure-state-indicator#faq"]
+  },
+  "disclosure-content#faq-14": {
+    "children": ["rich-text#faq-answer-14"]
+  },
+  "rich-text#faq-question-14": {
+    "props": {
+      "text": "###### Can I get a freight quote for shipping?"
+    }
+  },
+  "rich-text#faq-answer-14": {
+    "props": {
+      "text": "In order to obtain a freight quote, please do the following: \n 1. Set up a web account. \n 2. Place the order. \n 3. Once the order has been processed, the client experience team will provide courier estimates that need to be approved. \n 4. Note that no payment will processed unless you have approved all charges. \n 5. You can cancel if you do not wish to pay the freight fee provided OR you can choose to send your own courier to pick up at our warehouse facility. ",
+      "blockClass": "faq-numbered-list"
+    }
+  },
+
+  // 15
+  "disclosure-layout#faq-15": {
+    "title": "FAQ - 15",
+    "children": ["disclosure-trigger#faq-15"]
+  },
+  "disclosure-trigger#faq-15": {
+    "children": ["flex-layout.row#faq-15", "disclosure-content#faq-15"],
+    "props": {
+      "blockClass": "faq-disclosure-layout"
+    }
+  },
+  "flex-layout.row#faq-15": {
+    "children": ["rich-text#faq-question-15", "disclosure-state-indicator#faq"]
+  },
+  "disclosure-content#faq-15": {
+    "children": ["rich-text#faq-answer-15"]
+  },
+  "rich-text#faq-question-15": {
+    "props": {
+      "text": "###### What other deals or discounts do you offer?"
+    }
+  },
+  "rich-text#faq-answer-15": {
+    "props": {
+      "text": "Customers with an AIR MILES® membership earn one AIR MILES® reward mile for every $25.00 spent at Whitebird for orders that exceed $200.00 before taxes. \n New customers with an AIR MILES® membership earn 100 bonus AIR MILES® if their first order after opening an account with us is $500.00 or more. \n There are always discounts to be had with our clearance sales! You can see what clearance items we currently have in stock [here](https://whitebird.ca/clearance-items/8100)."
+    }
+  },
+
+  // 16
+  "disclosure-layout#faq-16": {
+    "title": "FAQ - 16",
+    "children": ["disclosure-trigger#faq-16"]
+  },
+  "disclosure-trigger#faq-16": {
+    "children": ["flex-layout.row#faq-16", "disclosure-content#faq-16"],
+    "props": {
+      "blockClass": "faq-disclosure-layout"
+    }
+  },
+  "flex-layout.row#faq-16": {
+    "children": ["rich-text#faq-question-16", "disclosure-state-indicator#faq"]
+  },
+  "disclosure-content#faq-16": {
+    "children": ["rich-text#faq-answer-16"]
+  },
+  "rich-text#faq-question-16": {
+    "props": {
+      "text": "###### Return Policy"
+    }
+  },
+  "rich-text#faq-answer-16": {
+    "props": {
+      "text": "Please contact customer service at 1800-263-2128 to set up a return authorization. Products must be returned within 30 days of receipt. \n Standard stocked products ordered incorrectly by the customer are subject to a 15% restocking charge. \n Certain non-stocked items are non-returnable or subject to higher than 15% restocking charges. \n Credits are only issued upon inspection of returned goods. \n Customers are responsible for shipping charges on returned goods."
+    }
+  },
+
+  // 17
+  "disclosure-layout#faq-17": {
+    "title": "FAQ - 17",
+    "children": ["disclosure-trigger#faq-17"]
+  },
+  "disclosure-trigger#faq-17": {
+    "children": ["flex-layout.row#faq-17", "disclosure-content#faq-17"],
+    "props": {
+      "blockClass": "faq-disclosure-layout"
+    }
+  },
+  "flex-layout.row#faq-17": {
+    "children": ["rich-text#faq-question-17", "disclosure-state-indicator#faq"]
+  },
+  "disclosure-content#faq-17": {
+    "children": ["rich-text#faq-answer-17"]
+  },
+  "rich-text#faq-question-17": {
+    "props": {
+      "text": "###### Pricing policy"
+    }
+  },
+  "rich-text#faq-answer-17": {
+    "props": {
+      "text": "Whitebird strives to maintain accurate pricing on both its website and in its mailed advertising, however we reserve the right to make any corrections or adjustments without notice, which are caused by market fluctuations or human error. All pricing is in Canadian dollars."
+    }
+  }
+}

@@ -1,0 +1,60 @@
+@import '../../color-variables.css';
+
+.container--about-us-history-text {
+  background-color: var(--star-blue);
+  color: var(--text-white);
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.container--about-us-single-source-text {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background: var(--bg-cultured-white);
+}
+
+.wrapper--about-us-history-text :global(.vtex-rich-text-0-x-heading-level-6),
+.wrapper--about-us-single-source-text
+  :global(.vtex-rich-text-0-x-heading-level-6) {
+  margin: 0;
+}
+
+.wrapper--about-us-history-text {
+  max-width: 400px;
+  margin-right: 115px;
+}
+
+.wrapper--about-us-single-source-text {
+  max-width: 400px;
+  margin-left: 115px;
+}
+
+@media (max-width: 1225px) {
+  .wrapper--about-us-history-text,
+  .wrapper--about-us-single-source-text {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 850px) {
+  .wrapper--about-us-history-text,
+  .wrapper--about-us-single-source-text {
+    padding: 14px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 639px) {
+  .wrapper--about-us-history-text,
+  .wrapper--about-us-single-source-text {
+    padding: 35px 0;
+    text-align: center;
+  }
+}
+
+.paragraph--about-us-remove-margin {
+  padding-top: 0px !important;
+  margin-top: 0px;
+}

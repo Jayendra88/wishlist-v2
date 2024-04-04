@@ -1,0 +1,146 @@
+{
+  "store.quickorder": {
+    "blocks": ["flex-layout.row#title", "flex-layout.row#main-body"]
+  },
+  "flex-layout.row#main-body": {
+    "children": ["flex-layout.col#left-side", "flex-layout.col#right-side"],
+    "props": {
+      "blockClass": "main-container"
+    }
+  },
+  "flex-layout.row#title": {
+    "children": ["flex-layout.col#title"]
+  },
+  "flex-layout.col#title": {
+    "children": ["rich-text#title"],
+    "props": {
+      "blockClass": "titleQuickorder",
+      "preventVerticalStretch": true,
+      "horizontalAlign": "center"
+    }
+  },
+
+  "flex-layout.col#left-side": {
+    "children": ["rich-text#bysku", "tab-layout#quickorder"],
+    "props": {
+      "blockClass": "left-ride",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.col#right-side": {
+    "children": ["flex-layout.row#autocomplete"],
+    "props": {
+      "blockClass": "right-side",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#title": {
+    "props": {
+      "textAlignment": "center",
+      "text": "## Quick Orders"
+    }
+  },
+  "rich-text#bysku": {
+    "props": {
+      "textAlignment": "center",
+      "text": "### By SKU"
+    }
+  },
+
+  "flex-layout.row#textarea": {
+    "children": ["flex-layout.col#textarea"]
+  },
+  "flex-layout.col#textarea": {
+    "children": ["quickorder-textarea"],
+    "props": {
+      "blockClass": "textarea-container"
+    }
+  },
+  "quickorder-textarea": {
+    "props": {
+      "componentOnly": false,
+      "blockClass": "textarea-container",
+      "description": "[Sku's Code],[Quantity]"
+    }
+  },
+
+  "tab-layout#quickorder": {
+    "children": ["tab-list#quickorder", "tab-content#quickorder"],
+    "props": {
+      "blockClass": "home",
+      "defaultActiveTabId": "upload"
+    }
+  },
+  "tab-list#quickorder": {
+    "children": ["tab-list.item#upload", "tab-list.item#textarea"],
+    "props": {
+      "blockClass": "quick-order"
+    }
+  },
+  "tab-list.item#upload": {
+    "props": {
+      "tabId": "upload",
+      "label": "upload SKUs",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#textarea": {
+    "props": {
+      "tabId": "textarea",
+      "label": "Copy/Paste Skus"
+    }
+  },
+  "tab-content#quickorder": {
+    "children": ["tab-content.item#upload", "tab-content.item#textarea"]
+  },
+  "tab-content.item#upload": {
+    "children": ["flex-layout.row#upload"],
+    "props": {
+      "tabId": "upload"
+    }
+  },
+  "tab-content.item#textarea": {
+    "children": ["flex-layout.row#textarea"],
+    "props": {
+      "tabId": "textarea",
+      "blockClass": "textarea-container"
+    }
+  },
+
+  "flex-layout.row#upload": {
+    "children": ["flex-layout.col#upload"]
+  },
+  "flex-layout.col#upload": {
+    "props": {
+      "blockClass": "upload-container"
+    },
+    "children": ["quickorder-upload"]
+  },
+  "quickorder-upload": {
+    "props": {
+      "blockClass": "drag-drop",
+      "componentOnly": false,
+      "description": "Upload a Spreadsheet with two columns (SKU, Quantity) to bulk order",
+      "downloadText": "Click here to download a spreadsheet model"
+    }
+  },
+
+  "flex-layout.row#autocomplete": {
+    "children": ["flex-layout.col#autocomplete"]
+  },
+  "flex-layout.col#autocomplete": {
+    "props": {
+      "blockClass": "auto-complete"
+    },
+    "children": ["quickorder-autocomplete"]
+  },
+  "quickorder-autocomplete": {
+    "props": {
+      "blockClass": "autocomplete-input",
+      "componentOnly": false,
+      "text": "One by One",
+      "description": "Type the product name, select, enter quantity, add to the cart"
+    }
+  }
+}

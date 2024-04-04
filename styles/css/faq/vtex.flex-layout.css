@@ -1,0 +1,54 @@
+@import '../../color-variables.css';
+
+.flexRowContent--faq-row {
+  justify-content: flex-start !important;
+}
+
+.flexRowContent--faq-row :global(.vtex-rich-text-0-x-list) {
+  list-style-type: none;
+  padding-left: 0;
+  line-height: 26px;
+  margin-top: 0;
+}
+
+.flexRowContent--faq-row--bullets :global(.vtex-rich-text-0-x-list) {
+  padding-left: 18px;
+  line-height: 26px;
+  margin-top: 0;
+}
+
+.flexRowContent--faq-row :global(.vtex-rich-text-0-x-strong) {
+  color: var(--text-gray);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.flexColChild--faq-layout {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+  margin-bottom: 225px;
+}
+
+.flexRowContent--faq-accordion-icon {
+  margin: 0;
+  border-left: 1px solid var(--border-light-gray);
+  padding: 10px 0 10px 16px;
+}
+
+.flexRow--faq-layout {
+  background: var(--bg-cultured-white);
+}
+
+.flexRow--divider {
+  border-top: 1px solid var(--border-beau-blue);
+  height: 0;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .flexRow--divider {
+    width: 350px;
+  }
+}

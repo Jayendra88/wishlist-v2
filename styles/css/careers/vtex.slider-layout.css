@@ -1,0 +1,20 @@
+@import '../../color-variables.css';
+
+.sliderTrackContainer--careers-carousel {
+  height: 520px;
+  width: 950px;
+}
+.caretIcon--careers-carousel {
+  color: var(--text-star-blue);
+}
+
+.paginationDot--isActive {
+  background-color: var(--text-star-blue);
+}
+
+@media (max-width: 600px) {
+  .sliderTrackContainer--careers-carousel {
+    height: auto;
+    width: 400px;
+  }
+}

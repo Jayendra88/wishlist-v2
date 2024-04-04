@@ -1,0 +1,52 @@
+{
+  "title": "OrderShippingMethod",
+  "type": "object",
+  "properties": {
+    "orderFormId": {
+      "type": "string",
+      "title": "Order Form Id"
+    },
+    "firstName": {
+      "type": "string",
+      "title": "First Name"
+    },
+    "lastName": {
+      "type": "string",
+      "title": "Last Name"
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "title": "Email"
+    },
+    "shippingObject": {
+      "type": "string",
+      "title": "Shipping Object"
+    },
+    "addressObject": {
+      "type": "string",
+      "title": "Address Object"
+    },
+    "requestId": {
+      "type": "string",
+      "title": "Request Id"
+    }
+  },
+  "required": [
+    "orderFormId",
+    "firstName",
+    "lastName",
+    "email",
+    "shippingObject",
+    "addressObject",
+    "requestId"
+  ],
+  "v-indexed": ["email", "orderFormId"],
+  "v-security": {
+    "publicJsonSchema": true,
+    "allowGetAll": true,
+    "publicRead": [],
+    "publicWrite": [],
+    "publicFilter": []
+  }
+}

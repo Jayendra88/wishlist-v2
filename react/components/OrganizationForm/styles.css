@@ -1,0 +1,53 @@
+.validate-organization__form,
+.validate-organization__form {
+  margin-bottom: 2rem;
+}
+
+.validate-organization__contact-us {
+  color: var(--text-star-blue);
+  font-size: 0.75rem;
+  text-align: center;
+  margin: 1rem 0 3rem 0;
+}
+
+.validate-organization__header {
+  font-weight: 500;
+  text-align: center;
+}
+
+.validate-organization__link--primary {
+  text-decoration: none;
+  color: var(--text-white);
+  font-weight: 600;
+}
+
+.validate-organization__link-text--primary {
+  background-color: var(--bg-star-blue);
+  border: var(--border-star-blue) solid 2px;
+  margin-bottom: 2rem;
+  padding: 0.85rem;
+  text-align: center;
+}
+
+.validate-organization__link--secondary {
+  text-decoration: none;
+  color: var(--text-star-blue);
+  font-weight: 600;
+}
+
+.validate-organization__link-text--secondary {
+  margin-bottom: 2rem;
+  padding: 0.85rem;
+  text-align: center;
+  border: var(--border-star-blue) solid 2px;
+}
+
+.validate-organization__link--secondary:hover {
+  color: var(--text-white);
+  transition: color 0.25s ease;
+}
+
+.validate-organization__link-text--secondary:hover {
+  background-color: var(--bg-star-blue);
+  transition: background-color 0.25s ease;
+}

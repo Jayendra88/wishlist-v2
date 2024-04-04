@@ -1,0 +1,12 @@
+{
+  "extends": "@vtex/tsconfig",
+  "compilerOptions": {
+    "noEmitOnError": false,
+    "lib": ["es2019"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "es2019"
+  },
+  "include": ["./typings/*.d.ts", "./**/*.tsx", "./**/*.ts", "ts/index.js"],
+  "exclude": ["node_modules"]
+}

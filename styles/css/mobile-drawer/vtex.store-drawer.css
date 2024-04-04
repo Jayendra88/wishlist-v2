@@ -1,0 +1,22 @@
+.drawerTriggerContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.drawerTriggerContainer
+  :global(.vtex-rich-text-0-x-wrapper--products-trigger-text--arrow) {
+  color: var(--text-star-blue);
+  font-size: 10px;
+  transform: scaleX(0.8);
+}
+
+.drawerTriggerContainer--products-trigger {
+  padding: 0 16px;
+}
+
+.overlay {
+  background-color: #032b3f;
+  opacity: 0.59;
+}

@@ -1,0 +1,40 @@
+@import '../color-variables.css';
+
+.menuContainerNav--menu-container {
+  display: flex;
+  justify-content: center;
+}
+
+.menuContainer--menu-container {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.styledLink--menu-text {
+  font-size: 12px;
+  color: var(--text-white);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.styledLinkContainer {
+  font-size: 14px;
+  margin-left: 1rem;
+  padding: 1rem 0;
+}
+
+.styledLinkContent {
+  color: var(--text-star-blue);
+  font-weight: bold;
+}
+
+.submenu :global(.vtex-menu-2-x-styledLinkContent) {
+  color: var(--star-blue);
+}
+
+@media (min-width: 790px) {
+  .styledLinkContainer {
+    font-size: 12px;
+  }
+}

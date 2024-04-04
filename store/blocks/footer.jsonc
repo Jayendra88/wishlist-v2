@@ -1,0 +1,467 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+
+  //Footer Layout
+  "footer-layout.desktop": {
+    "title": "Desktop Layout",
+    "children": [
+      "flex-layout.row#top-footer",
+      "flex-layout.row#bottom-footer",
+      "flex-layout.row#trademark"
+    ]
+  },
+  "footer-layout.mobile": {
+    "title": "Mobile Layout",
+    "children": [
+      "flex-layout.row#top-footer-mobile",
+      "flex-layout.row#bottom-footer-mobile",
+      "flex-layout.row#trademark"
+    ]
+  },
+
+  //Footer Top row
+  "flex-layout.row#top-footer": {
+    "props": {
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "center",
+      "preserveLayoutOnMobile": true,
+      "rowGap": "7"
+    },
+    "children": ["image#logo"]
+  },
+  "flex-layout.row#top-footer-mobile": {
+    "props": {
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "center",
+      "preserveLayoutOnMobile": true
+    },
+    "children": ["image#logo"]
+  },
+
+  //Footer Bottom
+  "flex-layout.row#bottom-footer": {
+    "props": {
+      "horizontalAlign": "center"
+    },
+    "children": ["flex-layout.row#links", "flex-layout.col#newsletter"]
+  },
+  "flex-layout.row#bottom-footer-mobile": {
+    "props": {
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "flex-layout.row#links-mobile",
+      "flex-layout.col#newsletter-mobile"
+    ]
+  },
+
+  //Footer Columns
+  //Footer Links Containers
+  "flex-layout.row#links": {
+    "props": {
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "right",
+      "blockClass": "footer-links"
+    },
+    "children": ["flex-layout.col#firstCol", "flex-layout.col#secondCol"]
+  },
+  "flex-layout.row#links-mobile": {
+    "children": [
+      "flex-layout.col#firstCol-mobile",
+      "flex-layout.col#secondCol-mobile"
+    ]
+  },
+
+  "flex-layout.col#firstCol": {
+    "title": "Info & Resources Layout",
+    "props": {
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "horizontalAlign": "left",
+      "preserveLayoutOnMobile": true,
+      "marginRight": 10
+    },
+    "children": [
+      "rich-text#firstCol",
+      "rich-text#delivery",
+      "rich-text#policy",
+      "rich-text#review"
+    ]
+  },
+  "flex-layout.col#firstCol-mobile": {
+    "title": "Info & Resources Layout",
+    "props": {
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "horizontalAlign": "center",
+      "verticalAlign": "top",
+      "preserveLayoutOnMobile": true,
+      "blockClass": "mobile-link-container"
+    },
+    "children": [
+      "rich-text#firstCol",
+      "rich-text#delivery",
+      "rich-text#policy",
+      "rich-text#review"
+    ]
+  },
+  "flex-layout.col#secondCol": {
+    "title": "About Whitebird Layout",
+    "props": {
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "horizontalAlign": "left",
+      "blockClass": "link-title",
+      "preserveLayoutOnMobile": true,
+      "marginRight": 5
+    },
+    "children": [
+      "rich-text#secondCol",
+      "rich-text#aboutus",
+      "rich-text#careers",
+      "rich-text#contact"
+    ]
+  },
+  "flex-layout.col#secondCol-mobile": {
+    "title": "About Whitebird Layout",
+    "props": {
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "horizontalAlign": "center",
+      "preserveLayoutOnMobile": true,
+      "blockClass": "mobile-link-container"
+    },
+    "children": [
+      "rich-text#secondCol",
+      "rich-text#aboutus",
+      "rich-text#careers",
+      "rich-text#contact"
+    ]
+  },
+
+  //Footer newsletter Sign up section
+  "flex-layout.col#newsletter": {
+    "title": "Newsletter Desktop Layout",
+    "props": {
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "center"
+    },
+    "children": ["newsletter", "flex-layout.col#contact"]
+  },
+  "flex-layout.col#newsletter-mobile": {
+    "title": "Newsletter Layout",
+    "props": {
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "center"
+    },
+    "children": ["newsletter", "flex-layout.col#contact-mobile"]
+  },
+
+  //Footer contact section
+  "flex-layout.col#contact": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "top"
+    },
+    "children": ["rich-text#footerNumber", "flex-layout.row#social-networks"]
+  },
+  "flex-layout.col#contact-mobile": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "top"
+    },
+    "children": [
+      "rich-text#footerNumber",
+      "flex-layout.row#social-networks-mobile"
+    ]
+  },
+
+  //Footer Row - Social Networks Icons
+  "flex-layout.row#social-networks": {
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    },
+    "children": [
+      "list-context.social-links"
+    ]
+  },
+  "flex-layout.row#social-networks-mobile": {
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    },
+    "children": [
+      "list-context.social-links"
+    ]
+  },
+
+    "list-context.social-links": {
+      "children": ["list-context-renderer#social-links-wrapper"],
+      "props": {
+        "blockClass": "social-links",
+        "socialLinks": [
+          {
+              "id": "info-card-example1",
+              "imageUrl": "assets/socials/linkedin.svg",
+              "alt": "Linkedin",
+              "url": "https://www.linkedin.com/company/whitebird/"
+          }
+        ]
+      }
+    },
+    "list-context-renderer#social-links-wrapper": {
+      "props": {
+        "listElement": "div",
+        "itemElement": "div",
+        "blockClass": "social-links"
+      }
+    },
+
+  //Footer Disclaimer Row
+  "flex-layout.row#trademark": {
+    "children": ["rich-text#disclaimer"]
+  },
+
+  //Newsletter section
+  "newsletter": {
+    "props": {
+      "placeholder": "Enter Email",
+      "label": "SIGN UP FOR SPECIAL OFFERS!",
+      "font": "t-small"
+    }
+  },
+
+  //Rich Text
+  "rich-text#delivery": {
+    "title": "Delivery",
+    "props": {
+      "text": "[Delivery & Pickup](/delivery_pickup)",
+      "blockClass": "link",
+      "font": "t-small"
+    }
+  },
+  "rich-text#policy": {
+    "title": "Privacy Policy",
+    "props": {
+      "text": "[Privacy Policy](/privacy-policy)",
+      "blockClass": "link",
+      "font": "t-small"
+    }
+  },
+  "rich-text#review": {
+    "title": "Review Us",
+    "props": {
+      "text": "[Review Us](https://www.google.com/search?hl=en-CA&gl=ca&q=Whitebird,+690+Rennie+St,+Hamilton,+ON+L8H+3R2&ludocid=15120003413787924508#lrd=0x882c98d08f455ded:0xd1d50afee185d81c,3,,,)",
+      "blockClass": "link",
+      "font": "t-small"
+    }
+  },
+  "rich-text#aboutus": {
+    "title": "About Us",
+    "props": {
+      "text": "[About Us](/about-us)",
+      "blockClass": "link",
+      "font": "t-small"
+    }
+  },
+  "rich-text#careers": {
+    "title": "Careers",
+    "props": {
+      "text": "[Careers](/careers)",
+      "blockClass": "link",
+      "font": "t-small"
+    }
+  },
+  "rich-text#contact": {
+    "title": "Contact",
+    "props": {
+      "text": "[Contact](/contact-us)",
+      "blockClass": "link",
+      "font": "t-small"
+    }
+  },
+  "rich-text#footerNumber": {
+    "title": "Footer number",
+    "props": {
+      "text": "800-123-4567",
+      "font": "t-small",
+      "textColor": "c-on-emphasis",
+      "blockClass": "number"
+    }
+  },
+  "rich-text#firstCol": {
+    "title": "Info & Resources",
+    "props": {
+      "text": "INFO & RESOURCES",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "c-on-emphasis",
+      "blockClass": "link-title",
+      "font": "t-mini"
+    }
+  },
+  "rich-text#secondCol": {
+    "title": "About Whitebird",
+    "props": {
+      "text": "ABOUT WHITEBIRD",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "c-on-emphasis",
+      "blockClass": "link-title",
+      "font": "t-mini"
+    }
+  },
+  "rich-text#disclaimer": {
+    "title": "Trademark",
+    "props": {
+      "text": "®™ Trademarks of AM Royalties Limited Partnership used under license by LoyaltyOne, Co. and Whitebird.  Copyright ©2020 Whitebird, All Rights Reserved.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "c-on-emphasis",
+      "blockClass": "disclaimer"
+    }
+  },
+
+  //Images
+  "image#logo": {
+    "title": "Logo",
+    "props": {
+      "blockClass": "image",
+      "width": 150,
+      "src": "assets/whitebird-logo-white.svg"
+    }
+  },
+  "image#linkedin": {
+    "title": "Linkedin",
+    "props": {
+      "alt": "Linkedin",
+      "blockClass": "social-image",
+      "width": 30,
+      "src": "assets/socials/linkedin.svg",
+      "link": {
+        "newTab": true,
+        "url": "https://www.linkedin.com/company/whitebird/"
+      }
+    }
+  },
+  "image#facebook": {
+    "title": "Facebook",
+    "props": {
+      "alt": "Facebook",
+      "blockClass": "social-image",
+      "width": 30,
+      "src": "assets/socials/facebook.svg",
+      "link": {
+        "newTab": true,
+        "url": "https://www.facebook.com/whitebird.ca"
+      }
+    }
+  },
+  "image#instagram": {
+    "title": "Instagram",
+    "props": {
+      "alt": "Instagram",
+      "blockClass": "social-image",
+      "width": 30,
+      "src": "assets/socials/instagram.svg",
+      "link": {
+        "newTab": true,
+        "url": "https://www.instagram.com/whitebird.ca/"
+      }
+    }
+  },
+  "image#youtube": {
+    "title": "Youtube",
+    "props": {
+      "alt": "Youtube",
+      "blockClass": "social-image",
+      "width": 30,
+      "src": "assets/socials/youtube.svg",
+      "link": {
+        "newTab": true,
+        "url": "https://www.youtube.com/channel/UCu4zJAw1zqX8tymmKqSzZnQ/videos"
+      }
+    }
+  },
+  "image#rss": {
+    "title": "RSS",
+    "props": {
+      "alt": "RSS",
+      "blockClass": "social-image",
+      "width": 30,
+      "src": "assets/socials/blog.svg",
+      "link": {
+        "newTab": true,
+        "url": ""
+      }
+    }
+  },
+  "image#linkedin-mobile": {
+    "title": "Linkedin",
+    "props": {
+      "alt": "Linkedin",
+      "blockClass": "social-image",
+      "width": 30,
+      "src": "assets/socials/linkedin.svg",
+      "link": {
+        "newTab": true,
+        "url": "https://www.linkedin.com/company/whitebird/"
+      }
+    }
+  },
+  "image#facebook-mobile": {
+    "title": "Facebook",
+    "props": {
+      "alt": "Facebook",
+      "blockClass": "social-image",
+      "width": 30,
+      "src": "assets/socials/facebook.svg",
+      "link": {
+        "newTab": true,
+        "url": "https://www.facebook.com/whitebird.ca"
+      }
+    }
+  },
+  "image#instagram-mobile": {
+    "title": "Instagram",
+    "props": {
+      "alt": "Instagram",
+      "blockClass": "social-image",
+      "width": 30,
+      "src": "assets/socials/instagram.svg",
+      "link": {
+        "newTab": true,
+        "url": "https://www.instagram.com/whitebird.ca/"
+      }
+    }
+  },
+  "image#youtube-mobile": {
+    "title": "Youtube",
+    "props": {
+      "alt": "Youtube",
+      "blockClass": "social-image",
+      "width": 30,
+      "src": "assets/socials/youtube.svg",
+      "link": {
+        "newTab": true,
+        "url": "https://www.youtube.com/channel/UCu4zJAw1zqX8tymmKqSzZnQ/videos"
+      }
+    }
+  },
+  "image#rss-mobile": {
+    "title": "RSS",
+    "props": {
+      "alt": "RSS",
+      "blockClass": "social-image",
+      "width": 30,
+      "src": "assets/socials/blog.svg",
+      "link": {
+        "newTab": true,
+        "url": ""
+      }
+    }
+  }
+}

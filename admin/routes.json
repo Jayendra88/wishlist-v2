@@ -1,0 +1,10 @@
+{
+  "admin.app.grid-list": {
+    "component": "AdminGridTableWrapped",
+    "path": "/admin/app/grids"
+  },
+  "admin.app.grid-list-detail": {
+    "component": "AdminGridTableDetail",
+    "path": "/admin/app/grids/:id"
+  }
+}

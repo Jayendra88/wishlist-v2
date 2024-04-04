@@ -1,0 +1,47 @@
+@import '../color-variables.css';
+
+.listContainer--product-tabs {
+  margin-top: 20px;
+  justify-content: flex-start;
+}
+
+@media (min-width: 960px) {
+  .listContainer--product-tabs {
+    margin-top: 36px;
+  }
+}
+
+.listContainer--product-tabs :global(.vtex-tab-layout-0-x-listItem) {
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+}
+
+.listItem--product-tabs :global(.vtex-button) {
+  width: 100%;
+  border-top: 1px solid var(--border-light-gray);
+  border-left: 0;
+  border-right: 1px solid var(--border-light-gray);
+  border-bottom: 0;
+  border-radius: 0;
+  background-color: var(--bg-cultured-white);
+  color: var(--text-dark-gray);
+}
+
+.listItem--product-tabs :global(.vtex-button__label) {
+  padding: 4px 10px;
+  justify-content: center;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media (min-width: 960px) {
+  .listItem--product-tabs :global(.vtex-button__label) {
+    justify-content: flex-start;
+  }
+}
+
+.listItemActive--product-tabs :global(.vtex-button) {
+  background-color: var(--bg-white);
+}

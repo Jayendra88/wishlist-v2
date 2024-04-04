@@ -1,0 +1,146 @@
+@import '../../color-variables.css';
+
+.flexCol--contact-us-form {
+  max-width: 520px;
+}
+
+.flexCol--contact-us-form :global(.vtex-dropdown__label),
+.flexCol--contact-us-form :global(.vtex-input__label) {
+  font-weight: 500;
+}
+.flexCol--contact-us-form :global(.vtex-dropdown__label)::after,
+.flexCol--contact-us-form :global(.vtex-input__label)::after {
+  content: '*';
+  color: var(--text-carolina-blue);
+}
+
+.flexCol--contact-us-form :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  width: 48.5% !important;
+}
+
+.flexCol--contact-us-form :global(.vtex-flex-layout-0-x-flexRowContent) {
+  justify-content: space-between;
+}
+
+.flexCol--contact-us-form :global(.vtex-styleguide-9-x-dropdown),
+.flexCol--contact-us-form :global(.vtex-flex-layout-0-x-flexRowContent) {
+  margin-bottom: 22px;
+}
+
+.flexCol--contact-us-form :global(.vtex-styleguide-9-x-container),
+.flexCol--contact-us-form :global(.vtex-styleguide-9-x-input),
+.flexCol--contact-us-form :global(.vtex-textarea__input) {
+  background-color: var(--bg-cultured-white);
+  font-size: 14px;
+}
+
+.flexCol--contact-us-form :global(.vtex-rich-text-0-x-link) {
+  color: var(--text-carolina-blue) !important;
+}
+
+.flexCol--contact-us-form :global(.vtex-button) {
+  width: 100%;
+  border-radius: 0;
+  font-size: 14px;
+  margin-top: 18px;
+}
+
+.flexCol--hours-locations-wrapper {
+  flex-direction: row;
+  justify-content: center;
+}
+.flexColChild--hours-locations-wrapper {
+  padding: 0 17.5px;
+}
+
+.flexCol--contact-us-form :global(.vtex-rich-text-0-x-paragraph) {
+  font-weight: 500;
+  color: var(--text-black);
+}
+
+.flexCol--work-hours-wrapper {
+  padding: 0 35px;
+  border-left: 1px solid var(--border-light-gray);
+  border-right: 1px solid var(--border-light-gray);
+}
+
+.flexColChild--hours-locations-wrapper :global(.vtex-flex-layout-0-x-flexCol) {
+  margin-bottom: -20px;
+}
+
+.flexCol--background-color-wrapper {
+  margin-top: 65px;
+  margin-bottom: -26px;
+  margin-left: -16px;
+  padding-top: 40px;
+  width: calc(100% + 32px);
+  height: auto;
+  background: var(--bg-cultured-white);
+}
+
+@media (max-width: 525px) {
+  .flexCol--hours-locations-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .flexColChild--hours-locations-wrapper {
+    padding: 0;
+    width: 200px;
+  }
+  .flexColChild--hours-locations-wrapper
+    :global(.vtex-flex-layout-0-x-flexCol) {
+    margin-bottom: 0;
+  }
+  .flexCol--work-hours-wrapper {
+    padding: 15px 0;
+    margin: 15px 0 !important;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid var(--border-light-gray);
+    border-bottom: 1px solid var(--border-light-gray);
+  }
+}
+
+@media (max-width: 640px) {
+  .flexCol--background-color-wrapper {
+    margin-left: -8px;
+    width: calc(100% + 16px);
+  }
+  .flexCol--contact-us-form
+    :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: 100% !important;
+    margin-bottom: 22px;
+  }
+}
+
+.flexCol--contact-us-image-text {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.flexColChild--contact-us-image-text
+  :global(.vtex-store-components-3-x-imageElement) {
+  height: 132px;
+  object-fit: cover;
+  width: 100%;
+  margin-bottom: -3px;
+}
+
+.flexCol--contact-us-wrapper {
+  margin-top: 60px;
+}
+
+.flexColChild--contact-us-wrapper :global(.vtex-rich-text-0-x-paragraph) {
+  font-size: 14px;
+}
+
+.flexColChild--contact-us-wrapper :global(.vtex-rich-text-0-x-heading-level-3) {
+  margin-top: 50px;
+  font-size: 26px;
+}
+
+.flexRow--contact-us-layout :global(.vtex-store-components-3-x-container) {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}

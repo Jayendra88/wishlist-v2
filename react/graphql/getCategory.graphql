@@ -1,0 +1,8 @@
+query GetCategory ($id: Int){
+  category (id: $id ) @context(provider: "vtex.store-graphql"){ 
+    slug
+    titleTag
+    name
+    id
+  }
+}

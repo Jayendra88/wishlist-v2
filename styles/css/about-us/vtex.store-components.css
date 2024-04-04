@@ -1,0 +1,15 @@
+.imageElement--about-us-deer-head {
+  height: 217px;
+  object-fit: contain;
+}
+
+.imageElement--about-us-history-image,
+.imageElement--about-us-single-source-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.imageElement--about-us-truck {
+  height: 190px;
+  object-fit: contain;
+}

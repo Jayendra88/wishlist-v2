@@ -1,0 +1,68 @@
+.priceSelectorQuantityContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.priceSelectorQuantityContainer--wishlist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.priceSelectorQuantityContainerSlim {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.priceSelectorQuantityContainerSlim input[type='tel'],
+.priceSelectorQuantityContainerSlim button {
+  height: 36px !important;
+  min-height: 32px;
+}
+
+.priceSelectorQuantityContainerSlim > button {
+  margin-left: 6px;
+}
+
+.priceSelectorQuantityLoading {
+  width: 148px;
+  background-color: #dce2e5;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.priceSelectorStepper button {
+  width: max-content;
+  background: var(--bg-french-blue);
+  border-color: var(--bg-french-blue);
+  color: #ffffff;
+  height: 2.8rem;
+  border-radius: 0;
+}
+
+.priceSelectorQuantityContainerSlim
+  .priceSelectorStepper
+  :global(.vtex-styleguide-9-x-hideDecorators) {
+  width: 45px;
+}
+
+.priceSelectorStepper button:disabled {
+  background: #f6f6f6;
+  border-color: #dce2e5;
+  color: #dce2e5;
+}
+
+.priceSelectorQuantityContainer :global(.vtex-button) {
+  background-color: var(--bg-french-blue);
+}
+
+.priceSelectorStepper input {
+  height: 2.8rem;
+}
+
+@media (min-width: 790px) {
+  .priceSelectorStepper {
+    margin-right: 5px;
+  }
+}

@@ -1,0 +1,66 @@
+@import '../color-variables.css';
+
+.imageWrapper {
+  width: 13rem;
+}
+
+.element--shelf {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px;
+}
+
+.element--shelf :global(.vtex-flex-layout-0-x-flexRowContent) {
+  display: flex;
+  justify-content: center;
+}
+
+.element--shelf :global(.vtex-product-summary-2-x-brandName) {
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.element--shelf
+  :global(.vtex-product-identifier-0-x-product-identifier--productReference) {
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-dark-gray);
+}
+
+.productNameContainer {
+  text-align: start;
+}
+
+.nameContainer {
+  padding-top: 0;
+  padding-bottom: 10px;
+  margin-bottom: auto;
+}
+
+.spacer {
+  border-top: solid 1px var(--border-light-gray);
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  flex-grow: 0;
+}
+
+.clearLink {
+  width: 100%;
+}
+
+/* single card border */
+.containerNormal--shelf:global(.vtex-product-summary-2-x-containerNormal) {
+  border: 2px solid #dce2e570;
+  border-radius: 5px;
+}
+
+/* remove reference text and colon from a product cards */
+.container--shelf
+  :global(.vtex-product-identifier-0-x-product-identifier__label),
+.container--shelf
+  :global(.vtex-product-identifier-0-x-product-identifier__separator) {
+  display: none;
+}
+/* end remove reference text and colon from a product cards */

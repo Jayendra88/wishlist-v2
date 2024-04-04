@@ -1,0 +1,138 @@
+@import '../color-variables.css';
+
+.sliderRightArrow--carousel {
+  color: var(--text-white);
+}
+
+.sliderLeftArrow--carousel {
+  color: var(--text-white);
+}
+
+.sliderRightArrow--reviews {
+  color: var(--text-star-blue);
+}
+
+.sliderLeftArrow--reviews {
+  color: var(--text-star-blue);
+}
+
+.sliderRightArrow--shelf {
+  color: var(--text-star-blue);
+}
+
+.sliderLeftArrow--shelf {
+  color: var(--text-star-blue);
+  left: -35px;
+}
+
+.slideChildrenContainer--carousel
+  :global(.vtex-info-card-list-0-x-hero-banner-primary),
+.slideChildrenContainer--carousel
+  :global(.vtex-info-card-list-0-x-hero-banner-secondary) {
+  width: 100%;
+}
+
+.slideChildrenContainer--carousel
+  :global(.vtex-info-card-list-0-x-hero-banner-secondary)
+  :global(.vtex-button) {
+  background-color: transparent;
+  border: 2px solid var(--bg-white);
+  color: var(--bg-white);
+}
+
+.infoCardContainer--carousel {
+  height: 400px;
+  width: 100vw;
+}
+
+.infoCardHeadline--carousel,
+.infoCardSubhead--carousel {
+  color: var(--text-white);
+}
+
+.paginationDotsContainer {
+  padding: 20px 0;
+}
+
+.paginationDotsContainer--reviews {
+  padding: 40px 0;
+}
+
+.paginationDot--carousel {
+  background: var(--bg-roman-silver);
+  box-shadow: 0 2px 4px 0 var(--shadow-33);
+}
+
+.paginationDot--carousel--isActive {
+  background: var(--bg-white);
+  box-shadow: 0 2px 4px 0 var(--shadow-33);
+}
+
+.paginationDot--reviews {
+  background: var(--bg-star-blue-85);
+  box-shadow: 0 2px 4px 0 var(--shadow-33);
+}
+
+.paginationDot--reviews--isActive {
+  background: var(--bg-star-blue);
+  box-shadow: 0 2px 4px 0 var(--shadow-33);
+}
+
+.paginationDot--shelf {
+  background: var(--bg-star-blue-85);
+  box-shadow: 0 2px 4px 0 var(--shadow-33);
+}
+
+.paginationDot--shelf--isActive {
+  background: var(--bg-star-blue);
+  box-shadow: 0 2px 4px 0 var(--shadow-33);
+}
+
+.slide--reviews {
+  position: relative;
+  padding: 45px 40px;
+}
+
+.swiper-wrapper {
+  flex-direction: row;
+}
+
+.sliderLayoutContainer--shelf {
+  margin-bottom: 20px;
+}
+
+.slide--shelf {
+  margin: 0 5px;
+}
+
+.paginationDotsContainer--shelf {
+  bottom: -50px;
+}
+
+@media (min-width: 760px) {
+  .slide--shelf {
+    margin: 0 10px;
+  }
+}
+
+@media (min-width: 960px) {
+  .sliderLeftArrow--reviews {
+    margin-left: 100px;
+  }
+
+  .sliderRightArrow--reviews {
+    margin-right: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sliderLayoutContainer--promotionSlider {
+    margin-bottom: -5px;
+  }
+}
+
+@media screen and (min-width: 639px) {
+  .sliderLayoutContainer--marchPromotionSlider {
+    display: none;
+  }
+}

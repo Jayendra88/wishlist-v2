@@ -1,0 +1,68 @@
+@import '../../../styles/color-variables.css';
+
+.container {
+  display: flex;
+  align-items: center;
+  background: var(--bg-cultured-white);
+  padding: 20px 14px;
+}
+
+.container--breadcrumb-container {
+  padding: 20px;
+  background-color: var(--bg-cultured-white);
+  color: var(--text-star-blue);
+}
+
+.link--breadcrumb-container {
+  color: var(--text-star-blue);
+  vertical-align: middle;
+}
+
+.arrow--breadcrumb-container {
+  color: var(--text-dark-gray);
+}
+
+/* active breadcrumb */
+.term--breadcrumb-container {
+  color: var(--text-dark-gray);
+}
+
+.homeLink::after {
+  content: 'Home';
+  color: var(--text-star-blue);
+}
+
+.link {
+  color: var(--text-star-blue);
+}
+
+.homeIcon {
+  display: none;
+}
+
+.caretIcon {
+  display: none;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+}
+
+.termArrow::before,
+.arrow::before {
+  content: '|';
+  color: var(--text-dark-gray);
+}
+
+.termArrow::before {
+  margin: 0 0px 0 -2px;
+}
+
+.arrow::before {
+  margin: 0 5px 0 0px;
+}
+
+.arrow--1::before {
+  margin: 0 4px 0 1px;
+}

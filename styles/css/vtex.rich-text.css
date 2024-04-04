@@ -1,0 +1,242 @@
+@import '../color-variables.css';
+
+.link {
+  color: var(--text-white);
+  text-decoration: none;
+}
+
+.paragraph--link {
+  margin: 8px 0;
+}
+
+.paragraph--link {
+  margin: 8px 0;
+  font-weight: 500;
+}
+
+.paragraph--link-title {
+  margin: 0 0 20px 0;
+  font-weight: bold;
+}
+
+.paragraph--reviews {
+  display: flex;
+  margin: 20px 0;
+}
+
+.wrapper--number {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.wrapper--reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading--reviews {
+  color: var(--text-star-blue);
+}
+
+.headingLevel5--reviews {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 225px;
+  z-index: -1;
+}
+
+.headingLevel4--reviews {
+  width: 100%;
+  font-size: 14px;
+  font-weight: lighter;
+  font-style: italic;
+  font-family: 'Lora', sans-serif;
+  line-height: 30px;
+  margin: 0;
+}
+
+.headingLevel3--reviews {
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 60px;
+}
+
+.headingLevel1--reviews {
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  width: 70%;
+}
+
+.paragraph--number {
+  color: var(--text-french-blue);
+  font-size: 12px;
+}
+
+.paragraph--disclaimer {
+  font-size: 10px;
+  margin: 0 5px;
+  padding-bottom: 35px;
+}
+
+.paragraph--contact {
+  line-height: 0;
+}
+
+.paragraph--faq {
+  line-height: 0;
+}
+
+.paragraph--shipping {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 5px 10px;
+}
+
+.paragraph--collections-boxes {
+  color: var(--text-white);
+  font-family: Poppins;
+  font-size: 18px;
+  margin: 0;
+}
+
+.paragraph--per-each {
+  font-size: 14px;
+}
+
+.container--number {
+  display: flex;
+  align-items: center;
+}
+
+.container--shelfTitle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.heading--shelfTitle,
+.wrapper--similar-header :global(.vtex-rich-text-0-x-heading-level-2) {
+  color: var(--text-dark-gray);
+  font-family: Poppins;
+  font-size: 18px;
+}
+
+.paragraph--products-trigger-text {
+  color: var(--text-star-blue);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* PDP */
+
+.wrapper--per-each {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper--per-each :global(.vtex-rich-text-0-x-paragraph) {
+  margin-top: 10px;
+}
+
+.container--shipping {
+  align-items: center;
+}
+/* End PDP */
+
+/* search result page */
+
+.paragraph--layout-option {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* end of search result page */
+
+@media (min-width: 760px) {
+  .headingLevel1--reviews {
+    width: 100%;
+  }
+
+  .headingLevel4--reviews {
+    font-size: 18px;
+  }
+
+  .paragraph--shipping {
+    margin: 0 0 5px 10px;
+  }
+}
+
+@media (min-width: 960px) {
+  .paragraph--collections-boxes {
+    font-size: 26px;
+  }
+
+  .headingLevel4--reviews {
+    width: 725px;
+  }
+
+  .headingLevel5--reviews {
+    width: 375px;
+    right: 30px;
+  }
+}
+
+/* Careers page */
+.headingLevel1--careers-layout-title {
+  font-size: 26px;
+}
+.paragraph--careers-layout-paragraph {
+  font-size: 14px;
+}
+/* end careers page */
+
+/* Mini Cart */
+
+.wrapper--mini-cart-price {
+  font-weight: bold;
+  color: #333a3d;
+}
+
+.paragraph--mini-cart-price {
+  margin: 0;
+}
+
+/* Organization page */
+
+.link--organizations-contact-us {
+  color: var(--text-star-blue);
+}
+
+.paragraph--organizations-contact-us {
+  width: 235px;
+  text-align: center;
+}
+
+.paragraph--validate-title {
+  text-align: center;
+}
+
+.paragraph--validate-sub-text {
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.wrapper--sub-title-register {
+  width: 100%;
+}
+
+.wrapper--validate-title {
+  width: 100%;
+}
+
+.wrapper--sub-title-register :global(.vtex-rich-text-0-x-paragraph) {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper--validate-sub-text :global(.vtex-rich-text-0-x-paragraph) {
+  text-align: center;
+}

@@ -1,0 +1,18 @@
+query productsByRefId($refIds: [[String]]) {
+  productsByRefId(refIds: $refIds)
+    @context(provider: "whitebird.minimumtheme") {
+    categoryName
+    image
+    link
+    name
+    productId
+    properties {
+      name
+      value
+    }
+    reference
+    ABCClassCode
+    unitMultiplier
+    UOM
+  }
+}

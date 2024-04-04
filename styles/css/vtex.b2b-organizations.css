@@ -1,0 +1,61 @@
+.userWidgetContainer {
+  margin: 0;
+}
+
+.userWidgetRow,
+.userWidgetItem {
+  background: var(--bg-french-blue);
+  height: 35px;
+}
+
+.userWidgetItem :global(.vtex-button) {
+  color: var(--bg-french-blue) !important;
+  background-color: var(--white) !important;
+  min-height: 30px !important;
+}
+
+@media screen and (max-width: 640px) {
+  .userWidgetItem {
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .userWidgetRow {
+    height: auto;
+  }
+
+  .userWidgetItem :global(.vtex-button) {
+    width: 90vw;
+    border-color: var(--gray);
+    background-color: #002b80;
+  }
+
+  .userWidgetItem :global(.vtex-button__label) {
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .userWidgetCostCenterName,
+  .userWidgetRole,
+  .userWidgetCompanyName {
+    flex: 0 1 30%;
+    text-align: center;
+  }
+}
+
+.newOrganizationInput:nth-child(0n + 3) {
+  display: none;
+}
+
+.newOrganizationInput:nth-child(0n + 9) {
+  display: none;
+}
+
+.businessDocument :global(.vtex-styleguide-9-x-input) {
+  pointer-events: none;
+}
+
+.businessDocument,
+.stateRegistration {
+  display: none;
+}

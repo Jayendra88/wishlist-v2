@@ -1,0 +1,8 @@
+/* moved dots for similar product shelf to match product page clearance shelf */
+.dotsContainer {
+  padding: 20px 0px;
+}
+
+.container {
+  border: 1px solid red;
+}

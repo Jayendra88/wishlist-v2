@@ -1,0 +1,37 @@
+{
+  "admin/admin-grid-table.navigation.label-group": "Grids",
+  "admin/admin-grid-table.navigation.label-main": "Grid List",
+
+  "admin/admin-grid-table.create.modalTrigger": "Add New Grid",
+  "admin/admin-grid-table.update.modalTrigger": "Update Category",
+
+  "admin/admin-grid-table.create.modalHeader": "Upload New Category",
+  "admin/admin-grid-table.update.modalHeader": "Upload Existing Category",
+  "admin/admin-grid-table.create.cancel": "Cancel",
+
+  "admin/admin-grid-table.create.confirm": "Save Category",
+  "admin/admin-grid-table.update.confirm": "Update Category",
+
+  "admin/admin-grid-table.create.confirmMessage": "Category added,  re-indexing in progress",
+  "admin/admin-grid-table.update.confirmMessage": "Category updated,  re-indexing in progress",
+  "admin/admin-grid-table.update.failMessage": "Category update failed,  please try again",
+  "admin/admin-grid-table.update.failTooLarge": "Category update failed, entry too large",
+
+  "admin/admin-grid-table.create.categorySaveFail": "Failed To Save A Category",
+  "admin/admin-grid-table.create.categorySaveFailTooLarge": "Failed To Save A Category - Request too large",
+  "admin/admin-grid-table.update.categoryUpdateFail": "Failed To Save A Category",
+
+  "admin/admin-grid-table.title": "Grid List",
+  "admin/admin-grid-table.itemId": "Item ID",
+  "admin/admin-grid-table.item.action": "Action",
+  "admin/admin-grid-table.item.actions.ariaLabel": "Aria label",
+  "admin/admin-grid-table.item.dangerousAction": "Delete category grid",
+  "admin/admin-grid-table.details.return": "Return",
+  "admin/admin-grid-table.details.save": "Save",
+  "admin/admin-grid-table.details.confirmMessage": "Category Saved",
+  "admin/admin-grid-table.details.title": "Category",
+  "admin/admin-grid-table.details.params": "Params ",
+  "admin/admin-grid-table.create.noGridProvided": "Please provide a grid in order to save category",
+
+  "admin/admin-grid-table.upload.uploadXls": "Upload XLS file (optional)"
+}

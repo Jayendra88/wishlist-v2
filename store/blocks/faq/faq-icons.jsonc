@@ -1,0 +1,36 @@
+{
+  // icons
+  "disclosure-state-indicator#faq": {
+    "props": {
+      "Show": "flex-layout.row#caret-down",
+      "Hide": "flex-layout.row#caret-up"
+    }
+  },
+
+  "flex-layout.row#caret-up": {
+    "children": ["icon-caret-up#faq-caret"],
+    "props": {
+      "blockClass": "faq-accordion-icon"
+    }
+  },
+  "flex-layout.row#caret-down": {
+    "children": ["icon-caret-down#faq-caret"],
+    "props": {
+      "blockClass": "faq-accordion-icon"
+    }
+  },
+  "icon-caret-up#faq-caret": {
+    "props": {
+      "size": 10,
+      "blockClass": "faq-accordion-icon",
+      "viewBox": "0.7 0 6.2 6.2"
+    }
+  },
+  "icon-caret-down#faq-caret": {
+    "props": {
+      "size": 10,
+      "blockClass": "faq-accordion-icon",
+      "viewBox": "0.7 0 6.2 6.2"
+    }
+  }
+}

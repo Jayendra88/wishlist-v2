@@ -1,0 +1,5 @@
+query subcategoryHref($categoryId: Int) {
+  category(id: $categoryId) {
+    href
+  }
+}

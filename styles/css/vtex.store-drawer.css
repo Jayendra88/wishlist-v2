@@ -1,0 +1,27 @@
+@import '../color-variables.css';
+
+.openIconContainer {
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  color: var(--text-star-blue);
+  display: flex;
+  align-items: flex-end;
+}
+
+.openIconContainer--mega-menu-trigger {
+  border-bottom: 1px solid var(--gainsboro-gray);
+  padding: 0;
+  margin-bottom: 0rem;
+  color: var(--text-star-blue);
+}
+
+.closeIconButton {
+  background-color: var(--bg-star-blue);
+  position: absolute;
+  right: 0%;
+  height: 48px;
+}
+
+.closeIcon {
+  color: var(--white);
+}

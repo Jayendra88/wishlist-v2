@@ -1,0 +1,14 @@
+@import '../../color-variables.css';
+
+.wrapper--careers-layout-bullet-list {
+  color: var(--text-star-blue);
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.paragraph--careers-layout-question {
+  color: var(--text-dark-gray);
+  font-size: 16px;
+  line-height: 46px;
+  font-weight: 600;
+}

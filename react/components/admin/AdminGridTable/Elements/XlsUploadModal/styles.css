@@ -1,0 +1,27 @@
+.input-field > div {
+  width: 100%;
+}
+
+.flex-container {
+  margin-bottom: 23px;
+  align-items: center;
+}
+
+.flex-container__input > div {
+  width: 100%;
+}
+
+.text-style {
+  min-width: fit-content;
+  margin-right: 16px;
+}
+
+.preview-table {
+  margin-top: 32px;
+  display: block;
+}
+
+div[aria-label='Product creation modal'] {
+  width: fit-content;
+  max-width: 1200px;
+}

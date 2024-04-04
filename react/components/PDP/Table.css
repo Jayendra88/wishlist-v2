@@ -1,0 +1,49 @@
+.specification-table tr:nth-child(2n) {
+  background: #f6f6f6;
+}
+
+.specification-table-wrapper {
+  border-top: 1px solid var(--border-light-gray);
+  padding-top: 28px;
+  margin-top: 10px;
+  margin-bottom: 14px;
+}
+
+.price-table,
+.specification-table {
+  border-spacing: 0; /* Removes the cell spacing via CSS */
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.price-table td,
+.specification-table td {
+  border: 1px solid #dce2e5;
+  padding: 5px 15px;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.price-table tr:first-child,
+.specification-table tr td:first-child {
+  font-weight: 600;
+}
+
+.specification-table tr {
+  height: 34px;
+}
+
+.specification-table tr td:first-child {
+  text-align: left;
+  padding-left: 8px;
+}
+.specification-table tr td:last-child {
+  width: 0.1%;
+  min-width: 158px;
+}
+
+.price-table tr:nth-child(2n) {
+  background: #f6f6f6;
+  color: var(--star-blue);
+}
